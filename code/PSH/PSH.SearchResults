@@ -1,0 +1,71 @@
+---- widgetQueue Matches (70 in 6 files) ----
+Int_widget_common.c (ds\widget):GENERAL_LIST_STRUCT_T widgetQueue[MSF_MAX_WIDGETTYPE];
+Int_widget_common.c (ds\widget):        ptr = SP_list_get_first_item(&widgetQueue[tmpWidgetType]);
+Int_widget_common.c (ds\widget):                ptr = SP_list_get_next_item(&widgetQueue[tmpWidgetType]);
+Int_widget_common.c (ds\widget):                ptr = SP_list_get_next_item(&widgetQueue[tmpWidgetType]);
+Int_widget_common.c (ds\widget):                    ptr = SP_list_get_next_item(&widgetQueue[tmpWidgetType]);
+Int_widget_common.c (ds\widget):                    ptr = SP_list_get_next_item(&widgetQueue[tmpWidgetType]);
+Int_widget_common.c (ds\widget):                    ptr = SP_list_get_next_item(&widgetQueue[tmpWidgetType]);
+Int_widget_common.c (ds\widget):                    ptr = SP_list_get_next_item(&widgetQueue[tmpWidgetType]);
+Int_widget_common.c (ds\widget):                    ptr = SP_list_get_next_item(&widgetQueue[tmpWidgetType]);
+Int_widget_common.c (ds\widget):                    ptr = SP_list_get_next_item(&widgetQueue[tmpWidgetType]);
+Int_widget_common.c (ds\widget):                    ptr = SP_list_get_next_item(&widgetQueue[tmpWidgetType]);
+Int_widget_common.c (ds\widget):                    ptr = SP_list_get_next_item(&widgetQueue[tmpWidgetType]);
+Int_widget_common.c (ds\widget):                    ptr = SP_list_get_next_item(&widgetQueue[tmpWidgetType]);
+Int_widget_common.c (ds\widget):                    ptr = SP_list_get_next_item(&widgetQueue[tmpWidgetType]);
+Int_widget_common.h (ds\inc):extern GENERAL_LIST_STRUCT_T widgetQueue[];
+Int_widget_general.c (ds\widget):        curWidgetQueue = &widgetQueue[index];
+Int_widget_highlevel.c (ds\widget):            SP_list_insert_to_head(&widgetQueue[MSF_SCREEN], pScreen);
+Int_widget_highlevel.c (ds\widget):            SP_list_insert_to_head(&widgetQueue[MSF_PAINTBOX], pPaintbox);
+Int_widget_highlevel.c (ds\widget):        SP_list_insert_to_head(&widgetQueue[MSF_FORM], pForm);
+Int_widget_highlevel.c (ds\widget):        SP_list_insert_to_head(&widgetQueue[MSF_EDITOR], pEditor);
+Int_widget_highlevel.c (ds\widget):        SP_list_insert_to_head(&widgetQueue[MSF_MENU], pMenu);
+Int_widget_highlevel.c (ds\widget):        SP_list_insert_to_head(&widgetQueue[MSF_MENU], pMenu);
+Int_widget_highlevel.c (ds\widget):        SP_list_insert_to_head(&widgetQueue[MSF_DIALOG], pDialog);
+Int_widget_highlevel.c (ds\widget):    SP_list_insert_to_head(&widgetQueue[MSF_ACTION], pAction);
+Int_widget_highlevel.c (ds\widget):            SP_list_insert_to_head(&widgetQueue[MSF_STRINGGADGET], pStringGadget);
+Int_widget_highlevel.c (ds\widget):            SP_list_insert_to_head(&widgetQueue[MSF_TEXTINPUT], pTextInput);
+Int_widget_highlevel.c (ds\widget):            SP_list_insert_to_head(&widgetQueue[MSF_SELECTGROUP], pSelectgroup);
+Int_widget_highlevel.c (ds\widget):            SP_list_insert_to_head(&widgetQueue[MSF_IMAGEGADGET], pImageGadget);
+Int_widget_highlevel.c (ds\widget):            SP_list_insert_to_head(&widgetQueue[MSF_DATETIME], pDateTime);
+Int_widget_highlevel.c (ds\widget):            SP_list_insert_to_head(&widgetQueue[MSF_BUTTON], pButton);
+Int_widget_highlevel.c (ds\widget):            SP_list_insert_to_head(&widgetQueue[MSF_BOX], pBox);
+Int_widget_highlevel.c (ds\widget):            SP_list_insert_to_head(&widgetQueue[MSF_BAR], pBar);
+Int_widget_highlevel.c (ds\widget):            SP_list_insert_to_head(&widgetQueue[MSF_BMPANIMATION], pBmpAniGadget);
+Int_widget_highlevel.c (ds\widget):        SP_list_insert_to_head(&widgetQueue[MSF_VIEWER], pViewer);
+Int_widget_highlevel.c (ds\widget):        SP_list_insert_to_head(&widgetQueue[MSF_WAITINGWIN], pWaitingWin);
+Int_widget_lowlevel.c (ds\widget):        SP_list_insert_to_head(&widgetQueue[MSF_STYLE], pStyle);
+Int_widget_lowlevel.c (ds\widget):    SP_list_insert_to_head(&widgetQueue[MSF_STRING], pStr);
+Int_widget_lowlevel.c (ds\widget):        SP_list_insert_to_head(&widgetQueue[MSF_ICON], pIcon);
+Int_widget_lowlevel.c (ds\widget):    SP_list_insert_to_head(&widgetQueue[MSF_IMAGE], pImage);
+Int_widget_lowlevel.c (ds\widget):    SP_list_insert_to_head(&widgetQueue[MSF_IMAGE], pImage);
+Int_widget_lowlevel.c (ds\widget):    SP_list_insert_to_head(&widgetQueue[MSF_IMAGE], pImage);
+Int_widget_lowlevel.c (ds\widget):    pImage = (MsfImage*)SP_list_get_first_item(&widgetQueue[MSF_IMAGE]);
+Int_widget_lowlevel.c (ds\widget):        pImage = (MsfImage*)SP_list_get_next_item(&widgetQueue[MSF_IMAGE]);
+Int_widget_lowlevel.c (ds\widget):            SP_list_insert_to_head(&widgetQueue[MSF_SOUND], pSound);
+Int_widget_lowlevel.c (ds\widget):            SP_list_insert_to_head(&widgetQueue[MSF_SOUND], pSound);
+Int_widget_lowlevel.c (ds\widget):    SP_list_insert_to_head(&widgetQueue[MSF_SOUND], pSound);
+Int_widget_remove.c (ds\widget):    if (SP_list_delete_by_item(&widgetQueue[MSF_SCREEN], pScreen))
+Int_widget_remove.c (ds\widget):        if (SP_list_delete_by_item(&widgetQueue[MSF_PAINTBOX], ptr))
+Int_widget_remove.c (ds\widget):        if (SP_list_delete_by_item(&widgetQueue[MSF_FORM], ptr))
+Int_widget_remove.c (ds\widget):        if (SP_list_delete_by_item(&widgetQueue[MSF_DIALOG], ptr))
+Int_widget_remove.c (ds\widget):        if (SP_list_delete_by_item(&widgetQueue[MSF_MENU], ptr))
+Int_widget_remove.c (ds\widget):        if (SP_list_delete_by_item(&widgetQueue[MSF_MAINMENU], ptr))
+Int_widget_remove.c (ds\widget):        if (SP_list_delete_by_item(&widgetQueue[MSF_VIEWER], ptr))
+Int_widget_remove.c (ds\widget):        if (SP_list_delete_by_item(&widgetQueue[MSF_WAITINGWIN], ptr))
+Int_widget_remove.c (ds\widget):        if (SP_list_delete_by_item(&widgetQueue[MSF_EDITOR], ptr))
+Int_widget_remove.c (ds\widget):    if (SP_list_delete_by_item(&widgetQueue[MSF_SELECTGROUP], ptr))
+Int_widget_remove.c (ds\widget):    if (SP_list_delete_by_item(&widgetQueue[MSF_DATETIME], ptr))
+Int_widget_remove.c (ds\widget):    if (SP_list_delete_by_item(&widgetQueue[MSF_TEXTINPUT], ptr))
+Int_widget_remove.c (ds\widget):    if (SP_list_delete_by_item(&widgetQueue[MSF_STRINGGADGET], ptr))
+Int_widget_remove.c (ds\widget):    if (SP_list_delete_by_item(&widgetQueue[MSF_IMAGEGADGET], ptr))
+Int_widget_remove.c (ds\widget):    if (SP_list_delete_by_item(&widgetQueue[MSF_BUTTON], ptr))
+Int_widget_remove.c (ds\widget):    if (SP_list_delete_by_item(&widgetQueue[MSF_BOX], ptr))
+Int_widget_remove.c (ds\widget):    if (SP_list_delete_by_item(&widgetQueue[MSF_BAR], ptr))
+Int_widget_remove.c (ds\widget):        if (SP_list_delete_by_item(&widgetQueue[MSF_IMAGE], ptr))
+Int_widget_remove.c (ds\widget):        if (SP_list_delete_by_item(&widgetQueue[MSF_STRING], pString))
+Int_widget_remove.c (ds\widget):        if (SP_list_delete_by_item(&widgetQueue[MSF_SOUND], ptr))
+Int_widget_remove.c (ds\widget):        if (SP_list_delete_by_item(&widgetQueue[MSF_STYLE], ptr))
+Int_widget_remove.c (ds\widget):        if (SP_list_delete_by_item(&widgetQueue[MSF_ICON], ptr))
+Int_widget_remove.c (ds\widget):        if (SP_list_delete_by_item(&widgetQueue[MSF_ACTION], ptr))
+Int_widget_remove.c (ds\widget):    if (SP_list_delete_by_item(&widgetQueue[MSF_BMPANIMATION], ptr))

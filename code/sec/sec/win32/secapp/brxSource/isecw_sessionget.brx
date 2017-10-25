@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BREWRes Name="isecw_sessionget" VERSION="1">
+<Strings Encoding="Unicode">
+	<String Id="1001" Name="TARGETID1">
+		<Text>1</Text>
+	</String>
+	<String Id="1002" Name="MASTERID1">
+		<Text>1</Text>
+	</String>
+	<String Id="1003" Name="TARGETID2">
+		<Text>2</Text>
+	</String>
+	<String Id="1004" Name="MASTERID2">
+		<Text>2</Text>
+	</String>
+	<String Id="1005" Name="IDS_STRING_1005">
+		<Text>3</Text>
+	</String>
+	<String Id="1006" Name="IDS_STRING_1006">
+		<Text>3</Text>
+	</String>
+	<String Id="1007" Name="IDS_STRING_1007">
+		<Text>4</Text>
+	</String>
+	<String Id="1008" Name="IDS_STRING_1008">
+		<Text>4</Text>
+	</String>
+	<String Id="1009" Name="IDS_STRING_1009">
+		<Text>5</Text>
+	</String>
+	<String Id="1010" Name="IDS_STRING_1010">
+		<Text>5</Text>
+	</String>
+	<String Id="1011" Name="IDS_STRING_1011">
+		<Text>6</Text>
+	</String>
+	<String Id="1012" Name="IDS_STRING_1012">
+		<Text>6</Text>
+	</String>
+	<String Id="1013" Name="IDS_STRING_1013">
+		<Text>7</Text>
+	</String>
+	<String Id="1014" Name="IDS_STRING_1014">
+		<Text>7</Text>
+	</String>
+	<String Id="1015" Name="IDS_STRING_1015">
+		<Text>8</Text>
+	</String>
+	<String Id="1016" Name="IDS_STRING_1016">
+		<Text>8</Text>
+	</String>
+	<String Id="1017" Name="IDS_STRING_1017">
+		<Text>9</Text>
+	</String>
+	<String Id="1018" Name="IDS_STRING_1018">
+		<Text>9</Text>
+	</String>
+	<String Id="1019" Name="IDS_STRING_1019">
+		<Text>10</Text>
+	</String>
+	<String Id="1020" Name="IDS_STRING_1020">
+		<Text>0</Text>
+	</String>
+	<String Id="1021" Name="IDS_STRING_1021">
+		<Text>11</Text>
+	</String>
+	<String Id="1022" Name="IDS_STRING_1022">
+		<Text>11</Text>
+	</String>
+</Strings>
+</BREWRes>

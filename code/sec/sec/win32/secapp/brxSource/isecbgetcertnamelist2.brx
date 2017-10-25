@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BREWRes Name="isecbgetcertnamelist2" VERSION="1">
+<Strings Encoding="Unicode">
+	<String Id="1001" Name="ITARGETID2">
+		<Text>3</Text>
+	</String>
+	<String Id="1002" Name="ICERTTYPE2">
+		<Text>3</Text>
+	</String>
+</Strings>
+</BREWRes>

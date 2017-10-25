@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[objects.mak]
+SCC_Aux_Path = "\\Taishan\janus_project\"
+SCC_Project_Name = "$/pacific/OPUS/ds", IWGAAAAA
+
+[rules.mak]
+SCC_Aux_Path = "\\Taishan\janus_project\"
+SCC_Project_Name = "$/pacific/OPUS/ds", IWGAAAAA

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BREWRes Name="isecw_attechpeertosession" VERSION="1">
+<Strings Encoding="Unicode">
+	<String Id="1001" Name="IP">
+		<Text>192.168.52.241</Text>
+	</String>
+	<String Id="1002" Name="PORT">
+		<Text>9203</Text>
+	</String>
+	<String Id="1003" Name="MASTERSECRETID">
+		<Text>0</Text>
+	</String>
+	<String Id="1004" Name="IDS_STRING_1004">
+		<Text>192.168.52.241</Text>
+	</String>
+	<String Id="1005" Name="IDS_STRING_1005">
+		<Text>9202</Text>
+	</String>
+	<String Id="1006" Name="IDS_STRING_1006">
+		<Text>1</Text>
+	</String>
+	<String Id="1007" Name="IDS_STRING_1007">
+		<Text>10.0.0.172</Text>
+	</String>
+	<String Id="1008" Name="IDS_STRING_1008">
+		<Text>9203</Text>
+	</String>
+	<String Id="1009" Name="IDS_STRING_1009">
+		<Text>2</Text>
+	</String>
+	<String Id="1010" Name="IDS_STRING_1010">
+		<Text>10.0.0.172</Text>
+	</String>
+	<String Id="1011" Name="IDS_STRING_1011">
+		<Text>9202</Text>
+	</String>
+	<String Id="1012" Name="IDS_STRING_1012">
+		<Text>3</Text>
+	</String>
+	<String Id="1013" Name="IDS_STRING_1013">
+		<Text>1.2.3.4</Text>
+	</String>
+	<String Id="1014" Name="IDS_STRING_1014">
+		<Text>8080</Text>
+	</String>
+	<String Id="1015" Name="IDS_STRING_1015">
+		<Text>4</Text>
+	</String>
+	<String Id="1016" Name="IDS_STRING_1016">
+		<Text>255.255.255.1</Text>
+	</String>
+	<String Id="1017" Name="IDS_STRING_1017">
+		<Text>9009</Text>
+	</String>
+	<String Id="1018" Name="IDS_STRING_1018">
+		<Text>5</Text>
+	</String>
+	<String Id="1019" Name="IDS_STRING_1019">
+		<Text>11.22.33.44</Text>
+	</String>
+	<String Id="1020" Name="IDS_STRING_1020">
+		<Text>80</Text>
+	</String>
+	<String Id="1021" Name="IDS_STRING_1021">
+		<Text>6</Text>
+	</String>
+	<String Id="1022" Name="IDS_STRING_1022">
+		<Text>88.81.98.76</Text>
+	</String>
+	<String Id="1023" Name="IDS_STRING_1023">
+		<Text>8080</Text>
+	</String>
+	<String Id="1024" Name="IDS_STRING_1024">
+		<Text>7</Text>
+	</String>
+	<String Id="1025" Name="IDS_STRING_1025">
+		<Text>168.204.33.55</Text>
+	</String>
+	<String Id="1026" Name="IDS_STRING_1026">
+		<Text>1000</Text>
+	</String>
+	<String Id="1027" Name="IDS_STRING_1027">
+		<Text>8</Text>
+	</String>
+	<String Id="1028" Name="IDS_STRING_1028">
+		<Text>10.99.78.56</Text>
+	</String>
+	<String Id="1029" Name="IDS_STRING_1029">
+		<Text>9999</Text>
+	</String>
+	<String Id="1030" Name="IDS_STRING_1030">
+		<Text>9</Text>
+	</String>
+	<String Id="1031" Name="IDS_STRING_1031">
+		<Text>1.1.1.1</Text>
+	</String>
+	<String Id="1032" Name="IDS_STRING_1032">
+		<Text>9000</Text>
+	</String>
+	<String Id="1033" Name="IDS_STRING_1033">
+		<Text>10</Text>
+	</String>
+</Strings>
+</BREWRes>

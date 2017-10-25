@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<BREWRes Name="isecbgetcontractnamelist" VERSION="1">
-<Strings Encoding="Unicode">
-	<String Id="1001" Name="ITARGETID">
-		<Text>1</Text>
-	</String>
-</Strings>
-</BREWRes>

@@ -1,6 +1,0 @@
-#ifndef SECBRS_BID
-#define SECBRS_BID
-
-#define AEECLSID_SECBRS    	0x0104295f
-
-#endif //SECBRS_BID

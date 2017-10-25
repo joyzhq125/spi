@@ -1,6 +1,0 @@
-#ifndef SECAPP_BID
-#define SECAPP_BID
-
-#define AEECLSID_SECAPP        0x78899999
-
-#endif //SECAPP_BID

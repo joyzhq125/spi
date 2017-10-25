@@ -1,6 +1,0 @@
-#ifndef SECWAP_BID
-#define SECWAP_BID
-
-#define AEECLSID_SECWAP    	0x0104295e
-
-#endif //SECWAP_BID

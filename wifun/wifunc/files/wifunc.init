@@ -1,0 +1,11 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+
+start() {
+	/usr/sbin/wifunc &
+}
+
+stop() {
+	killall  wifunc
+}

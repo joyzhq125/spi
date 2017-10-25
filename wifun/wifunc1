@@ -1,0 +1,33 @@
+define Package/helloworld/install 
+         $(INSTALL_DIR) $(1)/usr/bin
+         $(INSTALL_BIN) $(PKG_BUILD_DIR)/helloworld $(1)/usr/bin/
+         $(INSTALL_DIR) $(1)/etc/init.d
+         $(INSTALL_BIN) ./files/wifunc.init $(1)/etc/init.d/wifunc  
+ endef
+ define Package/helloworld/postinst
+ #!/bin/sh
+ /etc/init.d/wifunc enable
+ #chmod +x /etc/init.d/helloworld                       //在此想赋予执行权限不知行不行的通，貌似没报错
+exit 0
+ endef
+
+ define Package/helloworld/prerm
+ #!/bin/sh
+ #/etc/init.d/helloworld disable
+ exit 0
+ endef
+ 
+ 
+ 
+然后写了个简单的脚本：
+#!/bin/sh /etc/rc.common
+
+ START=101
+
+ start() {
+         /usr/bin/wifunc &
+ }
+
+ stop() {
+         killall  wifunc
+ }

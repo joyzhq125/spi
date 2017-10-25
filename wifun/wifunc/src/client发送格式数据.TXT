@@ -1,0 +1,40 @@
+/*client发送原始数据 
+    接收的原始数据格式	
+    msgtype  1 bytes 
+    op           1 byte
+    op_data   4 bytes
+    
+    devid       4 bytes
+    unit_type 1 byte
+    unit_num 1 byte
+    total 1+1+4+4+1+1 = 12 bytes
+*/
+
+led4:1 1 0 0 0 0  0 0 0 0  1 4
+led5:1 1 0 0 0 0  0 0 0 0  1 5
+1)请求马上返回
+2)请求状态
+1 2 0 0 0 0  0 0 0 0 1 0
+010200000000000000000100
+3)开关灯
+16进制
+010100000000000000000104
+010100000000000000000105
+
+
+/*接收原始数据*/
+
+/*
+    msgtype  1 bytes 
+    op           1 byte
+    
+    devid       4 bytes
+    unit_type 1 byte
+    unit_num 1 byte	 
+    result      4 bytes
+    total 1+1+4+1+1+4 = 12 bytes
+*/
+
+0 0 0 0 0 0 0 0 0 0 0 49
+0 0 0 0 0 0 0 0 0 0 0 50
+0 0 0 0 0 0 0 0 0 0 0 51

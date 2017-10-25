@@ -1,0 +1,5388 @@
+From: =?gb2312?B?0tHTySBJbnRlcm5ldCBFeHBsb3JlciAxMSCxo7Tm?=
+Subject: Creating packages - OpenWrt Wiki
+Date: Thu, 20 Nov 2014 10:48:04 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01D004AF.7632E820"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.1.7601.17609
+
+这是 MIME 格式的多方邮件。
+
+------=_NextPart_000_0000_01D004AF.7632E820
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://wiki.openwrt.org/doc/devel/packages
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" =
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML=20
+lang=3D"en" lang=3D"en" dir=3D"ltr" xml:lang=3D"en"=20
+xmlns=3D"http://www.w3.org/1999/xhtml"><HEAD><META =
+content=3D"IE=3D11.0000"=20
+http-equiv=3D"X-UA-Compatible">
+  =20
+<META http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dutf-8">  =20
+<TITLE>Creating packages    - OpenWrt Wiki</TITLE>  =20
+<META name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.17344">=20
+<META name=3D"robots" content=3D"index,follow">=20
+<META name=3D"date" content=3D"2014-09-22T18:23:12+0200">=20
+<META name=3D"keywords" content=3D"doc,devel,packages"> <LINK title=3D"- =
+OpenWrt Wiki"=20
+href=3D"http://wiki.openwrt.org/lib/exe/opensearch.php" rel=3D"search" =
+type=3D"application/opensearchdescription+xml">=20
+<LINK href=3D"http://wiki.openwrt.org/" rel=3D"start"> <LINK =
+title=3D"Index" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages?do=3Dindex"=20
+rel=3D"contents"> <LINK title=3D"Recent Changes" =
+href=3D"http://wiki.openwrt.org/feed.php"=20
+rel=3D"alternate" type=3D"application/rss+xml"> <LINK title=3D"Current =
+Namespace"=20
+href=3D"http://wiki.openwrt.org/feed.php?mode=3Dlist&amp;ns=3Ddoc:devel" =
+rel=3D"alternate"=20
+type=3D"application/rss+xml"> <LINK title=3D"Plain HTML" =
+href=3D"http://wiki.openwrt.org/_export/xhtml/doc/devel/packages"=20
+rel=3D"alternate" type=3D"text/html"> <LINK title=3D"Wiki Markup" =
+href=3D"http://wiki.openwrt.org/_export/raw/doc/devel/packages"=20
+rel=3D"alternate" type=3D"text/plain"> <LINK =
+href=3D"http://wiki.openwrt.org/lib/exe/css.php?s=3Dall&amp;t=3Dameoto"=20
+rel=3D"stylesheet" type=3D"text/css" media=3D"all"> <LINK =
+href=3D"http://wiki.openwrt.org/lib/exe/css.php?t=3Dameoto"=20
+rel=3D"stylesheet" type=3D"text/css" media=3D"screen"> <LINK =
+href=3D"http://wiki.openwrt.org/lib/exe/css.php?s=3Dprint&amp;t=3Dameoto"=
+=20
+rel=3D"stylesheet" type=3D"text/css" media=3D"print">=20
+<SCRIPT =
+src=3D"http://wiki.openwrt.org/lib/exe/js.php?edit=3D0&amp;write=3D0" =
+type=3D"text/javascript" charset=3D"utf-8"></SCRIPT>
+=20
+<SCRIPT type=3D"text/javascript" =
+charset=3D"utf-8"><!--//--><![CDATA[//><!--=0A=
+addInitEvent(function(){=0A=
+	for ( i=3D0; i < document.forms.length; i++ ) {=0A=
+		if (document.forms[i].method =3D=3D 'post') {=0A=
+			var myElement =3D document.createElement('input');=0A=
+			myElement.setAttribute('type', 'hidden');=0A=
+			myElement.name =3D 'bb2_screener_';=0A=
+			myElement.value =3D '1416451691 65.49.2.178';=0A=
+			document.forms[i].appendChild(myElement);=0A=
+		}=0A=
+	}=0A=
+});=0A=
+//--><!]]></SCRIPT>
+   <LINK =
+href=3D"http://wiki.openwrt.org/lib/tpl/ameoto/images/favicon.ico" =
+rel=3D"shortcut icon">=20
+  <!--[if IE 6]><link rel=3D"stylesheet" =
+href=3D"/lib/tpl/ameoto/ie6.css" type=3D"text/css" media=3D"all" =
+/><![endif]-->=20
+  <!--[if IE 7]><link rel=3D"stylesheet" =
+href=3D"/lib/tpl/ameoto/ie7.css" type=3D"text/css" media=3D"all" =
+/><![endif]-->=20
+  </HEAD>=20
+<BODY>
+<DIV class=3D"container">
+<H1 class=3D"bannerhl"><A name=3D"dokuwiki__top" id=3D"banner" =
+href=3D"http://openwrt.org/">OpenWrt</A></H1>
+<DIV class=3D"whoami"></DIV>
+<UL id=3D"navigation">
+  <LI><A href=3D"https://dev.openwrt.org/">Development</A></LI>		=20
+  <LI><A =
+href=3D"http://wiki.openwrt.org/doc/start">Documentation</A></LI>		=20
+  <LI><A href=3D"http://downloads.openwrt.org/">Downloads</A></LI>		=20
+  <LI><A href=3D"http://wiki.openwrt.org/">Wiki</A></LI>		=20
+  <LI><A href=3D"http://forum.openwrt.org/">Forum</A></LI>	 </UL>
+<DIV id=3D"feedback"></DIV>
+<DIV class=3D"sidebar">
+<DIV>
+<H3>Wiki Search</H3>
+<FORM class=3D"search" id=3D"dw__search" =
+action=3D"http://wiki.openwrt.org/"=20
+accept-charset=3D"utf-8">
+<DIV=20
+class=3D"no"><INPUT name=3D"do" type=3D"hidden" value=3D"search"><INPUT =
+name=3D"id" title=3D"[F]" class=3D"edit" id=3D"qsearch__in" =
+accesskey=3D"f" type=3D"text"><INPUT title=3D"Search" class=3D"button" =
+type=3D"submit" value=3D"Search">
+<DIV class=3D"ajax_qsearch JSpopup" =
+id=3D"qsearch__out"></DIV></DIV></FORM></DIV>
+<DIV>
+<H3>Actions</H3>
+<UL class=3D"actions">
+  <LI><A class=3D"action source" accesskey=3D"v" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages?do=3Dedit&amp;rev=3D" =
+
+  rel=3D"nofollow">Show pagesource</A></LI>
+  <LI><A class=3D"action revisions" accesskey=3D"o" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages?do=3Drevisions"=20
+  rel=3D"nofollow">Old revisions</A></LI>
+  <LI class=3D"separate"><A class=3D"action index" accesskey=3D"x" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages?do=3Dindex"=20
+  rel=3D"nofollow">Index</A></LI>
+  <LI><A class=3D"action recent" accesskey=3D"r" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages?do=3Drecent"=20
+  rel=3D"nofollow">Recent changes</A></LI>
+  <LI class=3D"separate"></LI>
+  <LI></LI>
+  <LI><A class=3D"action login" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages?do=3Dlogin&amp;sectok=3D=
+1ea3eaf3c0fda0ffcfed9d27d1a4d275"=20
+  rel=3D"nofollow">Login</A></LI></UL></DIV>
+<DIV>
+<H3>Donate</H3><A href=3D"http://flattr.com/thing/642631/OpenWrt"=20
+target=3D"_blank"><IMG title=3D"Flattr this" alt=3D"Flattr this" =
+src=3D"http://api.flattr.com/button/flattr-badge-large.png"=20
+border=3D"0"></A>		 </DIV>
+<DIV>
+<H3>Translations</H3>
+<UL class=3D"actions" style=3D"padding-left: 24px;">
+  <LI=20
+  style=3D'list-style-image: =
+url("/lib/plugins/multilingual/flags/en.gif");'><SPAN=20
+  class=3D"curid"><A title=3D"doc:devel:packages" class=3D"wikilink1" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages">Creating=20
+  packages</A></SPAN></LI>
+  <LI=20
+  style=3D'list-style-image: =
+url("/lib/plugins/multilingual/flags/ru.gif");'><A=20
+  title=3D"ru:doc:devel:packages" class=3D"wikilink1" =
+href=3D"http://wiki.openwrt.org/ru/doc/devel/packages">=D0=A1=D0=BE=D0=B7=
+=D0=B4=D0=B0=D0=BD=D0=B8=D0=B5=20
+  =D0=BF=D0=B0=D0=BA=D0=B5=D1=82=D0=BE=D0=B2</A></LI>
+  <LI style=3D'list-style-image: =
+url("/lib/plugins/multilingual/flags/zh-cn.gif");'><A=20
+  title=3D"zh-cn:doc:devel:packages" class=3D"wikilink1" =
+href=3D"http://wiki.openwrt.org/zh-cn/doc/devel/packages">=E5=88=9B=E5=BB=
+=BA=E8=BD=AF=E4=BB=B6=E5=8C=85</A></LI>
+  <LI style=3D'list-style-image: =
+url("/lib/plugins/multilingual/flags/zh-tw.gif");'><A=20
+  title=3D"zh-tw:doc:devel:packages" class=3D"wikilink1" =
+href=3D"http://wiki.openwrt.org/zh-tw/doc/devel/packages">=E5=BB=BA=E7=AB=
+=8B=E5=A5=97=E4=BB=B6=E5=8C=85</A></LI></UL></DIV></DIV>
+<DIV class=3D"content">
+<DIV class=3D"breadcrumbs"><SPAN class=3D"bchead">You are here: =
+</SPAN><A title=3D"start"=20
+href=3D"http://wiki.openwrt.org/start">OpenWrt Wiki</A> =C2=BB <A =
+title=3D"doc:start"=20
+href=3D"http://wiki.openwrt.org/doc/start">Documentation</A> =C2=BB <A =
+title=3D"doc:devel:start"=20
+href=3D"http://wiki.openwrt.org/doc/devel/start">Developing</A> =C2=BB =
+<A title=3D"doc:devel:packages"=20
+href=3D"http://wiki.openwrt.org/doc/devel/packages">Creating =
+packages</A>		</DIV><!-- wikipage start -->
+		 <!-- TOC START -->=20
+<DIV class=3D"toc">
+<DIV class=3D"tocheader toctoggle" id=3D"toc__header">Table of =
+Contents</DIV>
+<DIV id=3D"toc__inside">
+<UL class=3D"toc">
+  <LI class=3D"level1">
+  <DIV class=3D"li"><SPAN class=3D"li"><A class=3D"toc" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#buildpackage.variables=
+">BuildPackage=20
+  variables</A></SPAN></DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"><SPAN class=3D"li"><A class=3D"toc" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#pkg_fixup">PKG_FIXUP</=
+A></SPAN></DIV>
+  <UL class=3D"toc">
+    <LI class=3D"clear">
+    <UL class=3D"toc">
+      <LI class=3D"level3">
+      <DIV class=3D"li"><SPAN class=3D"li"><A class=3D"toc" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#tips">Tips</A></SPAN><=
+/DIV></LI></UL></LI></UL></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"><SPAN class=3D"li"><A class=3D"toc" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#buildpackage.defines">=
+BuildPackage=20
+  defines</A></SPAN></DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"><SPAN class=3D"li"><A class=3D"toc" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#dependency.types">Depe=
+ndency=20
+  Types</A></SPAN></DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"><SPAN class=3D"li"><A class=3D"toc" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#configure.a.package.so=
+urce">Configure=20
+  a package source</A></SPAN></DIV>
+  <UL class=3D"toc">
+    <LI class=3D"level2">
+    <DIV class=3D"li"><SPAN class=3D"li"><A class=3D"toc" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#host.tools.required">H=
+ost=20
+    tools required</A></SPAN></DIV></LI></UL></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"><SPAN class=3D"li"><A class=3D"toc" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#adding.configuration.o=
+ptions">Adding=20
+  configuration options</A></SPAN></DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"><SPAN class=3D"li"><A class=3D"toc" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#working.on.local.appli=
+cation.source">Working=20
+  on local application source</A></SPAN></DIV>
+  <UL class=3D"toc">
+    <LI class=3D"level2">
+    <DIV class=3D"li"><SPAN class=3D"li"><A class=3D"toc" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#config_src_tree_overri=
+de">CONFIG_SRC_TREE_OVERRIDE</A></SPAN></DIV></LI>
+    <LI class=3D"level2">
+    <DIV class=3D"li"><SPAN class=3D"li"><A class=3D"toc" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#use_src_dir">USE_SRC_D=
+IR</A></SPAN></DIV></LI>
+    <LI class=3D"level2">
+    <DIV class=3D"li"><SPAN class=3D"li"><A class=3D"toc" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#deprecated.package-ver=
+sion-override.mk">(Deprecated)=20
+    package-version-override.mk</A></SPAN></DIV></LI></UL></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"><SPAN class=3D"li"><A class=3D"toc" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#creating.packages.for.=
+kernel.modules">Creating=20
+  packages for kernel modules</A></SPAN></DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"><SPAN class=3D"li"><A class=3D"toc" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#packaging.a.service">P=
+ackaging=20
+  a service</A></SPAN></DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"><SPAN class=3D"li"><A class=3D"toc" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#how.to.submit.patches.=
+to.openwrt">How=20
+  To Submit Patches to =
+OpenWrt</A></SPAN></DIV></LI></UL></DIV></DIV><!-- TOC END -->=20
+<H1><A name=3D"creating.packages" id=3D"creating.packages">Creating=20
+packages</A></H1>
+<DIV class=3D"level1">
+<P>One of the things that we've attempted to do with OpenWrt's template =
+system=20
+is make it incredibly easy to port software to OpenWrt. If you look at a =
+typical=20
+package directory in OpenWrt you'll find two things: </P>
+<UL>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> package/Makefile</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> package/patches</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> package/files </DIV></LI></UL>
+<P>The patches directory is optional and typically contains bug fixes or =
+
+optimizations to reduce the size of the executable.  The files directory =
+is=20
+optional. It typically includes default config or init files. </P>
+<P>The package makefile is the important item because it provides the =
+steps=20
+actually needed to download and compile the package.  </P>
+<P>Looking at one of the package makefiles, you'd hardly recognize it as =
+a=20
+makefile. Through what can only be described as blatant disregard and =
+abuse of=20
+the traditional make format, the makefile has been transformed into an =
+object=20
+oriented template which simplifies the entire ordeal. </P>
+<P>Here for example, is package/bridge/Makefile: </P>
+<P>
+<PRE class=3D"code">include $(TOPDIR)/rules.mk=0A=
+=0A=
+PKG_NAME:=3Dbridge=0A=
+PKG_VERSION:=3D1.0.6=0A=
+PKG_RELEASE:=3D1=0A=
+=0A=
+PKG_BUILD_DIR:=3D$(BUILD_DIR)/bridge-utils-$(PKG_VERSION)=0A=
+PKG_SOURCE:=3Dbridge-utils-$(PKG_VERSION).tar.gz=0A=
+PKG_SOURCE_URL:=3D@SF/bridge=0A=
+PKG_MD5SUM:=3D9b7dc52656f5cbec846a7ba3299f73bd=0A=
+PKG_CAT:=3Dzcat=0A=
+=0A=
+include $(INCLUDE_DIR)/package.mk=0A=
+=0A=
+define Package/bridge=0A=
+  SECTION:=3Dbase=0A=
+  CATEGORY:=3DNetwork=0A=
+  TITLE:=3DEthernet bridging configuration utility=0A=
+  #DESCRIPTION:=3DThis variable is obsolete. use the =
+Package/name/description define instead!=0A=
+  URL:=3Dhttp://bridge.sourceforge.net/=0A=
+endef=0A=
+=0A=
+define Package/bridge/description=0A=
+ Ethernet bridging configuration utility=0A=
+ Manage ethernet bridging; a way to connect networks together to=0A=
+ form a larger network.=0A=
+endef=0A=
+=0A=
+define Build/Configure=0A=
+  $(call Build/Configure/Default,--with-linux-headers=3D$(LINUX_DIR))=0A=
+endef=0A=
+=0A=
+define Package/bridge/install=0A=
+        $(INSTALL_DIR) $(1)/usr/sbin=0A=
+        $(INSTALL_BIN) $(PKG_BUILD_DIR)/brctl/brctl $(1)/usr/sbin/=0A=
+endef=0A=
+=0A=
+$(eval $(call BuildPackage,bridge))=0A=
+</PRE>
+<P></P></DIV>
+<H2><A name=3D"buildpackage.variables" =
+id=3D"buildpackage.variables">BuildPackage=20
+variables</A></H2>
+<DIV class=3D"level2">
+<P>As you can see, there's not much work to be done; everything is =
+hidden in=20
+other makefiles and abstracted to the point where you only need to =
+specify a few=20
+variables. </P>
+<UL>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> PKG_NAME        - The name of the package, as seen =
+via=20
+  menuconfig and ipkg</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> PKG_VERSION     - The upstream version number that =
+we're=20
+  downloading</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> PKG_RELEASE     - The version of this package=20
+  Makefile</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> PKG_LICENSE     - The license(s) the package is =
+available=20
+  under, SPDX form.</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> PKG_LICENSE_FILE- file containing the license =
+text</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> PKG_BUILD_DIR   - Where to compile the =
+package</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> PKG_SOURCE      - The filename of the original=20
+  sources</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> PKG_SOURCE_<ACRONYM=20
+  title=3D"Uniform Resource Locator">URL</ACRONYM>  - Where to download =
+the=20
+  sources from (directory)</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> PKG_MD5SUM      - A checksum to validate the=20
+  download</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> PKG_CAT         - How to decompress the sources =
+(zcat, bzcat,=20
+  unzip)</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> PKG_BUILD_DEPENDS - Packages that need to be built =
+before=20
+  this package, but are not required at runtime. Uses the same syntax as =
+DEPENDS=20
+  below.</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> PKG_INSTALL     - Setting it to "1" will call the =
+package's=20
+  original "make install" with prefix set to PKG_INSTALL_DIR</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> PKG_INSTALL_DIR - Where "make install" copies the =
+compiled=20
+  files</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> PKG_FIXUP       - ???</DIV></LI></UL>
+<P>The PKG_* variables define where to download the package from; @SF is =
+a=20
+special keyword for downloading packages from sourceforge. The md5sum is =
+used to=20
+verify the package was downloaded correctly and PKG_BUILD_DIR defines =
+where to=20
+find the package after the sources are uncompressed into $(BUILD_DIR).=20
+PKG_INSTALL_DIR defines where the files will be copied after calling =
+"make=20
+install" (set with the PKG_INSTALL variable), and after that you can =
+package=20
+them in the install section. </P>
+<P>At the bottom of the file is where the real magic happens, =
+"BuildPackage" is=20
+a macro setup by the earlier include statements. BuildPackage only takes =
+one=20
+argument directly =E2=80=93 the name of the package to be built, in this =
+case "bridge".=20
+All other information is taken from the define blocks. This is a way of=20
+providing a level of verbosity, it's inherently clear what the =
+DESCRIPTION=20
+variable in Package/bridge is, which wouldn't be the case if we passed =
+this=20
+information directly as the Nth argument to BuildPackage. </P></DIV>
+<H2><A name=3D"pkg_fixup" id=3D"pkg_fixup">PKG_FIXUP</A></H2>
+<DIV class=3D"level2">
+<P>Some/many packages that think autotools is a good idea end up needing =
+"fixes"=20
+to work around autotools "accidentally" knowing better and using host =
+tools=20
+instead of the build environment tools.  OpenWrt defines some PKG_FIXUP =
+rules to=20
+help work around this. <IMG class=3D"middle" alt=3D"FIXME" =
+src=3D"http://wiki.openwrt.org/lib/images/smileys/fixme.gif">=20
+snarkiness probably not required </P>
+<P>
+<PRE class=3D"code make">PKG_FIXUP:=3Dautoreconf=0A=
+PKG_FIXUP:=3Dpatch-libtool=0A=
+PKG_FIXUP:=3Dgettext-version</PRE>
+<P></P>
+<P>Any variations of this you see in the wild are simply aliases for =
+these.=20
+</P></DIV>
+<H5><A name=3D"autoreconf" id=3D"autoreconf">autoreconf</A></H5>
+<DIV class=3D"level5">
+<P>This fixup performs </P>
+<UL>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> autoreconf -f -i</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> touch required but maybe missing files</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> ensures that openwrt-libtool is linked</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> suppresses autopoint/gettext</DIV></LI></UL></DIV>
+<H5><A name=3D"patch-libtool" =
+id=3D"patch-libtool">patch-libtool</A></H5>
+<DIV class=3D"level5">
+<P>If the shipped automake recipes are broken beyound repair then simply =
+find=20
+instances of libtool, detect their version and apply openwrt fix patches =
+to it=20
+</P></DIV>
+<H5><A name=3D"gettext-version" =
+id=3D"gettext-version">gettext-version</A></H5>
+<DIV class=3D"level5">
+<P>This fixup suppress version mismatch errors in automake's gettext =
+support=20
+</P></DIV>
+<H4><A name=3D"tips" id=3D"tips">Tips</A></H4>
+<DIV class=3D"level4">
+<P>Packages that are using Autotools should work with simply=20
+"PKG_FIXUP:=3Dautoreconf". However there might be issues with required =
+versions.=20
+</P>
+<P>Instead of patching ./configure one should fix the file from which=20
+./configure is generated in autotools: configure.ac / configure.in. =
+</P></DIV>
+<H2><A name=3D"buildpackage.defines" =
+id=3D"buildpackage.defines">BuildPackage=20
+defines</A></H2>
+<DIV class=3D"level2"></DIV>
+<H5><A name=3D"package" id=3D"package">Package/</A></H5>
+<DIV class=3D"level5">
+<P>matches the argument passed to buildroot, this describes the package =
+the=20
+menuconfig and ipkg entries. Within Package/ you can define the =
+following=20
+variables: </P>
+<UL>
+  <LI class=3D"level1">
+  <DIV class=3D"li">  SECTION     - The type of package (currently=20
+  unused)</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li">  CATEGORY    - Which menu it appears in =
+menuconfig</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li">  TITLE       - A short description of the =
+package</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li">  DESCRIPTION - (deprecated) A long description of =
+the=20
+  package</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"><ACRONYM title=3D"Uniform Resource =
+Locator">URL</ACRONYM>       =20
+   - Where to find the original software</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li">  MAINTAINER  - (required for new packages) Who to =
+contact=20
+  concerning the package</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li">  DEPENDS     - (optional) Which packages must be=20
+  built/installed before this package. See <A =
+title=3D"doc:devel:packages =E2=86=B5"=20
+  class=3D"wikilink1" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#dependency.types">belo=
+w</A>=20
+  for the syntax.</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li">  USERID      - (optional) a username:groupname pair =
+to create=20
+  at package installation time.</DIV></LI></UL></DIV>
+<H5><A name=3D"packageconffiles.optional"=20
+id=3D"packageconffiles.optional">Package/conffiles (optional)</A></H5>
+<DIV class=3D"level5">
+<P>A list of config files installed by this package, one file per line.=20
+</P></DIV>
+<H5><A name=3D"packagedescription"=20
+id=3D"packagedescription">Package/description</A></H5>
+<DIV class=3D"level5">
+<P>A free text description of the package </P></DIV>
+<H5><A name=3D"buildprepare.optional" =
+id=3D"buildprepare.optional">Build/Prepare=20
+(optional)</A></H5>
+<DIV class=3D"level5">
+<P>A set of commands to unpack and patch the sources. You may safely =
+leave this
+ undefined. </P></DIV>
+<H5><A name=3D"buildconfigure.optional"=20
+id=3D"buildconfigure.optional">Build/Configure (optional)</A></H5>
+<DIV class=3D"level5">
+<P>You can leave this undefined if the source doesn't use configure or =
+has a
+ normal config script, otherwise you can put your own commands here or =
+use
+ "$(call Build/Configure/Default,)" as above to pass in additional =
+arguments for=20
+a standard configure script. </P></DIV>
+<H5><A name=3D"buildcompile.optional" =
+id=3D"buildcompile.optional">Build/Compile=20
+(optional)</A></H5>
+<DIV class=3D"level5">
+<P>How to compile the source; in most cases you should leave this =
+undefined,=20
+because then the default is used, which calls make. If you want to pass =
+special=20
+arguments to make, use e.g. "$(call Build/Compile/Default,FOO=3Dbar) =
+</P></DIV>
+<H5><A name=3D"buildinstall.optional" =
+id=3D"buildinstall.optional">Build/Install=20
+(optional)</A></H5>
+<DIV class=3D"level5">
+<P>How to install the compiled source. The default is to call make =
+install.=20
+Again, to pass special arguments or targets, use $(call=20
+Build/Install/Default,install install-foo) Note that you need put all =
+the needed=20
+make arguments here. If you just need to add something to the "install"=20
+argument, don't forget the 'install' itself. </P></DIV>
+<H5><A name=3D"buildinstalldev.optional"=20
+id=3D"buildinstalldev.optional">Build/InstallDev (optional)</A></H5>
+<DIV class=3D"level5">
+<P>For things needed to compile packages against it (static libs, header =
+files),=20
+but that are of no use on the target device. </P></DIV>
+<H5><A name=3D"packageinstall" =
+id=3D"packageinstall">Package/install</A></H5>
+<DIV class=3D"level5">
+<P>A set of commands to copy files into the ipkg which is represented by =
+the=20
+$(1) directory. As source you can use relative paths which will install =
+from the=20
+unpacked and compiled source, or $(PKG_INSTALL_DIR) which is where the =
+files in=20
+the Build/Install step above end up. </P></DIV>
+<H5><A name=3D"packagepreinst" =
+id=3D"packagepreinst">Package/preinst</A></H5>
+<DIV class=3D"level5">
+<P>The actual text of the script which is to be executed before =
+installation.=20
+Dont forget to include the #!/bin/sh. If you need to abort installation =
+have the=20
+script return false. </P></DIV>
+<H5><A name=3D"packagepostinst" =
+id=3D"packagepostinst">Package/postinst</A></H5>
+<DIV class=3D"level5">
+<P>The actual text of the script which is to be executed after =
+installation.=20
+Dont forget to include the #!/bin/sh.  </P></DIV>
+<H5><A name=3D"packageprerm" id=3D"packageprerm">Package/prerm</A></H5>
+<DIV class=3D"level5">
+<P>The actual text of the script which is to be executed before removal. =
+Dont=20
+forget to include the #!/bin/sh. If you need to abort removal have the =
+script=20
+return false. </P></DIV>
+<H5><A name=3D"packagepostrm" =
+id=3D"packagepostrm">Package/postrm</A></H5>
+<DIV class=3D"level5">
+<P>The actual text of the script which is to be executed after removal. =
+Dont=20
+forget to include the #!/bin/sh.  </P>
+<P>The reason that some of the defines are prefixed by "Package/" and =
+others are=20
+simply "Build" is because of the possibility of generating multiple =
+packages=20
+from a single source. OpenWrt works under the assumption of one source =
+per=20
+package makefile, but you can split that source into as many packages as
+ desired. Since you only need to compile the sources once, there's one =
+global=20
+set of "Build" defines, but you can add as many "Package/" defines as =
+you want=20
+by adding extra calls to BuildPackage =E2=80=93 see the dropbear package =
+for an example.=20
+</P></DIV>
+<H2><A name=3D"dependency.types" id=3D"dependency.types">Dependency =
+Types</A></H2>
+<DIV class=3D"level2">
+<P>Various types of dependencies can be specified, which require a bit =
+of=20
+explanation for their differences. </P>
+<TABLE class=3D"inline">
+  <TBODY>
+  <TR class=3D"row0">
+    <TD class=3D"col0 leftalign" rowspan=3D"1" =
+colspan=3D"1">+&lt;foo&gt;</TD>
+    <TD class=3D"col1" rowspan=3D"1" colspan=3D"1">Package will depend =
+on package=20
+      &lt;foo&gt; and will select it when selected.</TD></TR>
+  <TR class=3D"row1">
+    <TD class=3D"col0 leftalign" rowspan=3D"1" =
+colspan=3D"1">&lt;foo&gt;</TD>
+    <TD class=3D"col1 leftalign" rowspan=3D"1" colspan=3D"1">Package =
+will depend on=20
+      package &lt;foo&gt; and  will be invisible until &lt;foo&gt; is=20
+    selected.</TD></TR>
+  <TR class=3D"row2">
+    <TD class=3D"col0" rowspan=3D"1" colspan=3D"1">@FOO</TD>
+    <TD class=3D"col1" rowspan=3D"1" colspan=3D"1">Package depends on =
+the config=20
+      symbol CONFIG_FOO and will be invisible unless CONFIG_FOO is set. =
+This=20
+      usually used for depending on certain Linux versions or targets, =
+e.g.=20
+      @TARGET_foo will make a package only available for target foo. You =
+can=20
+      also use boolean expressions for complex dependencies, e.g.=20
+      @(!TARGET_foo&amp;&amp;!TARGET_bar) will make the package =
+unavailable for=20
+      foo and bar.</TD></TR>
+  <TR class=3D"row3">
+    <TD class=3D"col0" rowspan=3D"1" colspan=3D"1">+FOO:&lt;bar&gt;</TD>
+    <TD class=3D"col1" rowspan=3D"1" colspan=3D"1">Package will depend =
+on=20
+      &lt;bar&gt; if CONFIG_FOO is set, and will select &lt;bar&gt; when =
+it is=20
+      selected itself. The typical use case would be if there compile =
+time=20
+      options for this package toggling features that depend on external =
+
+      libraries. <IMG class=3D"middle" alt=3D":!:" =
+src=3D"http://wiki.openwrt.org/lib/images/smileys/icon_exclaim.gif">=20
+      Note that the + replaces the @.</TD></TR>
+  <TR class=3D"row4">
+    <TD class=3D"col0" rowspan=3D"1" colspan=3D"1">@FOO:&lt;bar&gt;</TD>
+    <TD class=3D"col1" rowspan=3D"1" colspan=3D"1">Package will depend =
+on=20
+      &lt;bar&gt; if CONFIG_FOO is set, and will be invisible until =
+&lt;bar&gt;=20
+      is selected when CONFIG_FOO is set.</TD></TR></TBODY></TABLE>
+<P>Some typical config symbols for (conditional) dependencies are: </P>
+<TABLE class=3D"inline">
+  <TBODY>
+  <TR class=3D"row0">
+    <TD class=3D"col0" rowspan=3D"1" =
+colspan=3D"1">TARGET_&lt;foo&gt;</TD>
+    <TD class=3D"col1" rowspan=3D"1" colspan=3D"1">Target &lt;foo&gt; is =
+
+  selected</TD></TR>
+  <TR class=3D"row1">
+    <TD class=3D"col0" rowspan=3D"1" =
+colspan=3D"1">TARGET_&lt;foo&gt;_&lt;bar&gt;</TD>
+    <TD class=3D"col1" rowspan=3D"1" colspan=3D"1">If the target =
+&lt;foo&gt; has=20
+      subtargets, subtarget &lt;foo&gt; is selected. If not, profile =
+&lt;foo&gt;=20
+      is selected. This is in addition to TARGET_&lt;foo&gt;</TD></TR>
+  <TR class=3D"row2">
+    <TD class=3D"col0" rowspan=3D"1"=20
+      colspan=3D"1">TARGET_&lt;foo&gt;_&lt;bar&gt;_&lt;baz&gt;</TD>
+    <TD class=3D"col1" rowspan=3D"1" colspan=3D"1">Target &lt;foo&gt; =
+with subtarget=20
+      &lt;bar&gt; and profile &lt;baz&gt; is selected.</TD></TR>
+  <TR class=3D"row3">
+    <TD class=3D"col0" rowspan=3D"1" colspan=3D"1">LINUX_3_X</TD>
+    <TD class=3D"col1" rowspan=3D"1" colspan=3D"1">Linux version used is =
+3.x.*</TD></TR>
+  <TR class=3D"row4">
+    <TD class=3D"col0" rowspan=3D"1" colspan=3D"1">LINUX_2_6_X</TD>
+    <TD class=3D"col1" rowspan=3D"1" colspan=3D"1">Linux version used is =
+2.6.x.*=20
+      (:1: only used for backfire and earlier)</TD></TR>
+  <TR class=3D"row5">
+    <TD class=3D"col0" rowspan=3D"1" colspan=3D"1">LINUX_2_4</TD>
+    <TD class=3D"col1" rowspan=3D"1" colspan=3D"1">Linux version is 2.4 =
+(<IMG class=3D"middle"=20
+      alt=3D":!:" =
+src=3D"http://wiki.openwrt.org/lib/images/smileys/icon_exclaim.gif">=20
+      only used in backfire and earlier, and only for target =
+brcm-2.4)</TD></TR>
+  <TR class=3D"row6">
+    <TD class=3D"col0" rowspan=3D"1" colspan=3D"1">USE_UCLIBC, =
+USE_GLIBC,=20
+    USE_EGLIBC</TD>
+    <TD class=3D"col1" rowspan=3D"1" colspan=3D"1">To (not) depend on a =
+certain=20
+    libc.</TD></TR>
+  <TR class=3D"row7">
+    <TD class=3D"col0" rowspan=3D"1" colspan=3D"1">BROKEN</TD>
+    <TD class=3D"col1" rowspan=3D"1" colspan=3D"1">Package doesn't build =
+or work,=20
+      and should only be visible if "Show broken targets/packages" is =
+selected.=20
+      Prevents the package from failing builds by accidentally selecting =
+
+  it.</TD></TR>
+  <TR class=3D"row8">
+    <TD class=3D"col0" rowspan=3D"1" colspan=3D"1">IPV6</TD>
+    <TD class=3D"col1" rowspan=3D"1" colspan=3D"1">IPv6 support in =
+packages is=20
+      selected.</TD></TR></TBODY></TABLE></DIV>
+<H2><A name=3D"configure.a.package.source"=20
+id=3D"configure.a.package.source">Configure a package source</A></H2>
+<DIV class=3D"level2">
+<P>Example:=20
+<PRE class=3D"code">CONFIGURE_ARGS +=3D \=0A=
+        --disable-native-affinity \=0A=
+        --disable-unicode \=0A=
+        --enable-hwloc=0A=
+=0A=
+CONFIGURE_VARS +=3D \=0A=
+        ac_cv_file__proc_stat=3Dyes \=0A=
+        ac_cv_file__proc_meminfo=3Dyes \=0A=
+        ac_cv_func_malloc_0_nonnull=3Dyes \=0A=
+        ac_cv_func_realloc_0_nonnull=3Dyes=0A=
+=0A=
+</PRE>
+To set variables (autoconfig internal ones or CPPFLAGS,CFLAGS, CXXFLAGS, =
+LDFLAGS=20
+for example) or configure arguments. Setting configure arguments is =
+common.=20
+Setting VARS is needed when the configure.ac autoconf source script does =
+not=20
+work well on cross compilation or finding libraries.=20
+<P></P></DIV>
+<H3><A name=3D"host.tools.required" id=3D"host.tools.required">Host =
+tools=20
+required</A></H3>
+<DIV class=3D"level3">
+<P>If your package needs some private tools built on the host, you can =
+use the=20
+following snippet as a pointer of where to look for more info </P>
+<P>
+<PRE class=3D"code make">HOST_BUILD_DEPENDS:=3D&lt;packagename&gt;/host=0A=
+PKG_BUILD_DEPENDS:=3D&lt;packagename&gt;/host=0A=
+include $(INCLUDE_DIR)/host-build.mk=0A=
+&nbsp;=0A=
+define Host/Compile=0A=
+define Host/Install=0A=
+&nbsp;=0A=
+$(eval $(call HostBuild))</PRE>
+TODO Expand on how to use this, and include examples=20
+<P></P>
+<P><IMG class=3D"middle" alt=3D"FIXME" =
+src=3D"http://wiki.openwrt.org/lib/images/smileys/fixme.gif">=20
+</P>
+<P>Extracted from this thead on the devel mailing list: <A =
+title=3D"https://lists.openwrt.org/pipermail/openwrt-devel/2014-February/=
+023970.html"=20
+class=3D"urlextern" =
+href=3D"https://lists.openwrt.org/pipermail/openwrt-devel/2014-February/0=
+23970.html"=20
+rel=3D"nofollow">https://lists.openwrt.org/pipermail/openwrt-devel/2014-F=
+ebruary/023970.html</A>=20
+</P></DIV>
+<H5><A name=3D"notes" id=3D"notes">NOTES</A></H5>
+<DIV class=3D"level5">
+<P>All variables in your pre/post install/removal scripts should have =
+double=20
+($$) instead of a single ($) string characters. This will inform "make" =
+to not=20
+interpret the value as a variable, but rather just ignore the string and =
+replace=20
+the double $$ by a single $ =E2=80=93 <A =
+title=3D"https://forum.openwrt.org/viewtopic.php?pid=3D85197#p85197"=20
+class=3D"urlextern" =
+href=3D"https://forum.openwrt.org/viewtopic.php?pid=3D85197#p85197"=20
+rel=3D"nofollow">More Info</A> </P>
+<P>After you've created your package Makefile, the new package will=20
+automatically show in the menu the next time you run "make menuconfig" =
+and if=20
+selected will be built automatically the next time "make" is run. </P>
+<P>DESCRIPTION is obsolete, use Package/PKG_NAME/description. </P></DIV>
+<H2><A name=3D"adding.configuration.options"=20
+id=3D"adding.configuration.options">Adding configuration =
+options</A></H2>
+<DIV class=3D"level2">
+<P>If you would like configure your package installation/compilation in =
+the=20
+menuconfig you can do the following: Add MENU:=3D1 to your package =
+definition like=20
+this: </P>
+<PRE class=3D"code">define Package/mjpg-streamer=0A=
+  SECTION:=3Dmultimedia=0A=
+  CATEGORY:=3DMultimedia=0A=
+  TITLE:=3DMJPG-streamer=0A=
+  DEPENDS:=3D@!LINUX_2_4 +libpthread-stubs +jpeg=0A=
+  URL:=3Dhttp://mjpg-streamer.wiki.sourceforge.net/=0A=
+  MENU:=3D1=0A=
+endef</PRE>
+<P>Create a config key in the Makefile: </P>
+<PRE class=3D"code">define Package/mjpg-streamer/config=0A=
+	source "$(SOURCE)/Config.in"=0A=
+endef</PRE>
+<P>Create a Config.in file directory where the Makefile is located with =
+the=20
+content like this: </P>
+<P>
+<PRE class=3D"code">	# Mjpg-streamer configuration=0A=
+	menu "Configuration"=0A=
+		depends on PACKAGE_mjpg-streamer=0A=
+=0A=
+	config MJPEG_STREAMER_AUTOSTART=0A=
+		bool "Autostart enabled"=0A=
+		default n=0A=
+=0A=
+		menu "Input plugins"=0A=
+			depends on PACKAGE_mjpg-streamer=0A=
+			config MJPEG_STREAMER_INPUT_FILE=0A=
+				bool "File input plugin"=0A=
+				help =0A=
+					You can stream pictures from jpg files on the filesystem=0A=
+				default n=0A=
+		=0A=
+			config MJPEG_STREAMER_INPUT_UVC=0A=
+				bool "UVC input plugin"=0A=
+				help=0A=
+					You can stream pictures from an Universal Video Class compatible =
+webcamera=0A=
+				default y=0A=
+		=0A=
+			config MJPEG_STREAMER_FPS=0A=
+				depends MJPEG_STREAMER_INPUT_UVC=0A=
+				int "Maximum FPS"=0A=
+				default 15=0A=
+=0A=
+			config MJPEG_STREAMER_PICT_HEIGHT=0A=
+				depends MJPEG_STREAMER_INPUT_UVC=0A=
+				int "Picture height"=0A=
+				default 640=0A=
+=0A=
+			config MJPEG_STREAMER_PICT_WIDTH=0A=
+				depends MJPEG_STREAMER_INPUT_UVC=0A=
+				int "Picture width"=0A=
+				default 480=0A=
+=0A=
+=0A=
+			config MJPEG_STREAMER_DEVICE=0A=
+				depends MJPEG_STREAMER_INPUT_UVC=0A=
+				string "Device"=0A=
+				default /dev/video0=0A=
+	=0A=
+			config MJPEG_STREAMER_INPUT_GSPCA=0A=
+				bool "GSPCA input plugin"=0A=
+				help=0A=
+					You can stream pictures from a gspca supported webcamera Note this =
+module is deprecated, use the UVVC plugin instead=0A=
+				default n=0A=
+		endmenu=0A=
+	=0A=
+		# ......=0A=
+	=0A=
+	endmenu=0A=
+</PRE>
+<P></P>
+<P>Above you can see examples for various type config parameters. </P>
+<P>And finally you can check your configuration parameters in your =
+Makefile in=20
+the following way: (Note that you can reference to the parameters value =
+with it=20
+name prefixed with CONFIG_) </P>
+<PRE class=3D"code">ifeq ($(CONFIG_MJPEG_STREAMER_INPUT_UVC),y)=0A=
+	$(CP) $(PKG_BUILD_DIR)/input_uvc.so $(1)/usr/lib=0A=
+endif</PRE></DIV>
+<H2><A name=3D"working.on.local.application.source" =
+id=3D"working.on.local.application.source">Working=20
+on local application source</A></H2>
+<DIV class=3D"level2">
+<P>If you are still working on the application itself, at the same time =
+as you=20
+are working on the packaging, it can be very useful to have OpenWrt =
+build your=20
+work in progress code, rather than a specific version+md5sum combination =
+checked=20
+out of revision control, or downloaded from your final "release" =
+location. =20
+There are a few ways of doing this. </P></DIV>
+<H3><A name=3D"config_src_tree_override"=20
+id=3D"config_src_tree_override">CONFIG_SRC_TREE_OVERRIDE</A></H3>
+<DIV class=3D"level3">
+<P>This is an option in menuconfig. See "Advanced configuration options =
+(for=20
+developers)" =E2=86=92 "Enable package source tree override" </P>
+<P>This allows you to point to a local git tree.  (And only git)  Say =
+your=20
+package is defined in my_cool_feed/awesome_app.=20
+<PRE class=3D"code">ln -s /path/to/local/awesome_app_tree/.git =
+feeds/my_cool_feed/awesome_app/git-src=0A=
+make package/awesome_app/{clean,compile} V=3Ds=0A=
+</PRE>
+<P></P>
+<P>Benefits of this approach are that you don't need any special =
+infrastructure=20
+in your package makefiles, they stay completely as they would be for a =
+final=20
+build. The downside is that it only builds whatever is currently =
+_committed_ in=20
+HEAD of your local tree.  (Not &lt;em&gt;master&lt;/em&gt;, this could =
+be a=20
+private testing branch, but it must be &lt;em&gt;committed&lt;/em&gt; it =
+can't=20
+be local changes) This will also use a _separate_ directory for building =
+and=20
+checking out the code.  So any built objects in your local git tree (for =
+
+example, build targeting a different architecture) will be left alone, =
+but=20
+whatever _branch_ is checked out in your tree determines where HEAD is.=20
+</P></DIV>
+<H3><A name=3D"use_src_dir" id=3D"use_src_dir">USE_SRC_DIR</A></H3>
+<DIV class=3D"level3">
+<P>As part of deprecating package-version-override.mk (below) a method =
+to point=20
+directly to local source was introduced.=20
+<PRE class=3D"code">make package/awesome_app/clean V=3Ds=0A=
+make package/awesome_app/prepare USE_SOURCE_DIR=3D~/src/awesome_src V=3Ds=0A=
+make package/awesome_app/clean V=3Ds=0A=
+</PRE>
+(V=3Ds is optional above)=20
+<P></P>
+<P>This doesn't require any config change to enable rules, and doesn't =
+require=20
+that you have a local git tree, and doesn't require any files to be =
+committed. =20
+</P>
+<P>At least at present however, this has the following problems: </P>
+<UL>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> make clean doesn't clean the source link directory, =
+but still=20
+  seems to be removing a link</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> make prepare needs to be run every time</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> make package/awesome_app/{clean,compile} =
+USE_SOURCE_DIR=3D~blah=20
+  doesn't work</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> Seems to have bad interactions with leaving =
+USE_SOURCE_DIR=20
+  set for other (dependent?) packages.</DIV></LI></UL>
+<P>See <A =
+title=3D"http://www.mail-archive.com/openwrt-devel@lists.openwrt.org/msg2=
+3122.html"=20
+class=3D"urlextern" =
+href=3D"http://www.mail-archive.com/openwrt-devel@lists.openwrt.org/msg23=
+122.html"=20
+rel=3D"nofollow">http://www.mail-archive.com/openwrt-devel@lists.openwrt.=
+org/msg23122.html</A>=20
+for the original discussion of this new feature </P></DIV>
+<H3><A name=3D"deprecated.package-version-override.mk" =
+id=3D"deprecated.package-version-override.mk">(Deprecated)=20
+package-version-override.mk</A></H3>
+<DIV class=3D"level3">
+<P><IMG class=3D"middle" alt=3D":!:" =
+src=3D"http://wiki.openwrt.org/lib/images/smileys/icon_exclaim.gif">=20
+<STRONG> Don't use this anymore </STRONG> Support for this style of =
+local source=20
+building was removed in: <A =
+title=3D"https://dev.openwrt.org/changeset/40392"=20
+class=3D"urlextern" href=3D"https://dev.openwrt.org/changeset/40392"=20
+rel=3D"nofollow">https://dev.openwrt.org/changeset/40392</A>.  This =
+style required=20
+a permanent modification to your package makefile, and then entering a =
+path via=20
+menuconfig to where the source was found.  It was fairly easy to use, =
+and didn't=20
+care whether your local source was in git or svn or visual source safe =
+even, but=20
+it had the major downside that the "clean" target simply didn't work.  =
+(As it=20
+simply removed a symlink for cleaning) </P>
+<P>If you build a current OpenWrt tree, with packages that still attempt =
+to use=20
+this style of local building, you _will_ receive errors like so: ERROR: =
+please=20
+fix package/feeds/feed_name/application_name/Makefile - see=20
+logs/package/feeds/feed_name/application_name/dump.txt for details </P>
+<P>If you need/want to keep using this style, where it's available, make =
+sure=20
+you include without failing if it was missing:=20
+<PRE class=3D"code">-include $(INCLUDE_DIR)/package-version-override.mk=0A=
+</PRE>
+<P></P></DIV>
+<H2><A name=3D"creating.packages.for.kernel.modules" =
+id=3D"creating.packages.for.kernel.modules">Creating=20
+packages for kernel modules</A></H2>
+<DIV class=3D"level2">
+<P>A <A =
+title=3D"http://www.digitalhermit.com/linux/Kernel-Build-HOWTO.html"=20
+class=3D"urlextern" =
+href=3D"http://www.digitalhermit.com/linux/Kernel-Build-HOWTO.html"=20
+rel=3D"nofollow">kernel module</A> is an installable program which =
+extends the=20
+behavior of the linux kernel. A kernel module gets loaded after the =
+kernel=20
+itself, (e.g. using insmod). </P>
+<P>Many kernel programs are included in the linux source distribution; =
+typically=20
+the kernel build may be configured to, for each program,  </P>
+<OL>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> compile it into the kernel as a built-in, =
+</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> compile it as a loadable kernel module, or =
+</DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"> ignore it.</DIV></LI></OL>
+<P>See <EM><STRONG>FIX:Customizingthekerneloptions customizing the =
+kernel=20
+options</STRONG></EM> for including it in the kernel. </P>
+<P>To include one of these programs as a loadable module, select the=20
+corresponding kernel option in the OpenWrt configuration (see <A =
+title=3D"doc:howto:build"=20
+class=3D"wikilink1"=20
+href=3D"http://wiki.openwrt.org/doc/howto/build#configuration">Build=20
+Configuration</A>). If your favorite kernel module does not appear in =
+the=20
+OpenWrt configuration menus, you must add a stanza to one of the files =
+in the=20
+package/kernel/linux/modules directory. Here is an example extracted =
+from=20
+=E2=80=A6/modules/block.mk:=20
+<PRE class=3D"code">define KernelPackage/loop=0A=
+  SUBMENU:=3D$(BLOCK_MENU)=0A=
+  TITLE:=3DLoopback device support=0A=
+  KCONFIG:=3D \=0A=
+        CONFIG_BLK_DEV_LOOP \=0A=
+        CONFIG_BLK_DEV_CRYPTOLOOP=3Dn=0A=
+  FILES:=3D$(LINUX_DIR)/drivers/block/loop.ko=0A=
+  AUTOLOAD:=3D$(call AutoLoad,30,loop)=0A=
+endef=0A=
+=0A=
+define KernelPackage/loop/description=0A=
+ Kernel module for loopback device support=0A=
+endef=0A=
+=0A=
+$(eval $(call KernelPackage,loop))=0A=
+</PRE>
+<P></P>
+<P>Changes to the *.mk files are not automatically picked up by the =
+build=20
+system. To force re-reading the meta data either touch the kernel =
+package=20
+Makefile using <CODE>touch package/kernel/linux/Makefile</CODE> (on =
+older=20
+revisions <CODE>touch package/kernel/Makefile</CODE>) or to delete the=20
+<CODE>tmp/</CODE> directory of the buildroot. </P>
+<P>You can also add kernel modules which are <EM>not</EM> part of the =
+linux=20
+source distribution. In this case, a kernel module appears in the =
+package/=20
+directory, just as any other package does. The package/Makefile uses=20
+<PRE class=3D"code">KernelPackage/xxx</PRE> definitions in place of=20
+<PRE class=3D"code">Package/xxx</PRE>For example, here is=20
+package/madwifi/Makefile:=20
+<PRE class=3D"code">#=0A=
+# Copyright (C) 2006 OpenWrt.org=0A=
+#=0A=
+# This is free software, licensed under the GNU General Public License =
+v2.=0A=
+# See /LICENSE for more information.=0A=
+#=0A=
+# $Id$=0A=
+=0A=
+include $(TOPDIR)/rules.mk=0A=
+include $(INCLUDE_DIR)/kernel.mk=0A=
+=0A=
+PKG_NAME:=3Dmadwifi=0A=
+PKG_VERSION:=3D0.9.2=0A=
+PKG_RELEASE:=3D1=0A=
+=0A=
+PKG_SOURCE:=3D$(PKG_NAME)-$(PKG_VERSION).tar.bz2=0A=
+PKG_SOURCE_URL:=3D@SF/$(PKG_NAME)=0A=
+PKG_MD5SUM:=3Da75baacbe07085ddc5cb28e1fb43edbb=0A=
+PKG_CAT:=3Dbzcat=0A=
+=0A=
+PKG_BUILD_DIR:=3D$(KERNEL_BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)=0A=
+=0A=
+include $(INCLUDE_DIR)/package.mk=0A=
+=0A=
+RATE_CONTROL:=3Dsample=0A=
+=0A=
+ifeq ($(ARCH),mips)=0A=
+  HAL_TARGET:=3Dmips-be-elf=0A=
+endif=0A=
+ifeq ($(ARCH),mipsel)=0A=
+  HAL_TARGET:=3Dmips-le-elf=0A=
+endif=0A=
+ifeq ($(ARCH),i386)=0A=
+  HAL_TARGET:=3Di386-elf=0A=
+endif=0A=
+ifeq ($(ARCH),armeb)=0A=
+  HAL_TARGET:=3Dxscale-be-elf=0A=
+endif=0A=
+ifeq ($(ARCH),powerpc)=0A=
+  HAL_TARGET:=3Dpowerpc-be-elf=0A=
+endif=0A=
+=0A=
+BUS:=3DPCI=0A=
+ifneq ($(CONFIG_LINUX_2_4_AR531X),)=0A=
+  BUS:=3DAHB=0A=
+endif=0A=
+ifneq ($(CONFIG_LINUX_2_6_ARUBA),)=0A=
+  BUS:=3DPCI AHB	# no suitable HAL for AHB yet.=0A=
+endif=0A=
+=0A=
+BUS_MODULES:=3D=0A=
+ifeq ($(findstring AHB,$(BUS)),AHB)=0A=
+  BUS_MODULES+=3D$(PKG_BUILD_DIR)/ath/ath_ahb.$(LINUX_KMOD_SUFFIX)=0A=
+endif=0A=
+ifeq ($(findstring PCI,$(BUS)),PCI)=0A=
+  BUS_MODULES+=3D$(PKG_BUILD_DIR)/ath/ath_pci.$(LINUX_KMOD_SUFFIX)=0A=
+endif=0A=
+=0A=
+MADWIFI_AUTOLOAD:=3D \=0A=
+	wlan \=0A=
+	wlan_scan_ap \=0A=
+	wlan_scan_sta \=0A=
+	ath_hal \=0A=
+	ath_rate_$(RATE_CONTROL) \=0A=
+	wlan_acl \=0A=
+	wlan_ccmp \=0A=
+	wlan_tkip \=0A=
+	wlan_wep \=0A=
+	wlan_xauth=0A=
+=0A=
+ifeq ($(findstring AHB,$(BUS)),AHB)=0A=
+	MADWIFI_AUTOLOAD +=3D ath_ahb=0A=
+endif=0A=
+ifeq ($(findstring PCI,$(BUS)),PCI)=0A=
+	MADWIFI_AUTOLOAD +=3D ath_pci=0A=
+endif=0A=
+=0A=
+define KernelPackage/madwifi=0A=
+  SUBMENU:=3DWireless Drivers=0A=
+  DEFAULT:=3Dy if LINUX_2_6_BRCM |  LINUX_2_6_ARUBA |  LINUX_2_4_AR531X =
+|  LINUX_2_6_XSCALE, m if ALL=0A=
+  TITLE:=3DDriver for Atheros wireless chipsets=0A=
+  DESCRIPTION:=3D\=0A=
+	This package contains a driver for Atheros 802.11a/b/g chipsets.=0A=
+  URL:=3Dhttp://madwifi.org/=0A=
+  VERSION:=3D$(LINUX_VERSION)+$(PKG_VERSION)-$(BOARD)-$(PKG_RELEASE)=0A=
+  FILES:=3D \=0A=
+		$(PKG_BUILD_DIR)/ath/ath_hal.$(LINUX_KMOD_SUFFIX) \=0A=
+		$(BUS_MODULES) \=0A=
+		=
+$(PKG_BUILD_DIR)/ath_rate/$(RATE_CONTROL)/ath_rate_$(RATE_CONTROL).$(LINU=
+X_KMOD_SUFFIX) \=0A=
+		$(PKG_BUILD_DIR)/net80211/wlan*.$(LINUX_KMOD_SUFFIX)=0A=
+  AUTOLOAD:=3D$(call AutoLoad,50,$(MADWIFI_AUTOLOAD))=0A=
+endef=0A=
+=0A=
+MADWIFI_MAKEOPTS=3D -C $(PKG_BUILD_DIR) \=0A=
+		PATH=3D"$(TARGET_PATH)" \=0A=
+		ARCH=3D"$(LINUX_KARCH)" \=0A=
+		CROSS_COMPILE=3D"$(TARGET_CROSS)" \=0A=
+		TARGET=3D"$(HAL_TARGET)" \=0A=
+		TOOLPREFIX=3D"$(KERNEL_CROSS)" \=0A=
+		TOOLPATH=3D"$(KERNEL_CROSS)" \=0A=
+		KERNELPATH=3D"$(LINUX_DIR)" \=0A=
+		LDOPTS=3D" " \=0A=
+		ATH_RATE=3D"ath_rate/$(RATE_CONTROL)" \=0A=
+		DOMULTI=3D1=0A=
+=0A=
+ifeq ($(findstring AHB,$(BUS)),AHB)=0A=
+  define Build/Compile/ahb=0A=
+	$(MAKE) $(MADWIFI_MAKEOPTS) BUS=3D"AHB" all=0A=
+  endef=0A=
+endif=0A=
+=0A=
+ifeq ($(findstring PCI,$(BUS)),PCI)=0A=
+  define Build/Compile/pci=0A=
+	$(MAKE) $(MADWIFI_MAKEOPTS) BUS=3D"PCI" all=0A=
+  endef=0A=
+endif=0A=
+=0A=
+define Build/Compile=0A=
+	$(call Build/Compile/ahb)=0A=
+	$(call Build/Compile/pci)=0A=
+endef=0A=
+=0A=
+define Build/InstallDev=0A=
+	$(INSTALL_DIR) $(STAGING_DIR)/usr/include/madwifi=0A=
+	$(CP) $(PKG_BUILD_DIR)/include $(STAGING_DIR)/usr/include/madwifi/=0A=
+	$(INSTALL_DIR) $(STAGING_DIR)/usr/include/madwifi/net80211=0A=
+	$(CP) $(PKG_BUILD_DIR)/net80211/*.h =
+$(STAGING_DIR)/usr/include/madwifi/net80211/=0A=
+endef=0A=
+=0A=
+define KernelPackage/madwifi/install=0A=
+	$(INSTALL_DIR) $(1)/etc/init.d=0A=
+	$(INSTALL_DIR) $(1)/lib/modules/$(LINUX_VERSION)=0A=
+	$(INSTALL_DIR) $(1)/usr/sbin=0A=
+	$(INSTALL_BIN) ./files/madwifi.init $(1)/etc/init.d/madwifi=0A=
+	$(CP) =
+$(PKG_BUILD_DIR)/tools/{madwifi_multi,80211debug,80211stats,athchans,athc=
+trl,athdebug,athkey,athstats,wlanconfig} $(1)/usr/sbin/=0A=
+endef=0A=
+=0A=
+$(eval $(call KernelPackage,madwifi))=0A=
+</PRE>
+<P></P></DIV>
+<H5><A name=3D"notes1" id=3D"notes1">NOTES</A></H5>
+<DIV class=3D"level5">
+<P>INSTALL_DIR, INSTALL_BIN, INSTALL_DATA are used for creating a =
+directory,=20
+copying an executable, or a data file. +x is set on the target file for=20
+INSTALL_BIN, independent of it's mode on the host. </P>
+<P>From the big document: </P>
+<P>Package/&lt;name&gt;/install:  </P>
+<P>A set of commands to copy files out of the compiled source and into =
+the ipkg=20
+which is represented by the $(1) directory. Note that there are =
+currently 4=20
+defined install macros: </P>
+<P>
+<PRE class=3D"code">INSTALL_DIR =0A=
+install -d -m0755=0A=
+INSTALL_BIN =0A=
+install -m0755=0A=
+INSTALL_DATA =0A=
+install -m0644=0A=
+INSTALL_CONF =0A=
+install -m0600=0A=
+</PRE>
+<P></P></DIV>
+<H2><A name=3D"packaging.a.service" id=3D"packaging.a.service">Packaging =
+a=20
+service</A></H2>
+<DIV class=3D"level2">
+<P>If you want to install a service, (something that should start/stop =
+at boot=20
+time, that has a /etc/init.d/blah script), you should make sure  that =
+the init.d=20
+script can be run on the host.  At image build time, all init.d scripts =
+found=20
+are run on the host, looking for the  START=3D20/STOP=3D99 lines. </P>
+<P>This is what installs the symlinks in /etc/rc.d, so they are only =
+created=20
+when you rebuild the entire image.  If you want the symlinks to be =
+created when=20
+a package is installed, such as via opkg, you should add a postinstall =
+script=20
+which runs=20
+<PRE class=3D"code">/etc/init.d/foo enable</PRE> if $IPKG_INSTROOT is =
+empty.  when=20
+$IPKG_INSTROOT is defined, you run within the buildroot, if it is empty =
+you run=20
+on the target.=20
+<P></P>
+<P>Example makefile snippet to install/remove symlinks. </P>
+<P>
+<PRE class=3D"code">define Package/mrelay/postinst=0A=
+#!/bin/sh=0A=
+# check if we are on real system=0A=
+if [ -z "$${IPKG_INSTROOT}" ]; then=0A=
+        echo "Enabling rc.d symlink for mrelay"=0A=
+        /etc/init.d/mrelay enable=0A=
+fi=0A=
+exit 0=0A=
+endef=0A=
+=0A=
+define Package/mrelay/prerm=0A=
+#!/bin/sh=0A=
+# check if we are on real system=0A=
+if [ -z "$${IPKG_INSTROOT}" ]; then=0A=
+        echo "Removing rc.d symlink for mrelay"=0A=
+        /etc/init.d/mrelay disable=0A=
+fi=0A=
+exit 0=0A=
+endef=0A=
+</PRE>
+<P></P>
+<P>Very basic example of a suitable init.d script </P>
+<P><IMG class=3D"middle" alt=3D":!:" =
+src=3D"http://wiki.openwrt.org/lib/images/smileys/icon_exclaim.gif">=20
+<STRONG>procd</STRONG> style init is used in some init.d scripts since: =
+<A=20
+title=3D"https://dev.openwrt.org/changeset/38023" class=3D"urlextern" =
+href=3D"https://dev.openwrt.org/changeset/38023"=20
+rel=3D"nofollow">https://dev.openwrt.org/changeset/38023</A> . See <A =
+title=3D"http://wiki.openwrt.org/inbox/procd-init-scripts"=20
+class=3D"urlextern" =
+href=3D"http://wiki.openwrt.org/inbox/procd-init-scripts" =
+rel=3D"nofollow">http://wiki.openwrt.org/inbox/procd-init-scripts</A>=20
+for more details on that </P>
+<P>
+<PRE class=3D"code">#!/bin/sh /etc/rc.common=0A=
+# "new(er)" style init script=0A=
+# Look at /lib/functions/service.sh on a running system for explanations =
+of what other SERVICE_=0A=
+# options you can use, and when you might want them.=0A=
+=0A=
+START=3D80=0A=
+APP=3Dmrelay=0A=
+SERVICE_WRITE_PID=3D1=0A=
+SERVICE_DAEMONIZE=3D1=0A=
+=0A=
+start() {=0A=
+        service_start /usr/bin/$APP=0A=
+}=0A=
+=0A=
+stop() {=0A=
+        service_stop /usr/bin/$APP=0A=
+}=0A=
+</PRE>
+<P></P>
+<P>
+<PRE class=3D"code">#!/bin/sh /etc/rc.common=0A=
+###########################################=0A=
+# NOTE - this is an old style init script #=0A=
+###########################################=0A=
+=0A=
+START=3D80=0A=
+APP=3Dmrelay=0A=
+PID_FILE=3D/var/run/$APP.pid=0A=
+=0A=
+start() {=0A=
+        start-stop-daemon -S -x $APP -p $PID_FILE -m -b=0A=
+}=0A=
+=0A=
+stop() {=0A=
+        start-stop-daemon -K -n $APP -p $PID_FILE -s TERM=0A=
+        rm -rf $PID_FILE=0A=
+}=0A=
+</PRE>
+<P></P></DIV>
+<H2><A name=3D"how.to.submit.patches.to.openwrt" =
+id=3D"how.to.submit.patches.to.openwrt">How=20
+To Submit Patches to OpenWrt</A></H2>
+<DIV class=3D"level2">
+<P>Packages are maintained in a separate repository to reduce =
+maintennance=20
+overhead.  The general guidelines for OpenWrt still apply, but see the =
+README in=20
+the packages repository for latest information. </P>
+<UL>
+  <LI class=3D"level1">
+  <DIV class=3D"li"><A title=3D"https://github.com/openwrt/packages" =
+class=3D"urlextern"=20
+  href=3D"https://github.com/openwrt/packages"=20
+  rel=3D"nofollow">https://github.com/openwrt/packages</A></DIV></LI>
+  <LI class=3D"level1">
+  <DIV class=3D"li"><A =
+title=3D"https://dev.openwrt.org/wiki/SubmittingPatches"=20
+  class=3D"urlextern" =
+href=3D"https://dev.openwrt.org/wiki/SubmittingPatches" =
+rel=3D"nofollow">https://dev.openwrt.org/wiki/SubmittingPatches</A></DIV>=
+</LI></UL>
+<P>See <A =
+title=3D"https://lists.openwrt.org/pipermail/openwrt-devel/2014-June/0258=
+10.html"=20
+class=3D"urlextern" =
+href=3D"https://lists.openwrt.org/pipermail/openwrt-devel/2014-June/02581=
+0.html"=20
+rel=3D"nofollow">https://lists.openwrt.org/pipermail/openwrt-devel/2014-J=
+une/025810.html</A>=20
+for the original announcement of this change </P></DIV><!-- wikipage =
+stop -->		=20
+<P class=3D"top"><A class=3D"action top" accesskey=3D"x" =
+href=3D"http://wiki.openwrt.org/doc/devel/packages#dokuwiki__top">Back=20
+to top</A></P>
+<P class=3D"pageinfo">doc/devel/packages.txt =C2=B7 Last modified: =
+2014/09/22 18:23 by=20
+karlp</P>
+<DIV class=3D"license"><A =
+href=3D"http://creativecommons.org/licenses/by-sa/3.0/"=20
+rel=3D"license"><IMG style=3D"border-width: 0px;" alt=3D"Creative =
+Commons License"=20
+src=3D"http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></A>		        =
+This text=20
+is licensed under a <A =
+href=3D"http://creativecommons.org/licenses/by-sa/3.0/"=20
+rel=3D"license">Creative Commons Attribution-ShareAlike 3.0 Unported =
+License</A>.
+		=20
+<P></P></DIV><!--<div id=3D"tpl_simple_navi" align=3D"right"></div>-->	  =
+     =20
+		 </DIV>
+<DIV class=3D"hidden"><IMG width=3D"1" height=3D"1" alt=3D"" =
+src=3D"http://wiki.openwrt.org/lib/exe/indexer.php?id=3Ddoc%3Adevel%3Apac=
+kages&amp;1416451695"></DIV>
+<DIV class=3D"footer"><IMG width=3D"1" height=3D"1" alt=3D"" =
+src=3D"http://wiki.openwrt.org/lib/exe/indexer.php?id=3Ddoc%3Adevel%3Apac=
+kages&amp;1416451695"></DIV></DIV></BODY></HTML>
+
+------=_NextPart_000_0000_01D004AF.7632E820
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://api.flattr.com/button/flattr-badge-large.png
+
+iVBORw0KGgoAAAANSUhEUgAAAF0AAAAUCAYAAADvJjFnAAAGLklEQVR42u2Z2VdTRxzHeWmfffJB
+H/R/6KFP9bRirZWyiWUTEVoVq7UepZRNFBBFkCUEZF9lE2QRAglhTcAgm8BRREW0HGVzR3BDlnw7
+M8QbcC43baV9gS/ne+78fjM3v5lPbiYwmMkq3D+XlXuEkesoMVa9XPYYk5Xtk8emhq6Vy+WfEZt9
+sFlMuXtEat1veDf9Cnrys1B6vZ54DnP6WWYTYmNvjV5BcWcoijqCV7QLWgNBucqKD+QS0OsWgjeL
+LnN7+vb9BD5BHPQkrSfk9W4r3vENPyG61H2SgP6KeI0APbJkN4O1PNIz6CnaQ4itc/vHjqlxpdf/
+zVEqFwQV2f6nNShfAtqReL0A/dwlV7aNLNLMJPS3gjGn+ULcV77BxBO1KPQ7Y1fnode6SfpoisUi
+B+ZbISDbFmcrHCXvi1G7IiDvB3oVi006qNBYI7XhCOp7LorW8MvZLjmXkEt2OFFgbbIe4UuhuxNv
+EKCHF+7ioM9dD8GMylzcdZvx8pEaqm63JaC3IkVzCLKa3ZL+WH0jzaDKbQ6SvlfpgZ77WiQ2HhCP
+pU0hCzUuNPmDiBsTX7MX/cNdknOp6clG2x2lyXqEL4XuQbxRgB5W4MxgLdT7UvN5KywweyMGs10h
+QvxiRI3yzl0obrNbEnpy46+IUe+WNFVlV9KSubDLDvDO3IYjSRbMQUV2LJ9Q6Q0ilgsp3sHFR1O2
+4HieFY25ml7pW0FV2BQD/xxLZBugn7hoI9Sh7YwmL1DV9qaz+0JLdwr95D6W67ynxtCzuybXSfjy
+0E/nOXHQ3+V/yTzTFcPiuUddmCreAv2Lflx/UIA8nQ21KPTbIy1Iqj+IaJWrpBngzqQlc1kNgRh5
+PoAPqmhNZfmFquvN4OI3U5PkCVTRkKv58s1jYWz/WBuytH6g0vYWG1+ju4CNPa/wRvhlN9bOrj1l
+/EQOtbBcc18Jhp7eNblOwpeHfirHgYP+Jt2cebor1Yjz1Siougfzkam1ohaF3jd8BQl1BxCldJU0
+1UVNNA4nbKYWcgoCnbbb7ymYz9d6QtXD5kHztF9oi8VUg09uIFcX+HFNrkamZh56/2gb0jTHUNbB
+HjJuHH0j1V1ZiFX9DEV3HMs1EejDzwZMrpPw5aEHZ/3I7emT8ebMU+2p8/HbR0Jf5/08JNdbMovp
+5lAzEmp/QWTVLkl/JCGn6Ehk7QiFM/wuWOJo8reIKPIUxpB+oS0WU2U0+krUFWqwccK9xpgbR9XS
+V4ngHBf4ZG2nOfakXx9sNrlOwpeHfjLDngMwEWnOPNWSiicT9wjgnUJf0+1kxKm/pxb/lXFYNw+9
+0kXKhkUlLJkLyLRDe381xo1bAs3TfqEtFjPoDT5/py4bJ9xrjLlximuxeDf9GlTdAxqEFtujsTcP
+fQ9bTK6T8OWhB6bt4LaXF6HmGI+0wOhdFeQ19ohUfgddfw4a+pJomzmu1h5iuj1yFQk1B3FO4SJp
+KkV7wpK5py9H0DlQg7jqfUhUHgMRzdN+oc3HAnTJupUdibQtQGZ9xpibS2CuNcLLnZDfzPZ2dk2u
+9kK+JszkOglfHnpAiq0IdAsM31EhSmWH0xVbRa3ojgQRd2zQN6RDfLUnIsqdJW340uRyhZoYoV1Q
+H4VDsV9D2ZHB4tBLO1HdzbY8lj+Ra8PF89B9JeumK4PgnbaNjSMS+oyxcX5nShxQ1Z4O7yQrhBfs
+B9UFrT9KdXF0yzG5TsKXh+6XZMP9RfrwlgphlbY4WbZF1JevnWNnNbz06H3QBLlyP8IvO0uaAdad
+WZQbG/8T468fs7b2ZoHx0zPcyj7e2Rp/xFbtZWOo1D1pXEyVXHtkqbr0tYTXpOOIhD4hNs6P5tgX
+s0F0Xqy/Z7BemKuUCV8eum+CNZZPetx4oGXQz5Y5rZqY8OWh/xFv/ZweeM3OzWA51PdQh7gqT5wt
+dVrxDit2hE+87WvuGMBHbnf+eIYdKHgiAn/asN3o/92B19BVyCs9EVbitKJ9usgRlGug3L2ZO/AK
+jz251lfmUPi7zHrCS2aJVS+PvWU2r47H7tHJ5NGHCehNi452DYfr6wwdjsR7iD1W/cneY+C5ifsn
+BmuwBHsn1hv2no2r/mRvMPBcIwA3+C+TUD/pZWbMiwAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0000_01D004AF.7632E820
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://wiki.openwrt.org/lib/images/smileys/fixme.gif
+
+R0lGODlhUAAPAIcAAAAAAAQDAAgGAAgHAAwKABANABAOARQRABgUABgVABgWBRwXABwYABwZACAa
+ACAbACAcACQeACghADApADArADAsCjwzAEA1AEg8AEhBAFBCAFRGAFhOAGBVAGBWAGhWAGheAHBd
+AHRgAHRkAHRnAHhjAHhsAH9xAEVFRYNvAIt2AI98AI9/AJN7AJd+AI+BAJ+EAJ+NAK+RAK+bAKue
+DL+fAK+hDL+qAMupAM+sAM+7ANOxANu+AOeaAOedAOihAOunAOivAOa0AOq7AOe3FP+7AP+8AP++
+ANvCAOfAAObFEOvUAPPMAPfOAP/BAP/CAP/DAP3FAP/EAP/HAP3LAP/IAP/JAP/KAP3PAP/MAP/N
+AP/OAP/PAPPTAPfQAPfTAPfXAPPcAPfbAPvRAP/QAP/RAP/SAP3WAP/UAP/VAP/WAP/XAPvfAP/Y
+AP/ZAP/aAP/bAP/cAP/dAP/eAOjJKOrLOP/gAP/hAP/iAP/jAP/kAP/mAP/nAP/oAP/pAP/qAP/r
+C//rDP/rD//rEf/sEv/sHP/tH//tIP/tIv/uKf/uLv/uL//uMPvrOf/vOP/vOv/vPOrNRv/xS//x
+Tv/xUP/yVf/yVv/yWP/zYv/zZP/zZv/0dP/1d/zye//1e//1fYSEhOjfvv31hv/3jP/3j//3lf/4
+mf/4murisOjhtevjt/33p//5pP34sf/6uMbGxv/7wP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAMAALEALAAAAABQAA8A
+AAj/AGMJFIiioMGDCBMqXMiwocODAyPGKqhqFamLGA1i3Mixo8ePIENy7FSnoEQUoVyd+pSpZUsU
+sV6hcEmzZksAAGzq3MmzZ6ZJkBQRgUkwlatSmyw9WvoIpkymTHFKxbmUKtSrV3EqaMS0glWsUK0i
+EvTHjxCiKGCZ2kSJEaG3hJyieFvwLU64ePPq1QvAAAAab234BbA374ABb/3s0YMHD0wUqFh5qrQo
+EJ/LfJzKRCHzMk7MoD/rCJABs4kAOkDzAfACQGk+FFoDuLwERAMABDyEwQwBwuU8dubEgROkYKtR
+mBwN4pOneR7Nr16BQtEcp/Pr1vOQABAjz40AJK5X/xeTAACSGQnEZOcA4AQbFgA6OO/dfA6cNmrS
+YCnIipMkQ37kMceAToFi4HQDzjGVVAPiNGAXDxzAAwMPdJFgggDMsQIAI0ywgoIZzlEAABaCgVuC
+DzwwoBtpmEHGFlwUJIomjgCyhx1vvFHgQTnmiFOPQP6YowoAjJgCkD0C8MYXCASAwBdvCLmgkG9Y
+YEGOaZShxRVVRFFQJJckEqAcJkmHwhpopokmTmqmyeYaTDhQwA4LLMBEm2sAgGYLALSwpp5rjOgF
+nm2akcUUUjzxw2OUHNKHYwKZmcaklFKKU6WWAjCpCADAkEYNAYSAaRqapjEGBmNMemkaGwDgQhM4
+aHgQQaaTcmEFFEcYgRYdhfBxB0wATIfGsMQWi1OxxB6bQwAXEFtCADkgCwCywx6LRhIfSACAAB/I
+kOy0aGwxhRNF9EDUREr4ypmBKFDr7rvwxiuvvFtU4YQP5xKEwhBnGDTqvwAHLPDABFMBhEkS6fvQ
+wgw3zLBEAQEAOw==
+
+------=_NextPart_000_0000_01D004AF.7632E820
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://wiki.openwrt.org/lib/images/smileys/icon_exclaim.gif
+
+R0lGODlhDwAPAMQdAP/qAEVFRf/OAP/JAP/9E/+0AP6dAP/+k///x391AP/lAAAAAL+vAP//68W1
+Bi8vL9LBBfPfBHFvV3JwWL+wAEpHKbGiAgMDA21rUxQUFOnXBvvnAFNPJgAAAAAAAAAAACH5BAEA
+AB0ALAAAAAAPAA8AAAVpYCeKQVmOaFc2yHEIJxqwBAHcghGMQWsnCwZORzrYAEAhbtc7Ii+UG2Cg
+Cxillox0Wigdto7KdtANOAEOzrgs2G4gUgWV2b5JHpPbAEYSCBQAGhgRcjk7fQIDioqGKSUFkAVV
+KTwmhyMhADs=
+
+------=_NextPart_000_0000_01D004AF.7632E820
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://i.creativecommons.org/l/by-sa/3.0/88x31.png
+
+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
+AABJRU5ErkJggg==
+
+------=_NextPart_000_0000_01D004AF.7632E820
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wiki.openwrt.org/lib/exe/indexer.php?id=doc%3Adevel%3Apackages&1416451695
+
+R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7
+
+------=_NextPart_000_0000_01D004AF.7632E820
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://wiki.openwrt.org/lib/exe/css.php?s=all&t=ameoto
+
+a.interwiki {
+	background: url("http://wiki.openwrt.org/lib/images/interwiki.png") =
+no-repeat 0px 1px; padding-left: 16px;
+}
+a.iw_wp {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/wp.gif");
+}
+a.iw_wpde {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/wpde.gif");
+}
+a.iw_wpmeta {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/wpmeta.gif");
+}
+a.iw_doku {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/doku.gif");
+}
+a.iw_sb {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/sb.gif");
+}
+a.iw_amazon {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/amazon.gif");
+}
+a.iw_amazon_de {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/amazon.de.gif");
+}
+a.iw_amazon_uk {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/amazon.uk.gif");
+}
+a.iw_phpfn {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/phpfn.gif");
+}
+a.iw_dokubug {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/dokubug.gif");
+}
+a.iw_coral {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/coral.gif");
+}
+a.iw_google {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/google.gif");
+}
+a.iw_meatball {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/meatball.gif");
+}
+a.iw_wiki {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/wiki.gif");
+}
+a.mediafile {
+	background: =
+url("http://wiki.openwrt.org/lib/images/fileicons/file.png") no-repeat =
+0px 1px; padding-bottom: 1px; padding-left: 18px;
+}
+a.mf_jpg {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/jpg.png");
+}
+a.mf_jpeg {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/jpeg.png");
+}
+a.mf_gif {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/gif.png");
+}
+a.mf_png {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/png.png");
+}
+a.mf_tgz {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/tgz.png");
+}
+a.mf_tar {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/tar.png");
+}
+a.mf_gz {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/gz.png");
+}
+a.mf_bz2 {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/bz2.png");
+}
+a.mf_zip {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/zip.png");
+}
+a.mf_rar {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/rar.png");
+}
+a.mf_pdf {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/pdf.png");
+}
+a.mf_ps {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/ps.png");
+}
+a.mf_doc {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/doc.png");
+}
+a.mf_xls {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/xls.png");
+}
+a.mf_ppt {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/ppt.png");
+}
+a.mf_rtf {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/rtf.png");
+}
+a.mf_swf {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/swf.png");
+}
+a.mf_rpm {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/rpm.png");
+}
+a.mf_deb {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/deb.png");
+}
+a.mf_sxw {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/sxw.png");
+}
+a.mf_sxc {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/sxc.png");
+}
+a.mf_sxi {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/sxi.png");
+}
+a.mf_sxd {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/sxd.png");
+}
+a.mf_odc {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odc.png");
+}
+a.mf_odf {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odf.png");
+}
+a.mf_odg {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odg.png");
+}
+a.mf_odi {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odi.png");
+}
+a.mf_odp {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odp.png");
+}
+a.mf_ods {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/ods.png");
+}
+a.mf_odt {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odt.png");
+}
+.dokuwiki .wrap_column table {
+	width: 100%;
+}
+.dokuwiki .wrap_left table {
+	width: 100%;
+}
+.dokuwiki .wrap_right table {
+	width: 100%;
+}
+.dokuwiki .wrap_center table {
+	width: 100%;
+}
+.dokuwiki .wrap_box table {
+	width: 100%;
+}
+.dokuwiki .wrap_info table {
+	width: 100%;
+}
+.dokuwiki .wrap_important table {
+	width: 100%;
+}
+.dokuwiki .wrap_alert table {
+	width: 100%;
+}
+.dokuwiki .wrap_tip table {
+	width: 100%;
+}
+.dokuwiki .wrap_help table {
+	width: 100%;
+}
+.dokuwiki .wrap_todo table {
+	width: 100%;
+}
+.dokuwiki .wrap_download table {
+	width: 100%;
+}
+.dokuwiki .wrap_column em strong {
+	font-size: 130%; font-style: normal; font-weight: bold; display: block;
+}
+.dokuwiki .wrap_left em strong {
+	font-size: 130%; font-style: normal; font-weight: bold; display: block;
+}
+.dokuwiki .wrap_right em strong {
+	font-size: 130%; font-style: normal; font-weight: bold; display: block;
+}
+.dokuwiki .wrap_center em strong {
+	font-size: 130%; font-style: normal; font-weight: bold; display: block;
+}
+.dokuwiki .wrap_box em strong {
+	font-size: 130%; font-style: normal; font-weight: bold; display: block;
+}
+.dokuwiki .wrap_info em strong {
+	font-size: 130%; font-style: normal; font-weight: bold; display: block;
+}
+.dokuwiki .wrap_important em strong {
+	font-size: 130%; font-style: normal; font-weight: bold; display: block;
+}
+.dokuwiki .wrap_alert em strong {
+	font-size: 130%; font-style: normal; font-weight: bold; display: block;
+}
+.dokuwiki .wrap_tip em strong {
+	font-size: 130%; font-style: normal; font-weight: bold; display: block;
+}
+.dokuwiki .wrap_help em strong {
+	font-size: 130%; font-style: normal; font-weight: bold; display: block;
+}
+.dokuwiki .wrap_todo em strong {
+	font-size: 130%; font-style: normal; font-weight: bold; display: block;
+}
+.dokuwiki .wrap_download em strong {
+	font-size: 130%; font-style: normal; font-weight: bold; display: block;
+}
+.dokuwiki .wrap_column em strong em.u {
+	font-size: 115%; font-style: normal; text-decoration: none; =
+border-bottom-color: rgb(196, 196, 196); border-bottom-width: 1px; =
+border-bottom-style: solid; display: block;
+}
+.dokuwiki .wrap_left em strong em.u {
+	font-size: 115%; font-style: normal; text-decoration: none; =
+border-bottom-color: rgb(196, 196, 196); border-bottom-width: 1px; =
+border-bottom-style: solid; display: block;
+}
+.dokuwiki .wrap_right em strong em.u {
+	font-size: 115%; font-style: normal; text-decoration: none; =
+border-bottom-color: rgb(196, 196, 196); border-bottom-width: 1px; =
+border-bottom-style: solid; display: block;
+}
+.dokuwiki .wrap_center em strong em.u {
+	font-size: 115%; font-style: normal; text-decoration: none; =
+border-bottom-color: rgb(196, 196, 196); border-bottom-width: 1px; =
+border-bottom-style: solid; display: block;
+}
+.dokuwiki .wrap_box em strong em.u {
+	font-size: 115%; font-style: normal; text-decoration: none; =
+border-bottom-color: rgb(196, 196, 196); border-bottom-width: 1px; =
+border-bottom-style: solid; display: block;
+}
+.dokuwiki .wrap_info em strong em.u {
+	font-size: 115%; font-style: normal; text-decoration: none; =
+border-bottom-color: rgb(196, 196, 196); border-bottom-width: 1px; =
+border-bottom-style: solid; display: block;
+}
+.dokuwiki .wrap_important em strong em.u {
+	font-size: 115%; font-style: normal; text-decoration: none; =
+border-bottom-color: rgb(196, 196, 196); border-bottom-width: 1px; =
+border-bottom-style: solid; display: block;
+}
+.dokuwiki .wrap_alert em strong em.u {
+	font-size: 115%; font-style: normal; text-decoration: none; =
+border-bottom-color: rgb(196, 196, 196); border-bottom-width: 1px; =
+border-bottom-style: solid; display: block;
+}
+.dokuwiki .wrap_tip em strong em.u {
+	font-size: 115%; font-style: normal; text-decoration: none; =
+border-bottom-color: rgb(196, 196, 196); border-bottom-width: 1px; =
+border-bottom-style: solid; display: block;
+}
+.dokuwiki .wrap_help em strong em.u {
+	font-size: 115%; font-style: normal; text-decoration: none; =
+border-bottom-color: rgb(196, 196, 196); border-bottom-width: 1px; =
+border-bottom-style: solid; display: block;
+}
+.dokuwiki .wrap_todo em strong em.u {
+	font-size: 115%; font-style: normal; text-decoration: none; =
+border-bottom-color: rgb(196, 196, 196); border-bottom-width: 1px; =
+border-bottom-style: solid; display: block;
+}
+.dokuwiki .wrap_download em strong em.u {
+	font-size: 115%; font-style: normal; text-decoration: none; =
+border-bottom-color: rgb(196, 196, 196); border-bottom-width: 1px; =
+border-bottom-style: solid; display: block;
+}
+.dokuwiki .wrap_danger em strong em.u {
+	text-transform: uppercase; font-size: 115%; font-style: normal; =
+text-decoration: none; border-bottom-width: 0px; display: block;
+}
+.dokuwiki .wrap_warning em strong em.u {
+	text-transform: uppercase; font-size: 115%; font-style: normal; =
+text-decoration: none; border-bottom-width: 0px; display: block;
+}
+.dokuwiki .wrap_caution em strong em.u {
+	text-transform: uppercase; font-size: 115%; font-style: normal; =
+text-decoration: none; border-bottom-width: 0px; display: block;
+}
+.dokuwiki .wrap_notice em strong em.u {
+	text-transform: uppercase; font-size: 115%; font-style: normal; =
+text-decoration: none; border-bottom-width: 0px; display: block;
+}
+.dokuwiki .wrap_safety em strong em.u {
+	text-transform: uppercase; font-size: 115%; font-style: normal; =
+text-decoration: none; border-bottom-width: 0px; display: block;
+}
+.dokuwiki .wrap_box em strong em.u {
+	border-bottom-color: rgb(153, 153, 153);
+}
+.dokuwiki .wrap_info em strong em.u {
+	border-bottom-color: rgb(153, 153, 153);
+}
+.dokuwiki .wrap_important em strong em.u {
+	border-bottom-color: rgb(153, 153, 153);
+}
+.dokuwiki .wrap_alert em strong em.u {
+	border-bottom-color: rgb(153, 153, 153);
+}
+.dokuwiki .wrap_tip em strong em.u {
+	border-bottom-color: rgb(153, 153, 153);
+}
+.dokuwiki .wrap_help em strong em.u {
+	border-bottom-color: rgb(153, 153, 153);
+}
+.dokuwiki .wrap_todo em strong em.u {
+	border-bottom-color: rgb(153, 153, 153);
+}
+.dokuwiki .wrap_download em strong em.u {
+	border-bottom-color: rgb(153, 153, 153);
+}
+.dokuwiki .wrap_left {
+	margin-right: 1.5em; float: left;
+}
+.dokuwiki .wrap_column {
+	margin-right: 1.5em; float: left;
+}
+.dokuwiki .wrap_right {
+	margin-left: 1.5em; float: right;
+}
+.dokuwiki .wrap_center {
+	margin-right: auto; margin-left: auto; display: block;
+}
+.dokuwiki .wrap_container {
+	margin-right: -1.5em;
+}
+.dokuwiki .wrap_leftalign {
+	text-align: left;
+}
+.dokuwiki .wrap_centeralign {
+	text-align: center;
+}
+.dokuwiki .wrap_rightalign {
+	text-align: right;
+}
+.dokuwiki .wrap_justify {
+	text-align: justify;
+}
+.dokuwiki div.wrap_round {
+	border-radius: 20px; -moz-border-radius: 20px; -webkit-border-radius: =
+20px; -khtml-border-radius: 20px;
+}
+.dokuwiki span.wrap_round {
+	border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: =
+2px; -khtml-border-radius: 2px;
+}
+div.dokuwiki .wrap_lo {
+	color: rgb(102, 102, 102); font-size: 85%;
+}
+div.dokuwiki .wrap_em {
+	color: rgb(204, 0, 0); font-weight: bold;
+}
+div.dokuwiki .wrap_sansserif {
+	font-family: Verdana,Tahoma,Geneva,"DejaVu Sans","Bitstream Vera =
+Sans","Liberation Sans",Arial,Helvetica,FreeSans,"Liberation =
+Sans","Nimbus Sans L",sans-serif;
+}
+div.dokuwiki .wrap_serif {
+	font-family: Georgia,Garamond,"Palatino Linotype","Book =
+Antiqua",Palatino,Palladio,"URW Palladio L","Liberation =
+Serif",Didot,Gentium,"Bitstream Charter","Century Schoolbook L","Times =
+New Roman",Times,"Nimbus Roman No9 L","FreeSerif",serif;
+}
+div.dokuwiki .wrap_monospace {
+	font-family: Courier,"Courier New",FreeMono,"Nimbus Mono L","Liberation =
+Mono","Lucida Console",Monaco,"DejaVu Sans Mono","Bitstream Vera Sans =
+Mono",monospace;
+}
+div.dokuwiki .wrap_bigger {
+	font-size: 125%;
+}
+div.dokuwiki .wrap_muchbigger {
+	font-size: 200%;
+}
+div.dokuwiki .wrap_smaller {
+	font-size: 75%;
+}
+div.dokuwiki .wrap_fgred {
+	color: rgb(153, 0, 0);
+}
+div.dokuwiki .wrap_fggreen {
+	color: rgb(0, 153, 0);
+}
+div.dokuwiki .wrap_fgblue {
+	color: rgb(0, 0, 153);
+}
+div.dokuwiki .wrap_fgcyan {
+	color: rgb(0, 153, 153);
+}
+div.dokuwiki .wrap_fgviolet {
+	color: rgb(153, 0, 153);
+}
+div.dokuwiki .wrap_fgyellow {
+	color: rgb(153, 153, 0);
+}
+div.dokuwiki .wrap_fggrey {
+	color: rgb(102, 102, 102);
+}
+div.dokuwiki .wrap_fgblack {
+	color: rgb(0, 0, 0);
+}
+div.dokuwiki .wrap_indent {
+	padding-left: 1.5em;
+}
+div.dokuwiki .wrap_outdent {
+	margin-left: -1.5em;
+}
+div.dokuwiki div.wrap_prewrap pre {
+	white-space: pre-wrap; -ms-word-wrap: break-word;
+}
+div.dokuwiki div.wrap_spoiler {
+	margin-bottom: 1.5em;
+}
+div.dokuwiki .wrap_clear {
+	height: 0px; line-height: 0; overflow: hidden; clear: both; font-size: =
+1px; visibility: hidden;
+}
+div.dokuwiki .wrap_hide {
+	display: none;
+}
+
+------=_NextPart_000_0000_01D004AF.7632E820
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://wiki.openwrt.org/lib/exe/css.php?t=ameoto
+
+a.interwiki {
+	background: url("http://wiki.openwrt.org/lib/images/interwiki.png") =
+no-repeat 0px 1px; padding-left: 16px;
+}
+a.iw_wp {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/wp.gif");
+}
+a.iw_wpde {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/wpde.gif");
+}
+a.iw_wpmeta {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/wpmeta.gif");
+}
+a.iw_doku {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/doku.gif");
+}
+a.iw_sb {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/sb.gif");
+}
+a.iw_amazon {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/amazon.gif");
+}
+a.iw_amazon_de {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/amazon.de.gif");
+}
+a.iw_amazon_uk {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/amazon.uk.gif");
+}
+a.iw_phpfn {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/phpfn.gif");
+}
+a.iw_dokubug {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/dokubug.gif");
+}
+a.iw_coral {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/coral.gif");
+}
+a.iw_google {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/google.gif");
+}
+a.iw_meatball {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/meatball.gif");
+}
+a.iw_wiki {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/wiki.gif");
+}
+a.mediafile {
+	background: =
+url("http://wiki.openwrt.org/lib/images/fileicons/file.png") no-repeat =
+0px 1px; padding-bottom: 1px; padding-left: 18px;
+}
+a.mf_jpg {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/jpg.png");
+}
+a.mf_jpeg {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/jpeg.png");
+}
+a.mf_gif {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/gif.png");
+}
+a.mf_png {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/png.png");
+}
+a.mf_tgz {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/tgz.png");
+}
+a.mf_tar {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/tar.png");
+}
+a.mf_gz {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/gz.png");
+}
+a.mf_bz2 {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/bz2.png");
+}
+a.mf_zip {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/zip.png");
+}
+a.mf_rar {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/rar.png");
+}
+a.mf_pdf {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/pdf.png");
+}
+a.mf_ps {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/ps.png");
+}
+a.mf_doc {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/doc.png");
+}
+a.mf_xls {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/xls.png");
+}
+a.mf_ppt {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/ppt.png");
+}
+a.mf_rtf {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/rtf.png");
+}
+a.mf_swf {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/swf.png");
+}
+a.mf_rpm {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/rpm.png");
+}
+a.mf_deb {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/deb.png");
+}
+a.mf_sxw {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/sxw.png");
+}
+a.mf_sxc {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/sxc.png");
+}
+a.mf_sxi {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/sxi.png");
+}
+a.mf_sxd {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/sxd.png");
+}
+a.mf_odc {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odc.png");
+}
+a.mf_odf {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odf.png");
+}
+a.mf_odg {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odg.png");
+}
+a.mf_odi {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odi.png");
+}
+a.mf_odp {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odp.png");
+}
+a.mf_ods {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/ods.png");
+}
+a.mf_odt {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odt.png");
+}
+div.clearer {
+	height: 0px; line-height: 0px; overflow: hidden; clear: both;
+}
+div.no {
+	margin: 0px; padding: 0px; display: inline;
+}
+.hidden {
+	display: none;
+}
+div.error {
+	background: =
+url("http://wiki.openwrt.org/lib/styles/../images/error.png") no-repeat =
+0.5em 0px rgb(255, 204, 204); margin: 0px; color: rgb(0, 0, 0); =
+overflow: hidden; padding-left: 3em; font-size: 90%; =
+border-bottom-color: rgb(255, 170, 170); border-bottom-width: 1px; =
+border-bottom-style: solid;
+}
+div.info {
+	background: =
+url("http://wiki.openwrt.org/lib/styles/../images/info.png") no-repeat =
+0.5em 0px rgb(204, 204, 255); margin: 0px; color: rgb(0, 0, 0); =
+overflow: hidden; padding-left: 3em; font-size: 90%; =
+border-bottom-color: rgb(170, 170, 255); border-bottom-width: 1px; =
+border-bottom-style: solid;
+}
+div.success {
+	background: =
+url("http://wiki.openwrt.org/lib/styles/../images/success.png") =
+no-repeat 0.5em 0px rgb(204, 255, 204); margin: 0px; color: rgb(0, 0, =
+0); overflow: hidden; padding-left: 3em; font-size: 90%; =
+border-bottom-color: rgb(170, 255, 170); border-bottom-width: 1px; =
+border-bottom-style: solid;
+}
+div.notify {
+	background: =
+url("http://wiki.openwrt.org/lib/styles/../images/notify.png") no-repeat =
+0.5em 0px rgb(255, 255, 204); margin: 0px; color: rgb(0, 0, 0); =
+overflow: hidden; padding-left: 3em; font-size: 90%; =
+border-bottom-color: rgb(255, 255, 170); border-bottom-width: 1px; =
+border-bottom-style: solid;
+}
+.medialeft {
+	float: left;
+}
+.mediaright {
+	float: right;
+}
+.mediacenter {
+	margin-right: auto; margin-left: auto; display: block;
+}
+.leftalign {
+	text-align: left;
+}
+.centeralign {
+	text-align: center;
+}
+.rightalign {
+	text-align: right;
+}
+em.u {
+	font-style: normal; text-decoration: underline;
+}
+em em.u {
+	font-style: italic;
+}
+.code .br0 {
+	color: rgb(102, 204, 102);
+}
+.code .co1 {
+	color: rgb(128, 128, 128); font-style: italic;
+}
+.code .co2 {
+	color: rgb(128, 128, 128); font-style: italic;
+}
+.code .co3 {
+	color: rgb(128, 128, 128);
+}
+.code .coMULTI {
+	color: rgb(128, 128, 128); font-style: italic;
+}
+.code .es0 {
+	color: rgb(0, 0, 153); font-weight: bold;
+}
+.code .kw1 {
+	color: rgb(177, 177, 0);
+}
+.code .kw2 {
+	color: rgb(0, 0, 0); font-weight: bold;
+}
+.code .kw3 {
+	color: rgb(0, 0, 102);
+}
+.code .kw4 {
+	color: rgb(153, 51, 51);
+}
+.code .kw5 {
+	color: rgb(0, 0, 255);
+}
+.code .me1 {
+	color: rgb(0, 102, 0);
+}
+.code .me2 {
+	color: rgb(0, 102, 0);
+}
+.code .nu0 {
+	color: rgb(204, 102, 204);
+}
+.code .re0 {
+	color: rgb(0, 0, 255);
+}
+.code .re1 {
+	color: rgb(0, 0, 255);
+}
+.code .re2 {
+	color: rgb(0, 0, 255);
+}
+.code .re3 {
+	color: rgb(255, 51, 51); font-weight: bold;
+}
+.code .re4 {
+	color: rgb(0, 153, 153);
+}
+.code .st0 {
+	color: rgb(255, 0, 0);
+}
+.code .sy0 {
+	color: rgb(102, 204, 102);
+}
+div.dokuwiki ul.medialist {
+	list-style: none; margin-left: 0px;
+}
+#plugin__manager {
+=09
+}
+#plugin__manager h2 {
+	margin-left: 0px;
+}
+#plugin__manager form {
+	margin: 0px; padding: 0px; display: block;
+}
+#plugin__manager legend {
+	display: none;
+}
+#plugin__manager fieldset {
+	width: auto;
+}
+#plugin__manager .button {
+	margin: 0px;
+}
+#plugin__manager p {
+	text-align: left;
+}
+#plugin__manager label {
+	text-align: left;
+}
+#plugin__manager .hidden {
+	display: none;
+}
+#plugin__manager .new {
+	background: rgb(222, 231, 236);
+}
+#plugin__manager input[disabled] {
+	border-color: rgb(204, 204, 204); color: rgb(204, 204, 204);
+}
+#plugin__manager .pm_menu {
+	text-align: left; margin-left: 0px;
+}
+#plugin__manager .pm_info {
+	text-align: left; margin-left: 0px;
+}
+#plugin__manager .pm_menu {
+	width: 48%; float: left;
+}
+#plugin__manager .pm_info {
+	width: 50%; float: right;
+}
+#plugin__manager .common {
+=09
+}
+#plugin__manager .common form {
+=09
+}
+#plugin__manager .common fieldset {
+	margin: 0px; padding: 0px 0px 1em; border: currentColor; border-image: =
+none; text-align: left;
+}
+#plugin__manager .common label {
+	padding: 0px 0px 0.5em;
+}
+#plugin__manager .common input {
+=09
+}
+#plugin__manager .common input.edit {
+	margin: 0.5em; width: 24em;
+}
+#plugin__manager .common .button {
+=09
+}
+#plugin__manager form.plugins {
+=09
+}
+#plugin__manager .plugins fieldset {
+	background: rgb(255, 255, 255); text-align: right; color: rgb(0, 0, 0); =
+border-top-color: currentColor; border-right-color: currentColor; =
+border-left-color: currentColor; border-top-width: medium; =
+border-right-width: medium; border-left-width: medium; border-top-style: =
+none; border-right-style: none; border-left-style: none;
+}
+#plugin__manager .plugins fieldset.protected {
+	background: rgb(255, 221, 221); color: rgb(0, 0, 0);
+}
+#plugin__manager .plugins fieldset.disabled {
+	background: rgb(224, 224, 224); color: rgb(168, 168, 168);
+}
+#plugin__manager .plugins .legend {
+	background: inherit; margin: 0px; padding: 0px; text-align: left; =
+color: rgb(0, 0, 0); line-height: 1.4em; clear: none; font-size: 1em; =
+font-weight: normal; float: left; display: block;
+}
+#plugin__manager .plugins .button {
+	font-size: 95%;
+}
+#plugin__manager .plugins fieldset.buttons {
+	border: currentColor; border-image: none;
+}
+#plugin__manager .plugins fieldset.buttons .button {
+	float: left;
+}
+#plugin__manager .pm_info h3 {
+	margin-left: 0px;
+}
+#plugin__manager .pm_info dl {
+	margin: 1em 0px; padding: 0px;
+}
+#plugin__manager .pm_info dt {
+	margin: 0px; padding: 0px; width: 6em; clear: left; float: left;
+}
+#plugin__manager .pm_info dd {
+	background: none; margin: 0px 0px 0px 7em; padding: 0px;
+}
+#plugin__manager .plugins .enable {
+	width: auto; margin-right: 0.5em; float: left;
+}
+div.page form fieldset fieldset {
+	text-align: left;
+}
+fieldset.clearhistory {
+	width: 315px; margin-right: 10px; margin-left: 20px; float: right;
+}
+div.dokuwiki div.page p.clearhistory {
+	margin-right: 350px; margin-left: 30px;
+}
+div.maintenancemessage {
+	padding: 5px; border-radius: 10px; border: 2px dashed red; =
+border-image: none; width: 100%; background-color: rgb(255, 255, 204); =
+-moz-border-radius: 10px; -webkit-border-radius: 10px;
+}
+div.denyeditmessage {
+	padding: 5px; border-radius: 10px; border: 2px dashed red; =
+border-image: none; width: 100%; margin-top: 5px; background-color: =
+rgb(255, 255, 204); -moz-border-radius: 10px; -webkit-border-radius: =
+10px;
+}
+.dokuwiki div.plugin_multilingual {
+	margin: 0em 0px 0.3em; padding-right: 0.1em; font-size: 95%; float: =
+right;
+}
+.dokuwiki div.plugin_multilingual ul {
+	margin: 0px; padding: 0px;
+}
+.dokuwiki div.plugin_multilingual ul li {
+	margin: 0.2em 0px 0px; padding: 0px; float: left; list-style-type: =
+none;
+}
+.dokuwiki div.plugin_multilingual ul li a.wikilink1:link {
+	margin: 0.1em 0.2em; padding: 0px 0.2em; border: currentColor =
+!important; border-image: none !important; color: rgb(255, 255, 255) =
+!important; text-decoration: none; background-color: rgb(0, 0, 128);
+}
+.dokuwiki div.plugin_multilingual ul li a.wikilink1:hover {
+	margin: 0.1em 0.2em; padding: 0px 0.2em; border: currentColor =
+!important; border-image: none !important; color: rgb(255, 255, 255) =
+!important; text-decoration: none; background-color: rgb(0, 0, 128);
+}
+.dokuwiki div.plugin_multilingual ul li a.wikilink1:active {
+	margin: 0.1em 0.2em; padding: 0px 0.2em; border: currentColor =
+!important; border-image: none !important; color: rgb(255, 255, 255) =
+!important; text-decoration: none; background-color: rgb(0, 0, 128);
+}
+.dokuwiki div.plugin_multilingual ul li a.wikilink1:visited {
+	margin: 0.1em 0.2em; padding: 0px 0.2em; border: currentColor =
+!important; border-image: none !important; color: rgb(255, 255, 255) =
+!important; text-decoration: none; background-color: rgb(0, 0, 128);
+}
+.dokuwiki div.plugin_multilingual ul li a.wikilink2:link {
+	margin: 0.1em 0.2em; padding: 0px 0.2em; border: currentColor =
+!important; border-image: none !important; color: rgb(255, 255, 255) =
+!important; text-decoration: none; background-color: rgb(128, 128, 128);
+}
+.dokuwiki div.plugin_multilingual ul li a.wikilink2:hover {
+	margin: 0.1em 0.2em; padding: 0px 0.2em; border: currentColor =
+!important; border-image: none !important; color: rgb(255, 255, 255) =
+!important; text-decoration: none; background-color: rgb(128, 128, 128);
+}
+.dokuwiki div.plugin_multilingual ul li a.wikilink2:active {
+	margin: 0.1em 0.2em; padding: 0px 0.2em; border: currentColor =
+!important; border-image: none !important; color: rgb(255, 255, 255) =
+!important; text-decoration: none; background-color: rgb(128, 128, 128);
+}
+.dokuwiki div.plugin_multilingual ul li a.wikilink2:visited {
+	margin: 0.1em 0.2em; padding: 0px 0.2em; border: currentColor =
+!important; border-image: none !important; color: rgb(255, 255, 255) =
+!important; text-decoration: none; background-color: rgb(128, 128, 128);
+}
+.dokuwiki div.plugin_multilingual option.wikilink1 {
+	text-align: center; color: rgb(0, 0, 128);
+}
+.dokuwiki div.plugin_multilingual option.wikilink2 {
+	text-align: center; color: rgb(128, 128, 128);
+}
+.dokuwiki div.plugin_multilingual ul li a img {
+	border: 1px solid rgb(136, 136, 136); border-image: none; margin-top: =
+0em; opacity: 0.8;
+}
+.dokuwiki div.plugin_multilingual ul li div.flag_not_exists a img {
+	border: 1px solid rgb(102, 102, 102); border-image: none; opacity: =
+0.25;
+}
+.dokuwiki div.plugin_multilingual ul li a.wikilink2 img {
+=09
+}
+.dokuwiki div.plugin_multilingual span.curid a img {
+	border: 1px solid rgb(102, 102, 102); border-image: none; opacity: 1;
+}
+.dokuwiki div.plugin_multilingual ul li a:hover img {
+	border: 1px solid rgb(68, 68, 68); border-image: none; opacity: 1;
+}
+.dokuwiki div.plugin_multilingual ul li div.flag_not_exists a:hover img =
+{
+	border: 1px solid rgb(68, 68, 68); border-image: none; opacity: 0.5;
+}
+div.divalign-left {
+	text-align: left;
+}
+div.divalign-center {
+	text-align: center;
+}
+div.divalign-right {
+	text-align: right;
+}
+div.divalign-justify {
+	text-align: justify;
+}
+div.dokuwiki table.pagelist tr {
+	border-top-color: rgb(196, 196, 196); border-bottom-color: rgb(196, =
+196, 196); border-top-width: 1px; border-bottom-width: 1px; =
+border-top-style: solid; border-bottom-style: solid;
+}
+div.dokuwiki table.pagelist th {
+	padding: 1px 1em 1px 0px;
+}
+div.dokuwiki table.pagelist td {
+	padding: 1px 1em 1px 0px;
+}
+div.dokuwiki table.ul th {
+	padding: 0px 1em 0px 0px;
+}
+div.dokuwiki table.ul td {
+	padding: 0px 1em 0px 0px;
+}
+div.dokuwiki table.ul ul {
+	margin: 0px 0px 0px 1.5em;
+}
+div.dokuwiki table.pagelist th {
+	background-color: rgb(248, 248, 248);
+}
+div.dokuwiki table.ul th {
+	background-color: rgb(248, 248, 248);
+}
+div.dokuwiki th.dpage {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki th.page {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki th.date {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki th.user {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki th.desc {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki th.comments {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki th.tags {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki td.date {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki td.user {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki td.desc {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki td.comments {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki td.tags {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki th.date {
+	text-align: right;
+}
+div.dokuwiki td.date {
+	text-align: right;
+}
+div.dokuwiki td.dpage {
+	text-align: left; vertical-align: top;
+}
+div.dokuwiki th.rowno {
+	width: 5px; text-align: right; color: rgb(102, 102, 102); font-size: =
+80%;
+}
+div.dokuwiki td.rowno {
+	width: 5px; text-align: right; color: rgb(102, 102, 102); font-size: =
+80%;
+}
+div.dokuwiki div.comment_wrapper {
+	margin: 1em; padding: 0.5em 1em 1.5em 0px; clear: both; =
+background-color: rgb(248, 248, 248);
+}
+div.dokuwiki div.comment_text {
+	padding-top: 0.5em;
+}
+div.dokuwiki div#discussion__comment_preview {
+	padding: 1em; margin-top: 1em; visibility: hidden;
+}
+div.dokuwiki div.comment_preview {
+	padding: 1em; border: 1px dashed rgb(196, 196, 196); border-image: =
+none;
+}
+div.dokuwiki div.comment_form {
+	clear: both; margin-top: 2em; margin-right: 1em;
+}
+div.dokuwiki div.comment_form .error {
+	background: rgb(255, 204, 204);
+}
+div.dokuwiki #discussion__comment_form label input.edit {
+	width: 75%;
+}
+div.dokuwiki .comment_head {
+	color: rgb(102, 102, 102); padding-top: 0.5em; clear: both; font-size: =
+80%; margin-top: 1em;
+}
+div.dokuwiki .comment_head abbr {
+	border-bottom-color: currentColor; border-bottom-width: 0px; =
+border-bottom-style: none;
+}
+div.dokuwiki .comment_head span.author {
+	background: =
+url("http://wiki.openwrt.org/lib/plugins/discussion/images/user.gif") =
+no-repeat 0px 1px; padding: 1px 0px 1px 16px;
+}
+div.dokuwiki .comment_head abbr.published {
+	background: =
+url("http://wiki.openwrt.org/lib/plugins/discussion/images/date.gif") =
+no-repeat 0px 1px; padding: 1px 0px 1px 16px;
+}
+div.dokuwiki .comment_body {
+	padding-top: 0.5em; padding-bottom: 0.5em; border-bottom-color: =
+rgb(196, 196, 196); border-bottom-width: 1px; border-bottom-style: =
+dotted;
+}
+div.dokuwiki div.comment_replies {
+=09
+}
+div.dokuwiki div.comment_subscribe {
+	padding: 0.6em; float: left; display: inline;
+}
+div.dokuwiki div.comment_subscribe input {
+	float: left; display: inline;
+}
+div.dokuwiki div.comment_subscribe label {
+	padding-left: 0.8em; float: left;
+}
+div.dokuwiki input.comment_submit {
+	float: left; display: inline;
+}
+div.dokuwiki div.comment_hidden {
+	opacity: 0.5;
+}
+div.dokuwiki div.comment_buttons {
+	padding-bottom: 1em; font-size: 10px; margin-top: -21px; float: right; =
+cursor: pointer;
+}
+div.dokuwiki div.comment_buttons input.button {
+	margin: 0px 0px 0px 0.5em; padding: 0px; border: 1px solid rgb(196, =
+196, 196); border-image: none; color: rgb(102, 102, 102); =
+text-decoration: none; vertical-align: middle; background-color: =
+rgb(255, 255, 255);
+}
+div.dokuwiki div.newthread_form {
+	text-align: center; clear: both; margin-bottom: 1em;
+}
+div.dokuwiki #discussion__newthread_form input.edit {
+	width: 95%;
+}
+div.dokuwiki ul.admin_discussion li.hidden {
+	display: list-item; opacity: 0.5;
+}
+div.dokuwiki ul.admin_discussion span.abstract {
+	color: rgb(102, 102, 102);
+}
+div.dokuwiki table.pagelist tr.discussion_status2 a {
+	color: rgb(102, 102, 102) !important;
+}
+.dokuwiki #plugin__captcha_wrapper img {
+	margin: 1px; border: 1px solid rgb(196, 196, 196); border-image: none; =
+vertical-align: bottom;
+}
+div#acl_manager div#acl__tree {
+	border: 1px solid rgb(196, 196, 196); border-image: none; width: 25%; =
+height: 300px; text-align: left; overflow: auto; font-size: 90%; float: =
+left;
+}
+div#acl_manager div#acl__tree a.cur {
+	font-weight: bold; background-color: rgb(255, 255, 153);
+}
+div#acl_manager div#acl__tree ul {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+div#acl_manager div#acl__tree li {
+	padding-left: 1em;
+}
+div#acl_manager div#acl__tree ul img {
+	margin-right: 0.25em; cursor: pointer;
+}
+div#acl_manager div#acl__detail {
+	width: 73%; height: 300px; overflow: auto; float: right;
+}
+div#acl_manager div#acl__detail fieldset {
+	width: 90%;
+}
+div#acl_manager div#acl__detail div#acl__user {
+	padding: 0.5em; border: 1px solid rgb(196, 196, 196); border-image: =
+none; margin-bottom: 0.6em;
+}
+div#acl_manager table.inline {
+	margin: 0px; width: 100%;
+}
+div#acl_manager .aclgroup {
+	background: =
+url("http://wiki.openwrt.org/lib/plugins/acl/pix/group.png") no-repeat =
+0px 1px; padding: 1px 0px 1px 18px;
+}
+div#acl_manager .acluser {
+	background: url("http://wiki.openwrt.org/lib/plugins/acl/pix/user.png") =
+no-repeat 0px 1px; padding: 1px 0px 1px 18px;
+}
+div#acl_manager .aclpage {
+	background: url("http://wiki.openwrt.org/lib/plugins/acl/pix/page.png") =
+no-repeat 0px 1px; padding: 1px 0px 1px 18px;
+}
+div#acl_manager .aclns {
+	background: url("http://wiki.openwrt.org/lib/plugins/acl/pix/ns.png") =
+no-repeat 0px 1px; padding: 1px 0px 1px 18px;
+}
+div#acl_manager label.disabled {
+	color: rgb(102, 102, 102) !important;
+}
+#acl_manager label {
+	text-align: left; font-weight: normal; display: inline;
+}
+#acl_manager table {
+	width: 80%; margin-left: 10%;
+}
+#acl_manager table tr {
+	background-color: inherit;
+}
+#acl_manager table tr:hover {
+	background-color: rgb(248, 248, 248);
+}
+div.dokuwiki div.tags {
+	text-align: right; clear: both; font-size: 95%; border-top-color: =
+rgb(196, 196, 196); border-top-width: 2px; border-top-style: dotted;
+}
+div.dokuwiki div.tags span {
+	background: =
+url("http://wiki.openwrt.org/lib/plugins/tag/images/tag.gif") no-repeat =
+0px 1px; padding: 1px 0px 1px 16px;
+}
+div.dokuwiki div.include div.secedit {
+	margin-top: -18px; margin-left: 1em; float: right;
+}
+div.dokuwiki div.inclmeta {
+	color: rgb(102, 102, 102); line-height: 1.25; padding-top: 0.2em; =
+font-size: 80%; margin-top: 0.5em; margin-bottom: 2em; border-top-color: =
+rgb(196, 196, 196); border-top-width: 1px; border-top-style: dotted;
+}
+div.dokuwiki div.inclmeta a.permalink {
+	background: =
+url("http://wiki.openwrt.org/lib/plugins/include/images/link.gif") =
+no-repeat 0px 1px; padding: 1px 0px 1px 16px;
+}
+div.dokuwiki div.inclmeta abbr.published {
+	background: =
+url("http://wiki.openwrt.org/lib/plugins/include/images/date.gif") =
+no-repeat 0px 1px; padding: 1px 0px 1px 16px; border-bottom-color: =
+currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+div.dokuwiki div.inclmeta span.author {
+	background: =
+url("http://wiki.openwrt.org/lib/plugins/include/images/user.gif") =
+no-repeat 0px 1px; padding: 1px 0px 1px 16px;
+}
+div.dokuwiki div.inclmeta span.comment {
+	background: =
+url("http://wiki.openwrt.org/lib/plugins/include/images/comment.gif") =
+no-repeat 0px 1px; padding: 1px 0px 1px 16px;
+}
+div.dokuwiki div.inclmeta div.tags {
+	clear: none; font-size: 100%; border-top-color: currentColor; =
+border-top-width: 0px; border-top-style: none; float: right;
+}
+#config__manager div.success {
+	background-position: 0.5em; padding: 0.5em; text-align: center;
+}
+#config__manager div.error {
+	background-position: 0.5em; padding: 0.5em; text-align: center;
+}
+#config__manager div.info {
+	background-position: 0.5em; padding: 0.5em; text-align: center;
+}
+#config__manager fieldset {
+	margin: 1em 1em 2em; padding: 0px 1em; width: auto; color: rgb(102, =
+102, 102); background-color: rgb(248, 248, 248);
+}
+#config__manager legend {
+	font-size: 1.25em;
+}
+#config__manager form {
+=09
+}
+#config__manager table {
+	margin: 1em 0px; width: 100%;
+}
+#config__manager fieldset td {
+	text-align: left;
+}
+#config__manager fieldset td.value {
+	width: 30em;
+}
+#config__manager td.label {
+	padding: 0.8em 0px 0.6em 1em; vertical-align: top;
+}
+#config__manager td.label label {
+	clear: both; display: block;
+}
+#config__manager td.label span.outkey {
+	padding: 0px 0.1em; color: rgb(102, 102, 102); font-size: 70%; =
+margin-top: -1.7em; margin-left: -1em; float: left; display: block; =
+position: relative; z-index: 1; background-color: rgb(255, 255, 255);
+}
+#config__manager td input.edit {
+	width: 30em;
+}
+#config__manager td select.edit {
+=09
+}
+#config__manager td textarea.edit {
+	width: 27.5em; height: 4em;
+}
+#config__manager tr .input {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+#config__manager tr input {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+#config__manager tr textarea {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+#config__manager tr select {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+#config__manager tr.default .input {
+	color: rgb(0, 0, 0); background-color: rgb(204, 221, 255);
+}
+#config__manager tr.default input {
+	color: rgb(0, 0, 0); background-color: rgb(204, 221, 255);
+}
+#config__manager tr.default textarea {
+	color: rgb(0, 0, 0); background-color: rgb(204, 221, 255);
+}
+#config__manager tr.default select {
+	color: rgb(0, 0, 0); background-color: rgb(204, 221, 255);
+}
+#config__manager .selectiondefault {
+	color: rgb(0, 0, 0); background-color: rgb(204, 221, 255);
+}
+#config__manager tr.protected .input {
+	color: rgb(0, 0, 0) !important; background-color: rgb(255, 204, 204) =
+!important;
+}
+#config__manager tr.protected input {
+	color: rgb(0, 0, 0) !important; background-color: rgb(255, 204, 204) =
+!important;
+}
+#config__manager tr.protected textarea {
+	color: rgb(0, 0, 0) !important; background-color: rgb(255, 204, 204) =
+!important;
+}
+#config__manager tr.protected select {
+	color: rgb(0, 0, 0) !important; background-color: rgb(255, 204, 204) =
+!important;
+}
+#config__manager tr.protected .selection {
+	color: rgb(0, 0, 0) !important; background-color: rgb(255, 204, 204) =
+!important;
+}
+#config__manager td.error {
+	color: rgb(0, 0, 0); background-color: red;
+}
+#config__manager .selection {
+	margin: 0px 0.3em 2px 0px; width: 14.8em; float: left;
+}
+#config__manager .selection label {
+	width: 14em; font-size: 90%; float: right;
+}
+* html #config__manager .selection label {
+	padding-top: 2px;
+}
+#config__manager .selection input.checkbox {
+	padding-left: 0.7em;
+}
+#config__manager .other {
+	padding-top: 0.5em; clear: both;
+}
+#config__manager .other label {
+	padding-left: 2px; font-size: 90%;
+}
+div.dokuwiki table.pagelist {
+	padding: 0px; border: 0px currentColor; border-image: none; =
+margin-bottom: 1em; border-collapse: collapse; border-spacing: 0;
+}
+div.dokuwiki table.ul {
+	padding: 0px; border: 0px currentColor; border-image: none; =
+margin-bottom: 1em; border-collapse: collapse; border-spacing: 0;
+}
+div.dokuwiki table.pagelist tr {
+	border-top-color: rgb(196, 196, 196); border-bottom-color: rgb(196, =
+196, 196); border-top-width: 1px; border-bottom-width: 1px; =
+border-top-style: solid; border-bottom-style: solid;
+}
+div.dokuwiki table.pagelist th {
+	padding: 1px 1em 1px 0px;
+}
+div.dokuwiki table.pagelist td {
+	padding: 1px 1em 1px 0px;
+}
+div.dokuwiki table.ul th {
+	padding: 0px 1em 0px 0px;
+}
+div.dokuwiki table.ul td {
+	padding: 0px 1em 0px 0px;
+}
+div.dokuwiki table.ul ul {
+	margin: 0px 0px 0px 1.5em;
+}
+div.dokuwiki table.pagelist th {
+	background-color: rgb(248, 248, 248);
+}
+div.dokuwiki table.ul th {
+	background-color: rgb(248, 248, 248);
+}
+div.dokuwiki th.page {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki th.date {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki th.user {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki th.desc {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki th.comments {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki th.linkbacks {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki th.tags {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki td.date {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki td.user {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki td.desc {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki td.comments {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki td.linkbacks {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki td.tags {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+div.dokuwiki td.date {
+	text-align: right;
+}
+div.dokuwiki table.columns-plugin {
+	margin: 0px; border: 0px currentColor; border-image: none; =
+border-collapse: collapse; border-spacing: 0;
+}
+div.dokuwiki table.columns-plugin td {
+	padding: 0px 0.5em; vertical-align: top;
+}
+div.dokuwiki table.columns-plugin td.first {
+	padding-left: 0px;
+}
+div.dokuwiki table.columns-plugin td.last {
+	padding-right: 0px;
+}
+div.dokuwiki table.columns-plugin td.left {
+	text-align: left;
+}
+div.dokuwiki table.columns-plugin td.center {
+	text-align: center;
+}
+div.dokuwiki table.columns-plugin td.right {
+	text-align: right;
+}
+div.dokuwiki table.columns-plugin td.center table {
+	margin-right: auto; margin-left: auto;
+}
+div.dokuwiki table.columns-plugin td.right table {
+	margin-right: 0px; margin-left: auto;
+}
+div.code {
+	margin: 1em auto; padding: 4px; border: 1px solid currentColor; =
+border-image: none; width: 92%;
+}
+div.file {
+	margin: 1em auto; padding: 4px; border: 1px solid currentColor; =
+border-image: none; width: 92%;
+}
+div.code p {
+	margin: 0px; padding: 2px; font-size: 90%;
+}
+div.file p {
+	margin: 0px; padding: 2px; font-size: 90%;
+}
+div.dokuwiki div.code pre.code {
+	margin: 4px 0px 0px;
+}
+div.dokuwiki div.file pre.file {
+	margin: 4px 0px 0px;
+}
+div.code {
+	background: rgb(228, 236, 248); border-color: rgb(187, 187, 221);
+}
+div.code p {
+	background: rgb(202, 208, 238);
+}
+div.file {
+	background: rgb(248, 236, 228); border-color: rgb(221, 187, 187);
+}
+div.file p {
+	background: rgb(238, 208, 202);
+}
+div.dokuwiki div.file pre.file {
+	background: rgb(253, 244, 236); border-color: rgb(221, 187, 187);
+}
+#user__manager tr.disabled {
+	background: rgb(228, 228, 228); color: rgb(111, 111, 111);
+}
+#user__manager tr.user_info {
+	vertical-align: top;
+}
+#user__manager div.edit_user {
+	width: 46%; float: left;
+}
+#user__manager table {
+	margin-bottom: 1em;
+}
+#user__manager input[disabled].button {
+	border-color: rgb(204, 204, 204) !important; color: rgb(204, 204, 204) =
+!important;
+}
+.dokuwiki .wrap_box {
+	background: rgb(248, 248, 248); color: rgb(102, 102, 102);
+}
+.dokuwiki div.wrap_box {
+	padding: 1em 1em 0.5em; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_danger {
+	padding: 1em 1em 0.5em; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_warning {
+	padding: 1em 1em 0.5em; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_caution {
+	padding: 1em 1em 0.5em; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_notice {
+	padding: 1em 1em 0.5em; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_safety {
+	padding: 1em 1em 0.5em; margin-bottom: 1.5em;
+}
+.dokuwiki span.wrap_box {
+	padding: 0px 0.3em;
+}
+.dokuwiki span.wrap_danger {
+	padding: 0px 0.3em;
+}
+.dokuwiki span.wrap_warning {
+	padding: 0px 0.3em;
+}
+.dokuwiki span.wrap_caution {
+	padding: 0px 0.3em;
+}
+.dokuwiki span.wrap_notice {
+	padding: 0px 0.3em;
+}
+.dokuwiki span.wrap_safety {
+	padding: 0px 0.3em;
+}
+.dokuwiki div.wrap_info {
+	background-position: 10px 50%; padding: 1em 1em 0.5em 70px; color: =
+rgb(0, 0, 0); margin-bottom: 1.5em; min-height: 68px; background-repeat: =
+no-repeat;
+}
+.dokuwiki div.wrap_important {
+	background-position: 10px 50%; padding: 1em 1em 0.5em 70px; color: =
+rgb(0, 0, 0); margin-bottom: 1.5em; min-height: 68px; background-repeat: =
+no-repeat;
+}
+.dokuwiki div.wrap_alert {
+	background-position: 10px 50%; padding: 1em 1em 0.5em 70px; color: =
+rgb(0, 0, 0); margin-bottom: 1.5em; min-height: 68px; background-repeat: =
+no-repeat;
+}
+.dokuwiki div.wrap_tip {
+	background-position: 10px 50%; padding: 1em 1em 0.5em 70px; color: =
+rgb(0, 0, 0); margin-bottom: 1.5em; min-height: 68px; background-repeat: =
+no-repeat;
+}
+.dokuwiki div.wrap_help {
+	background-position: 10px 50%; padding: 1em 1em 0.5em 70px; color: =
+rgb(0, 0, 0); margin-bottom: 1.5em; min-height: 68px; background-repeat: =
+no-repeat;
+}
+.dokuwiki div.wrap_todo {
+	background-position: 10px 50%; padding: 1em 1em 0.5em 70px; color: =
+rgb(0, 0, 0); margin-bottom: 1.5em; min-height: 68px; background-repeat: =
+no-repeat;
+}
+.dokuwiki div.wrap_download {
+	background-position: 10px 50%; padding: 1em 1em 0.5em 70px; color: =
+rgb(0, 0, 0); margin-bottom: 1.5em; min-height: 68px; background-repeat: =
+no-repeat;
+}
+* html .dokuwiki div.wrap_info {
+	height: 68px;
+}
+* html .dokuwiki div.wrap_important {
+	height: 68px;
+}
+* html .dokuwiki div.wrap_alert {
+	height: 68px;
+}
+* html .dokuwiki div.wrap_tip {
+	height: 68px;
+}
+* html .dokuwiki div.wrap_help {
+	height: 68px;
+}
+* html .dokuwiki div.wrap_todo {
+	height: 68px;
+}
+* html .dokuwiki div.wrap_download {
+	height: 68px;
+}
+.dokuwiki span.wrap_info {
+	background-position: 2px 50%; padding: 0px 2px 0px 20px; color: rgb(0, =
+0, 0); min-height: 20px; background-repeat: no-repeat;
+}
+.dokuwiki span.wrap_important {
+	background-position: 2px 50%; padding: 0px 2px 0px 20px; color: rgb(0, =
+0, 0); min-height: 20px; background-repeat: no-repeat;
+}
+.dokuwiki span.wrap_alert {
+	background-position: 2px 50%; padding: 0px 2px 0px 20px; color: rgb(0, =
+0, 0); min-height: 20px; background-repeat: no-repeat;
+}
+.dokuwiki span.wrap_tip {
+	background-position: 2px 50%; padding: 0px 2px 0px 20px; color: rgb(0, =
+0, 0); min-height: 20px; background-repeat: no-repeat;
+}
+.dokuwiki span.wrap_help {
+	background-position: 2px 50%; padding: 0px 2px 0px 20px; color: rgb(0, =
+0, 0); min-height: 20px; background-repeat: no-repeat;
+}
+.dokuwiki span.wrap_todo {
+	background-position: 2px 50%; padding: 0px 2px 0px 20px; color: rgb(0, =
+0, 0); min-height: 20px; background-repeat: no-repeat;
+}
+.dokuwiki span.wrap_download {
+	background-position: 2px 50%; padding: 0px 2px 0px 20px; color: rgb(0, =
+0, 0); min-height: 20px; background-repeat: no-repeat;
+}
+* html .dokuwiki span.wrap_info {
+	height: 20px;
+}
+* html .dokuwiki span.wrap_important {
+	height: 20px;
+}
+* html .dokuwiki span.wrap_alert {
+	height: 20px;
+}
+* html .dokuwiki span.wrap_tip {
+	height: 20px;
+}
+* html .dokuwiki span.wrap_help {
+	height: 20px;
+}
+* html .dokuwiki span.wrap_todo {
+	height: 20px;
+}
+* html .dokuwiki span.wrap_download {
+	height: 20px;
+}
+.dokuwiki .wrap_info {
+	background-color: rgb(209, 215, 223);
+}
+.dokuwiki div.wrap_info {
+	background-image: =
+url("http://wiki.openwrt.org/lib/plugins/wrap/images/note/48/info.png");
+}
+.dokuwiki span.wrap_info {
+	background-image: =
+url("http://wiki.openwrt.org/lib/plugins/wrap/images/note/16/info.png");
+}
+.dokuwiki .wrap_important {
+	background-color: rgb(255, 211, 159);
+}
+.dokuwiki div.wrap_important {
+	background-image: =
+url("http://wiki.openwrt.org/lib/plugins/wrap/images/note/48/important.pn=
+g");
+}
+.dokuwiki span.wrap_important {
+	background-image: =
+url("http://wiki.openwrt.org/lib/plugins/wrap/images/note/16/important.pn=
+g");
+}
+.dokuwiki .wrap_alert {
+	background-color: rgb(255, 188, 175);
+}
+.dokuwiki div.wrap_alert {
+	background-image: =
+url("http://wiki.openwrt.org/lib/plugins/wrap/images/note/48/alert.png");=
+
+}
+.dokuwiki span.wrap_alert {
+	background-image: =
+url("http://wiki.openwrt.org/lib/plugins/wrap/images/note/16/alert.png");=
+
+}
+.dokuwiki .wrap_tip {
+	background-color: rgb(255, 247, 159);
+}
+.dokuwiki div.wrap_tip {
+	background-image: =
+url("http://wiki.openwrt.org/lib/plugins/wrap/images/note/48/tip.png");
+}
+.dokuwiki span.wrap_tip {
+	background-image: =
+url("http://wiki.openwrt.org/lib/plugins/wrap/images/note/16/tip.png");
+}
+.dokuwiki .wrap_help {
+	background-color: rgb(220, 194, 239);
+}
+.dokuwiki div.wrap_help {
+	background-image: =
+url("http://wiki.openwrt.org/lib/plugins/wrap/images/note/48/help.png");
+}
+.dokuwiki span.wrap_help {
+	background-image: =
+url("http://wiki.openwrt.org/lib/plugins/wrap/images/note/16/help.png");
+}
+.dokuwiki .wrap_todo {
+	background-color: rgb(194, 239, 221);
+}
+.dokuwiki div.wrap_todo {
+	background-image: =
+url("http://wiki.openwrt.org/lib/plugins/wrap/images/note/48/todo.png");
+}
+.dokuwiki span.wrap_todo {
+	background-image: =
+url("http://wiki.openwrt.org/lib/plugins/wrap/images/note/16/todo.png");
+}
+.dokuwiki .wrap_download {
+	background-color: rgb(214, 239, 194);
+}
+.dokuwiki div.wrap_download {
+	background-image: =
+url("http://wiki.openwrt.org/lib/plugins/wrap/images/note/48/download.png=
+");
+}
+.dokuwiki span.wrap_download {
+	background-image: =
+url("http://wiki.openwrt.org/lib/plugins/wrap/images/note/16/download.png=
+");
+}
+.dokuwiki .wrap_danger {
+	color: rgb(255, 255, 255); background-color: rgb(204, 0, 0);
+}
+.dokuwiki .wrap_warning {
+	color: rgb(0, 0, 0); background-color: rgb(255, 102, 0);
+}
+.dokuwiki .wrap_caution {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);
+}
+.dokuwiki .wrap_notice {
+	color: rgb(255, 255, 255); background-color: rgb(0, 102, 255);
+}
+.dokuwiki .wrap_safety {
+	color: rgb(255, 255, 255); background-color: rgb(0, 153, 0);
+}
+div.dokuwiki .wrap_hi {
+	background-color: rgb(255, 255, 153);
+}
+div.dokuwiki .wrap_fgwhite {
+	color: rgb(255, 255, 255);
+}
+div.dokuwiki .wrap_bgred {
+	background-color: rgb(255, 204, 204);
+}
+div.dokuwiki .wrap_bggreen {
+	background-color: rgb(204, 255, 204);
+}
+div.dokuwiki .wrap_bgblue {
+	background-color: rgb(204, 204, 255);
+}
+div.dokuwiki .wrap_bgcyan {
+	background-color: rgb(153, 255, 255);
+}
+div.dokuwiki .wrap_bgviolet {
+	background-color: rgb(255, 153, 255);
+}
+div.dokuwiki .wrap_bgyellow {
+	background-color: rgb(255, 255, 153);
+}
+div.dokuwiki .wrap_bggrey {
+	background-color: rgb(204, 204, 204);
+}
+div.dokuwiki .wrap_bgwhite {
+	background-color: rgb(255, 255, 255);
+}
+div.dokuwiki .wrap_bgblack {
+	background-color: rgb(0, 0, 0);
+}
+div.dokuwiki .wrap_spoiler {
+	border: 1px dotted red; border-image: none; color: rgb(255, 255, 255) =
+!important; background-color: rgb(255, 255, 255) !important;
+}
+div.dokuwiki .wrap_onlyprint {
+	display: none;
+}
+#plugin__tagentry_wrapper {
+	margin-right: 5px; display: inline;
+}
+#plugin__tagentry_wrapper div#taglist_container {
+	display: none;
+}
+#plugin__tagentry_wrapper div.taglist {
+	margin-bottom: 1.25em;
+}
+#plugin__tagentry_wrapper div.taglist label {
+	width: 125px; height: 1.5em; overflow: hidden; font-size: 85%; float: =
+left; display: block; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+#plugin__tagentry_wrapper div.taglist br.last {
+	clear: left;
+}
+* {
+	margin: 0px; padding: 0px;
+}
+html {
+	min-height: 100%;
+}
+body {
+	background: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/footer.png") repeat-x =
+bottom rgb(85, 119, 136); margin: 0px; height: 100%; color: rgb(0, 0, =
+0); line-height: 1.5em; font-family: sans-serif; font-size: 90%;
+}
+.hidden {
+	display: none;
+}
+.container {
+	background: url("http://wiki.openwrt.org/lib/tpl/ameoto/images/bg.png") =
+no-repeat 0px 0px; height: 100%; min-height: 554px; min-width: 100%;
+}
+#banner {
+	background: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/openwrt-logo.png") =
+0px 0px; width: 386px; height: 98px; font-size: 0px; display: block;
+}
+.whoami {
+	padding: 0.25em; top: 0px; right: 0px; font-size: 110%; font-weight: =
+bold; position: absolute;
+}
+#navigation {
+	background: rgb(0, 0, 0); color: rgb(255, 255, 255);
+}
+#navigation {
+	clear: both; font-size: 1.3em;
+}
+#navigation li {
+	padding: 1em; display: inline;
+}
+#navigation a {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+.breadcrumbs {
+=09
+}
+#feedback {
+	clear: both;
+}
+#feedback div {
+	background-position: 4px !important; margin: 0.5em 0.5em 0px; padding: =
+0.5em 0.5em 0.25em 24px; line-height: 1.5em; font-size: 100%;
+}
+.sidebar {
+	margin: 0.5em; width: 17em; clear: both; float: right;
+}
+.sidebar div {
+	margin-bottom: 0.5em;
+}
+.sidebar div h3 {
+	background: rgb(0, 0, 0); margin: -1em -1em 1em; padding: 0.12em 1.5em =
+0px; color: rgb(255, 255, 255);
+}
+.sidebar div {
+	background: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/bg-2.png"); padding: =
+1em; border: 3px solid rgb(0, 0, 0); border-image: none;
+}
+.content {
+	background: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/bg-2.png"); padding: =
+1em; border: 3px solid rgb(0, 0, 0); border-image: none;
+}
+.sidebar div div {
+	background: none; padding: 0px; border: currentColor; border-image: =
+none;
+}
+.sidebar ul {
+	margin-left: 1em;
+}
+.sidebar #qsearch__in {
+	width: 9.5em;
+}
+.sidebar .actions {
+	list-style-type: none;
+}
+.sidebar .actions li {
+	margin: 0.25em 0px 0.5em;
+}
+.sidebar a.action {
+	background-position: left; padding-left: 24px; display: block; =
+min-height: 16px; background-repeat: no-repeat;
+}
+.sidebar a.edit {
+	background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/tool-edit.png");
+}
+.sidebar a.source {
+	background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/tool-source.png");
+}
+.sidebar a.show {
+	background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/tool-source.png");
+}
+.sidebar a.admin {
+	background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/tool-admin.png");
+}
+.sidebar a.login {
+	background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/tool-login.png");
+}
+.sidebar a.logout {
+	background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/tool-logout.png");
+}
+.sidebar a.profile {
+	background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/tool-profile.png");
+}
+.sidebar a.revisions {
+	background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/tool-revisions.png");
+}
+.sidebar a.index {
+	background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/urlextern.png");
+}
+.sidebar a.recent {
+	background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/history.png");
+}
+.sidebar li.separate {
+	margin: 1.5em 0px 0.5em;
+}
+.content {
+	margin: 0.5em 18.5em 2.5em 0.5em;
+}
+.content .breadcrumbs {
+	background: rgb(0, 0, 0); margin: -1em -1em 1em; padding: 0.12em 1.5em =
+0px; color: rgb(255, 255, 255); font-size: 115%; font-weight: bold;
+}
+.content .breadcrumbs a {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+.content div.toc {
+	border: 1px solid rgb(0, 0, 0); border-image: none; margin-bottom: 1em; =
+margin-left: 1em; float: right; background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/bg-3.png"); =
+background-repeat: repeat;
+}
+.content a.urlextern {
+	background: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/urlextern.png") =
+no-repeat left; padding-left: 18px;
+}
+.content hr {
+	margin-bottom: 1em;
+}
+.content h1 {
+	margin-top: 1em; margin-bottom: 0.5em;
+}
+.content h2 {
+	margin-top: 1em; margin-bottom: 0.5em;
+}
+.content h3 {
+	margin-top: 1em; margin-bottom: 0.5em;
+}
+.content h4 {
+	margin-top: 1em; margin-bottom: 0.5em;
+}
+.content h5 {
+	margin-top: 1em; margin-bottom: 0.5em;
+}
+.content ul {
+	margin-bottom: 0.75em;
+}
+.content ol {
+	margin-bottom: 0.75em;
+}
+.content dl {
+	margin-bottom: 0.75em;
+}
+.content pre {
+	margin-bottom: 0.75em;
+}
+.content code {
+	margin-bottom: 0.75em;
+}
+.content table {
+	margin-bottom: 0.75em;
+}
+.content p {
+	margin-bottom: 0.75em;
+}
+.content .inclmeta {
+	margin-bottom: 0.75em;
+}
+.content pre {
+	font-family: monospace; font-size: 120%; white-space: pre;
+}
+.content code {
+	font-family: monospace; font-size: 120%; white-space: pre;
+}
+.content dl {
+	margin-left: 2em;
+}
+.content ol {
+	margin-left: 2em;
+}
+.content ul {
+	margin-left: 2em;
+}
+.content dl dl {
+	margin-left: 1em;
+}
+.content ol ol {
+	margin-left: 1em;
+}
+.content ul ul {
+	margin-left: 1em;
+}
+.content ul ol {
+	margin-left: 1em;
+}
+.content ol ul {
+	margin-left: 1em;
+}
+.content #toc__header {
+	padding: 0px 1.5em; color: rgb(255, 255, 255); background-color: rgb(0, =
+0, 0);
+}
+.content #toc__inside {
+	margin: 0.5em 1.5em 0.5em 0px;
+}
+.content ul.toc ul.toc {
+	margin-bottom: 0px; margin-left: 1em;
+}
+form.btn_secedit {
+	text-align: right; margin-top: -1em;
+}
+.content p.pageinfo {
+	margin: 0px 0px -2em; top: -2em; width: 80%; height: 1.5em; position: =
+relative;
+}
+.content p.top {
+	font-weight: bold;
+}
+.content p.pageinfo {
+	font-weight: bold;
+}
+.content p.top {
+	margin: 2em 0px 0px; padding: 0.5em 0px; text-align: right; clear: =
+left; border-top-color: rgb(170, 170, 170); border-top-width: 2px; =
+border-top-style: dotted;
+}
+.content p.top a {
+	background: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/tool-top.png") =
+no-repeat left; padding: 12px 0px 12px 24px; color: rgb(0, 0, 0);
+}
+.content table {
+=09
+}
+.content th {
+	background: rgb(0, 0, 0); border: 1px solid rgb(0, 0, 0); border-image: =
+none; color: rgb(255, 255, 255);
+}
+.content td {
+	padding: 0.25em 0.5em; margin-top: -3px; border-bottom-color: rgb(170, =
+170, 170); border-bottom-width: 1px; border-bottom-style: solid; =
+background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/bg-3.png"); =
+background-repeat: repeat;
+}
+.content div.license {
+	padding-top: 1em; margin-top: 1em; border-top-color: rgb(170, 170, =
+170); border-top-width: 2px; border-top-style: dotted;
+}
+.content div.license img {
+	vertical-align: middle;
+}
+.content a.wikilink2 {
+	color: rgb(221, 0, 0);
+}
+div.spacer {
+	height: 160px; clear: both;
+}
+div.footer {
+	clear: both;
+}
+#wiki__text {
+	width: 100%; min-height: 20em;
+}
+#edit__summary {
+	max-width: 100%;
+}
+#wiki__editbar div.editButtons {
+	margin-top: 1.5em; margin-bottom: 1.5em;
+}
+#page__revisions ul {
+	margin: 0.5em 1em; list-style-type: none;
+}
+#dw__recent ul {
+	margin: 0.5em 1em; list-style-type: none;
+}
+#page__revisions li {
+	padding: 0.5em 0px; clear: left;
+}
+#dw__recent li {
+	padding: 0.5em 0px; clear: left;
+}
+#page__revisions .wikilink1 {
+	float: left;
+}
+#page__revisions .wikilink2 {
+	float: left;
+}
+#page__revisions div.li span {
+	float: left;
+}
+#dw__recent .wikilink1 {
+	float: left;
+}
+#dw__recent .wikilink2 {
+	float: left;
+}
+#dw__recent div.li span {
+	float: left;
+}
+#page__revisions div.li input {
+	margin: 0.25em 0.5em 0.25em 0.25em; float: left;
+}
+#dw__recent div.li input {
+	margin: 0.25em 0.5em 0.25em 0.25em; float: left;
+}
+#page__revisions input.button {
+	clear: left; margin-top: 0.5em;
+}
+#page__revisions .minor span {
+	color: rgb(136, 136, 136);
+}
+#dw__recent .minor span {
+	color: rgb(136, 136, 136);
+}
+#page__revisions .wikilink1 {
+	margin-right: 0.5em; margin-left: 0.25em;
+}
+#page__revisions div.li img {
+	display: none;
+}
+.diff_link img {
+	display: none;
+}
+.revisions_link img {
+	display: none;
+}
+.diff_link {
+	background: no-repeat center; width: 16px; height: 16px; float: left; =
+display: block;
+}
+.revisions_link {
+	background: no-repeat center; width: 16px; height: 16px; float: left; =
+display: block;
+}
+.diff_link {
+	margin: 2px 2px 0px 4px; background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/diff.png");
+}
+.revisions_link {
+	margin: 2px 4px 0px 2px; background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/history.png");
+}
+#page__revisions .user::before {
+	content: "by ";
+}
+#dw__recent .user::before {
+	content: "by ";
+}
+#page__revisions .sum {
+	margin-right: 0.25em;
+}
+#dw__recent .sum {
+	margin-right: 0.25em;
+}
+#page__revisions .user {
+	margin-right: 0.25em;
+}
+#dw__recent .user {
+	margin-right: 0.25em;
+}
+.diff-addedline {
+	background-color: rgb(221, 255, 221);
+}
+.diff-deletedline {
+	background-color: rgb(255, 221, 221);
+}
+.diff-addedline strong {
+	color: green;
+}
+.diff-deletedline strong {
+	color: red;
+}
+div.centeralign {
+	text-align: center;
+}
+#dw__register {
+	margin: auto; width: 50%;
+}
+#dw__resendpwd {
+	margin: auto; width: 50%;
+}
+#dw__login {
+	margin: auto; width: 50%;
+}
+#dw__login label.simple {
+	padding-left: 1em; margin-right: 1em; margin-left: 20%;
+}
+#dw__login br {
+	clear: left;
+}
+#dw__login {
+	text-align: left;
+}
+#dw__register {
+	text-align: left;
+}
+fieldset {
+	padding: 0.5em; margin-bottom: 1em;
+}
+fieldset legend {
+	padding: 0px 0.5em; margin-left: 1em;
+}
+fieldset label.block {
+	text-align: right; clear: left; display: block;
+}
+fieldset label.block span {
+	margin: 0.5em; width: 20%; clear: left; float: left; display: block;
+}
+fieldset label.block input {
+	margin: 0.25em 0px; width: 50%; float: left;
+}
+#plugin__captcha_wrapper {
+	padding: 0px 1em; clear: left; margin-left: 20%;
+}
+#plugin__captcha_wrapper label {
+	display: block;
+}
+#plugin__captcha_wrapper img {
+	margin: 0px 0.25em; border: 1px solid rgb(0, 0, 0); border-image: none; =
+top: 0.5em; position: relative;
+}
+#plugin__captcha_wrapper a img {
+	border: currentColor; border-image: none; top: 0px;
+}
+#dw__register input.button {
+	margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 22%;
+}
+ul.idx {
+	margin-left: 1em;
+}
+ul.idx ul.idx {
+	margin-left: 1em;
+}
+div.search_result {
+	clear: left; margin-bottom: 1em;
+}
+div.search_result a.wikilink1 {
+	float: left; display: block;
+}
+div.search_snippet {
+	margin: 0.5em 2em 2em;
+}
+div.search_result span.search_cnt {
+	font-weight: bold;
+}
+strong.search_hit {
+	color: red; background-color: rgb(255, 255, 170);
+}
+.search_quickresult {
+	margin-bottom: 1em;
+}
+.search_quickresult .clearer {
+	clear: none;
+}
+* html body {
+	background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/footer.jpg");
+}
+* html #banner {
+	background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/openwrt-logo.gif");
+}
+* html .container {
+	background-image: =
+url("http://wiki.openwrt.org/lib/tpl/ameoto/images/bg.jpg");
+}
+* html .content {
+	background-image: none; background-color: rgb(238, 238, 255);
+}
+* html .sidebar div {
+	background-image: none; background-color: rgb(238, 238, 255);
+}
+div.plugin_multilingual {
+=09
+}
+div.plugin_multilingual img {
+	border: 1px solid rgb(255, 255, 255); border-image: none;
+}
+div.sortable {
+	width: 100%; overflow: auto;
+}
+pre.code {
+	padding: 0.25em; border: 1px solid rgb(170, 170, 170); border-image: =
+none; overflow: auto; max-width: 100%; background-image: =
+url("/lib/tpl/ameoto/images/bg-3.png");
+}
+div.content p img {
+	max-width: 100%;
+}
+.inline {
+	display: inline-block; max-width: 100%;
+}
+div.insitu-footnote {
+	padding: 3px; border: 1px solid rgb(170, 170, 170); border-image: none; =
+line-height: 12px; font-size: 11px; background-image: =
+url("/lib/tpl/ameoto/images/bg-2.png");
+}
+#media__manager {
+	height: 100%; overflow: hidden;
+}
+#media__left {
+	left: 0px; width: 30%; height: 100%; overflow: auto; =
+border-right-color: rgb(196, 196, 196); border-right-width: 1px; =
+border-right-style: solid; position: absolute;
+}
+#media__right {
+	width: 69.7%; height: 100%; right: 0px; overflow: auto; position: =
+absolute;
+}
+#media__manager h1 {
+	margin: 0px 0px 0.5em; padding: 0px;
+}
+#media__tree img {
+	padding: 0.5em 0.3em 0px 0px; float: left;
+}
+#media__tree ul {
+	list-style-type: none; list-style-image: none;
+}
+#media__tree li {
+	clear: left; list-style-type: none; list-style-image: none;
+}
+* + html #media__tree li {
+	border: 1px solid rgb(255, 255, 255); border-image: none;
+}
+* html #media__tree li {
+	border: 1px solid rgb(255, 255, 255); border-image: none;
+}
+#media__opts {
+	padding-left: 1em; margin-bottom: 0.5em;
+}
+#media__opts input {
+	float: left; position: absolute;
+}
+* + html #media__opts input {
+	position: static;
+}
+* html #media__opts input {
+	position: static;
+}
+#media__opts label {
+	margin-left: 30px; float: left; display: block;
+}
+* + html #media__opts label {
+	margin-left: 10px;
+}
+* html #media__opts label {
+	margin-left: 10px;
+}
+#media__opts br {
+	clear: left;
+}
+#media__content img.load {
+	margin: 1em auto;
+}
+#media__content #scroll__here {
+	border: 1px dashed rgb(196, 196, 196); border-image: none;
+}
+#media__content .odd {
+	padding: 0.4em; background-color: rgb(247, 249, 250);
+}
+#media__content .even {
+	padding: 0.4em;
+}
+#media__content a.mediafile {
+	font-weight: bold; margin-right: 1.5em;
+}
+#media__content div.detail {
+	padding: 0.3em 0px 0.3em 2em;
+}
+#media__content div.detail div.thumb {
+	width: 130px; text-align: center; margin-right: 0.4em; float: left;
+}
+#media__content img.btn {
+	vertical-align: text-bottom;
+}
+#media__content div.example {
+	color: rgb(102, 102, 102); margin-left: 1em;
+}
+#media__content div.upload {
+	padding: 0px 0.5em 0.5em; font-size: 90%;
+}
+#media__content form#dw__upload {
+	padding: 0px 0.5em 1em; border-bottom-color: rgb(196, 196, 196); =
+border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+#media__content form#dw__upload fieldset {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none; =
+width: auto;
+}
+#media__content form#dw__upload p {
+	margin: 0px; padding: 0.25em 0px; text-align: left; line-height: 1em;
+}
+#media__content form#dw__upload label.check {
+	width: auto; margin-left: 11.5em; float: none;
+}
+#media__content form.meta {
+	padding: 0px 0px 1em; display: block;
+}
+#media__content form.meta label {
+	width: 25%; clear: left; font-weight: bold; margin-left: 1em; float: =
+left; display: block;
+}
+#media__content form.meta .edit {
+	font: 100%/normal "Lucida Grande", Verdana, Lucida, Helvetica, Arial, =
+sans-serif; margin: 2px; width: 70%; padding-right: 0px; padding-left: =
+0.2em; float: left; font-size-adjust: none; font-stretch: normal;
+}
+#media__content form.meta textarea.edit {
+	height: 8em;
+}
+#media__content form.meta div.metafield {
+	clear: left;
+}
+#media__content form.meta div.buttons {
+	padding-left: 1em; clear: left; margin-left: 20%;
+}
+
+------=_NextPart_000_0000_01D004AF.7632E820
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://wiki.openwrt.org/lib/exe/css.php?s=print&t=ameoto
+
+a.interwiki {
+	background: url("http://wiki.openwrt.org/lib/images/interwiki.png") =
+no-repeat 0px 1px; padding-left: 16px;
+}
+a.iw_wp {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/wp.gif");
+}
+a.iw_wpde {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/wpde.gif");
+}
+a.iw_wpmeta {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/wpmeta.gif");
+}
+a.iw_doku {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/doku.gif");
+}
+a.iw_sb {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/sb.gif");
+}
+a.iw_amazon {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/amazon.gif");
+}
+a.iw_amazon_de {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/amazon.de.gif");
+}
+a.iw_amazon_uk {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/amazon.uk.gif");
+}
+a.iw_phpfn {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/phpfn.gif");
+}
+a.iw_dokubug {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/dokubug.gif");
+}
+a.iw_coral {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/coral.gif");
+}
+a.iw_google {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/google.gif");
+}
+a.iw_meatball {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/meatball.gif");
+}
+a.iw_wiki {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/interwiki/wiki.gif");
+}
+a.mediafile {
+	background: =
+url("http://wiki.openwrt.org/lib/images/fileicons/file.png") no-repeat =
+0px 1px; padding-bottom: 1px; padding-left: 18px;
+}
+a.mf_jpg {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/jpg.png");
+}
+a.mf_jpeg {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/jpeg.png");
+}
+a.mf_gif {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/gif.png");
+}
+a.mf_png {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/png.png");
+}
+a.mf_tgz {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/tgz.png");
+}
+a.mf_tar {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/tar.png");
+}
+a.mf_gz {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/gz.png");
+}
+a.mf_bz2 {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/bz2.png");
+}
+a.mf_zip {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/zip.png");
+}
+a.mf_rar {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/rar.png");
+}
+a.mf_pdf {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/pdf.png");
+}
+a.mf_ps {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/ps.png");
+}
+a.mf_doc {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/doc.png");
+}
+a.mf_xls {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/xls.png");
+}
+a.mf_ppt {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/ppt.png");
+}
+a.mf_rtf {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/rtf.png");
+}
+a.mf_swf {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/swf.png");
+}
+a.mf_rpm {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/rpm.png");
+}
+a.mf_deb {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/deb.png");
+}
+a.mf_sxw {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/sxw.png");
+}
+a.mf_sxc {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/sxc.png");
+}
+a.mf_sxi {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/sxi.png");
+}
+a.mf_sxd {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/sxd.png");
+}
+a.mf_odc {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odc.png");
+}
+a.mf_odf {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odf.png");
+}
+a.mf_odg {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odg.png");
+}
+a.mf_odi {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odi.png");
+}
+a.mf_odp {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odp.png");
+}
+a.mf_ods {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/ods.png");
+}
+a.mf_odt {
+	background-image: =
+url("http://wiki.openwrt.org/lib/images/fileicons/odt.png");
+}
+.dokuwiki div.plugin_multilingual {
+	display: none;
+}
+div.dokuwiki #discussion__comment_form {
+	display: none;
+}
+div.dokuwiki #discussion__newthread_form {
+	display: none;
+}
+div.dokuwiki div.comment_buttons {
+	display: none;
+}
+div.dokuwiki div.comment_hidden {
+	display: none;
+}
+.dokuwiki .wrap_box {
+=09
+}
+.dokuwiki .wrap_danger {
+=09
+}
+.dokuwiki .wrap_warning {
+=09
+}
+.dokuwiki .wrap_caution {
+=09
+}
+.dokuwiki .wrap_notice {
+=09
+}
+.dokuwiki .wrap_safety {
+=09
+}
+.dokuwiki .wrap_info {
+=09
+}
+.dokuwiki .wrap_important {
+=09
+}
+.dokuwiki .wrap_alert {
+=09
+}
+.dokuwiki .wrap_tip {
+=09
+}
+.dokuwiki .wrap_help {
+=09
+}
+.dokuwiki .wrap_todo {
+=09
+}
+.dokuwiki .wrap_download {
+=09
+}
+.dokuwiki div.wrap_box {
+	padding: 1em 1em 0.5em; border: 2px solid rgb(153, 153, 153); =
+border-image: none; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_danger {
+	padding: 1em 1em 0.5em; border: 2px solid rgb(153, 153, 153); =
+border-image: none; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_warning {
+	padding: 1em 1em 0.5em; border: 2px solid rgb(153, 153, 153); =
+border-image: none; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_caution {
+	padding: 1em 1em 0.5em; border: 2px solid rgb(153, 153, 153); =
+border-image: none; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_notice {
+	padding: 1em 1em 0.5em; border: 2px solid rgb(153, 153, 153); =
+border-image: none; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_safety {
+	padding: 1em 1em 0.5em; border: 2px solid rgb(153, 153, 153); =
+border-image: none; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_info {
+	padding: 1em 1em 0.5em; border: 2px solid rgb(153, 153, 153); =
+border-image: none; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_important {
+	padding: 1em 1em 0.5em; border: 2px solid rgb(153, 153, 153); =
+border-image: none; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_alert {
+	padding: 1em 1em 0.5em; border: 2px solid rgb(153, 153, 153); =
+border-image: none; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_tip {
+	padding: 1em 1em 0.5em; border: 2px solid rgb(153, 153, 153); =
+border-image: none; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_help {
+	padding: 1em 1em 0.5em; border: 2px solid rgb(153, 153, 153); =
+border-image: none; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_todo {
+	padding: 1em 1em 0.5em; border: 2px solid rgb(153, 153, 153); =
+border-image: none; margin-bottom: 1.5em;
+}
+.dokuwiki div.wrap_download {
+	padding: 1em 1em 0.5em; border: 2px solid rgb(153, 153, 153); =
+border-image: none; margin-bottom: 1.5em;
+}
+.dokuwiki span.wrap_box {
+	padding: 0px 0.3em; border: 1px solid rgb(153, 153, 153); border-image: =
+none;
+}
+.dokuwiki span.wrap_danger {
+	padding: 0px 0.3em; border: 1px solid rgb(153, 153, 153); border-image: =
+none;
+}
+.dokuwiki span.wrap_warning {
+	padding: 0px 0.3em; border: 1px solid rgb(153, 153, 153); border-image: =
+none;
+}
+.dokuwiki span.wrap_caution {
+	padding: 0px 0.3em; border: 1px solid rgb(153, 153, 153); border-image: =
+none;
+}
+.dokuwiki span.wrap_notice {
+	padding: 0px 0.3em; border: 1px solid rgb(153, 153, 153); border-image: =
+none;
+}
+.dokuwiki span.wrap_safety {
+	padding: 0px 0.3em; border: 1px solid rgb(153, 153, 153); border-image: =
+none;
+}
+.dokuwiki span.wrap_info {
+	padding: 0px 0.3em; border: 1px solid rgb(153, 153, 153); border-image: =
+none;
+}
+.dokuwiki span.wrap_important {
+	padding: 0px 0.3em; border: 1px solid rgb(153, 153, 153); border-image: =
+none;
+}
+.dokuwiki span.wrap_alert {
+	padding: 0px 0.3em; border: 1px solid rgb(153, 153, 153); border-image: =
+none;
+}
+.dokuwiki span.wrap_tip {
+	padding: 0px 0.3em; border: 1px solid rgb(153, 153, 153); border-image: =
+none;
+}
+.dokuwiki span.wrap_help {
+	padding: 0px 0.3em; border: 1px solid rgb(153, 153, 153); border-image: =
+none;
+}
+.dokuwiki span.wrap_todo {
+	padding: 0px 0.3em; border: 1px solid rgb(153, 153, 153); border-image: =
+none;
+}
+.dokuwiki span.wrap_download {
+	padding: 0px 0.3em; border: 1px solid rgb(153, 153, 153); border-image: =
+none;
+}
+div.dokuwiki .wrap_hi {
+	border: 1px solid rgb(153, 153, 153); border-image: none;
+}
+div.dokuwiki .wrap_spoiler {
+	visibility: hidden;
+}
+div.dokuwiki .wrap_pagebreak {
+	page-break-after: always;
+}
+div.dokuwiki .wrap_nopagebreak {
+	page-break-inside: avoid;
+}
+div.dokuwiki .wrap_noprint {
+	display: none;
+}
+body {
+	font: 10pt/normal "Lucida Grande", Verdana, Lucida, Helvetica, Arial, =
+sans-serif; color: black; font-size-adjust: none; font-stretch: normal; =
+background-color: white;
+}
+table {
+	margin: 0px; padding: 0px; font-size: 100%;
+}
+tr {
+	margin: 0px; padding: 0px;
+}
+td {
+	margin: 0px; padding: 0px;
+}
+th {
+	margin: 0px; padding: 0px;
+}
+img {
+	border: 0px currentColor; border-image: none;
+}
+a {
+	background: none !important; color: rgb(0, 0, 0); text-decoration: =
+none;
+}
+div.meta {
+	text-align: right; clear: both; font-size: 70%; margin-top: 1em;
+}
+ul#navigation {
+	display: none;
+}
+h1.bannerhl {
+	display: none;
+}
+div.notify {
+	display: none;
+}
+div.info {
+	display: none;
+}
+div.success {
+	display: none;
+}
+div.error {
+	display: none;
+}
+div.breadcrumbs {
+	display: none;
+}
+div.secedit {
+	display: none;
+}
+div.sidebar {
+	display: none;
+}
+div.whoami {
+	display: none;
+}
+a.urlextern::after {
+	font-size: 90%; content: " [" attr(href) "]";
+}
+a.interwiki::after {
+	font-size: 90%; content: " [" attr(href) "]";
+}
+a.mail::after {
+	font-size: 90%; content: " [" attr(href) "]";
+}
+a.wikilink1 {
+	text-decoration: underline;
+}
+div.page {
+	text-align: justify;
+}
+h1 {
+	margin: 0px 0px 1em; padding: 0.5em 0px 0px; color: black; clear: left; =
+font-family: "Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif; =
+font-size: 100%; font-weight: normal; border-bottom-color: rgb(0, 0, 0); =
+border-bottom-width: 1px; border-bottom-style: solid; background-color: =
+transparent;
+}
+h2 {
+	margin: 0px 0px 1em; padding: 0.5em 0px 0px; color: black; clear: left; =
+font-family: "Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif; =
+font-size: 100%; font-weight: normal; border-bottom-color: rgb(0, 0, 0); =
+border-bottom-width: 1px; border-bottom-style: solid; background-color: =
+transparent;
+}
+h3 {
+	margin: 0px 0px 1em; padding: 0.5em 0px 0px; color: black; clear: left; =
+font-family: "Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif; =
+font-size: 100%; font-weight: normal; border-bottom-color: rgb(0, 0, 0); =
+border-bottom-width: 1px; border-bottom-style: solid; background-color: =
+transparent;
+}
+h4 {
+	margin: 0px 0px 1em; padding: 0.5em 0px 0px; color: black; clear: left; =
+font-family: "Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif; =
+font-size: 100%; font-weight: normal; border-bottom-color: rgb(0, 0, 0); =
+border-bottom-width: 1px; border-bottom-style: solid; background-color: =
+transparent;
+}
+h5 {
+	margin: 0px 0px 1em; padding: 0.5em 0px 0px; color: black; clear: left; =
+font-family: "Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif; =
+font-size: 100%; font-weight: normal; border-bottom-color: rgb(0, 0, 0); =
+border-bottom-width: 1px; border-bottom-style: solid; background-color: =
+transparent;
+}
+h1 {
+	font-size: 160%; font-weight: bold;
+}
+h2 {
+	font-size: 150%;
+}
+h3 {
+	font-size: 140%; border-bottom-color: currentColor; =
+border-bottom-width: medium; border-bottom-style: none;
+}
+h4 {
+	font-size: 120%; border-bottom-color: currentColor; =
+border-bottom-width: medium; border-bottom-style: none;
+}
+h5 {
+	font-size: 100%; border-bottom-color: currentColor; =
+border-bottom-width: medium; border-bottom-style: none;
+}
+img.media {
+	margin: 3px;
+}
+img.medialeft {
+	margin: 0px 1.5em 0px 0px; border: 0px currentColor; border-image: =
+none; float: left;
+}
+img.mediaright {
+	margin: 0px 0px 0px 1.5em; border: 0px currentColor; border-image: =
+none; float: right;
+}
+ul {
+	margin: 0px 0px 0.5em 1.5em; padding: 0px; line-height: 1.5em; =
+list-style-type: square;
+}
+ol {
+	margin: 0px 0px 0.5em 2.5em; padding: 0px; line-height: 1.5em; =
+font-weight: normal;
+}
+ol ol {
+	margin: 0px 0px 0.5em 1.5em;
+}
+div.dokuwiki ol {
+	list-style-type: decimal;
+}
+div.dokuwiki ol ol {
+	list-style-type: upper-roman;
+}
+div.dokuwiki ol ol ol {
+	list-style-type: lower-alpha;
+}
+div.dokuwiki ol ol ol ol {
+	list-style-type: lower-greek;
+}
+span.li {
+	font-weight: normal;
+}
+pre.pre {
+	padding: 0.5em; border: 1px dashed rgb(0, 0, 0); border-image: none; =
+color: black; overflow: visible; font-size: 8pt;
+}
+pre.code {
+	padding: 0.5em; border: 1px dashed rgb(0, 0, 0); border-image: none; =
+color: black; overflow: visible; font-size: 8pt;
+}
+code {
+	overflow: visible; font-size: 120%; white-space: pre;
+}
+pre.file {
+	padding: 0.5em; border: 1px dotted rgb(0, 0, 0); border-image: none; =
+color: black; overflow: visible; font-size: 8pt;
+}
+div.footnotes {
+	padding-left: 1em; clear: both; margin-top: 1em; border-top-color: =
+rgb(0, 0, 0); border-top-width: 1px; border-top-style: solid;
+}
+div.fn {
+	font-size: 90%;
+}
+a.fn_top {
+	font-size: 80%; vertical-align: super;
+}
+a.fn_bot {
+	font-size: 80%; font-weight: bold; vertical-align: super;
+}
+acronym {
+	border: 0px currentColor; border-image: none;
+}
+table.inline {
+	font-size: 80%; border-collapse: collapse; border-spacing: 0px; =
+background-color: rgb(255, 255, 255);
+}
+table.inline th {
+	border-width: 1px 1px 2px; border-style: solid; border-color: rgb(0, 0, =
+0); padding: 3px; border-image: none;
+}
+table.inline td {
+	padding: 3px; border: 1px solid rgb(0, 0, 0); border-image: none;
+}
+.leftalign {
+	text-align: left;
+}
+.centeralign {
+	text-align: center;
+}
+.rightalign {
+	text-align: right;
+}
+.toc {
+	display: none;
+}
+.footerinc {
+	display: none;
+}
+.header {
+	display: none;
+}
+.bar {
+	display: none;
+}
+.user {
+	display: none;
+}
+div.plugin_multilingual ul {
+	list-style: none;
+}
+div.plugin_multilingual ul li {
+	display: inline;
+}
+div.content p img {
+	max-width: 100%;
+}
+div.dokuwiki form#dw__search {
+	display: none;
+}
+div.dokuwiki div#tpl_simple_navi {
+	display: none;
+}
+div.dokuwiki a.action {
+	display: none;
+}
+
+------=_NextPart_000_0000_01D004AF.7632E820
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://wiki.openwrt.org/lib/exe/js.php?edit=0&write=0
+
+var DOKU_BASE=3D'http://wiki.openwrt.org/';var =
+DOKU_TPL=3D'http://wiki.openwrt.org/lib/tpl/ameoto/';var =
+alertText=3D'Please enter the text you want to format.\nIt will be =
+appended to the end of the document.';var notSavedYet=3D'Unsaved changes =
+will be lost.\nReally continue?';var reallyDel=3D'Really delete selected =
+item(s)?';LANG=3D{"keepopen":"Keep window open on =
+selection","hidedetails":"Hide Details","nosmblinks":"Linking to Windows =
+shares only works in Microsoft Internet Explorer.\nYou still can copy =
+and paste the link.","mu_btn":"Upload multiple files at =
+once","plugins":[]};function isUndefined(prop){return(typeof =
+prop=3D=3D'undefined');}function isFunction(prop){return(typeof =
+prop=3D=3D'function');}function isString(prop){return(typeof =
+prop=3D=3D'string');}function isNumber(prop){return(typeof =
+prop=3D=3D'number');}function isNumeric(prop){return =
+isNumber(prop)&&!isNaN(prop)&&isFinite(prop);}function =
+isArray(prop){return(prop instanceof Array);}function =
+isRegExp(prop){return(prop instanceof RegExp);}function =
+isBoolean(prop){return('boolean'=3D=3Dtypeof prop);}function =
+isScalar(prop){return isNumeric(prop)||isString(prop);}function =
+isEmpty(prop){if(isBoolean(prop))return false;if(isRegExp(prop)&&new =
+RegExp("").toString()=3D=3Dprop.toString())return =
+true;if(isString(prop)||isNumber(prop))return!prop;if(Boolean(prop)&&fals=
+e!=3Dprop){for(var i in prop)if(prop.hasOwnProperty(i))return =
+false}return true;}if('undefined'=3D=3Dtypeof =
+Object.hasOwnProperty){Object.prototype.hasOwnProperty=3Dfunction(prop){r=
+eturn!('undefined'=3D=3Dtypeof =
+this[prop]||this.constructor&&this.constructor.prototype[prop]&&this[prop=
+]=3D=3D=3Dthis.constructor.prototype[prop]);}}function =
+hasFlash(version){var =
+ver=3D0;try{if(navigator.plugins!=3Dnull&&navigator.plugins.length>0){ver=
+=3Dnavigator.plugins["Shockwave Flash"].description.split(' =
+')[2].split('.')[0];}else{var axo=3Dnew =
+ActiveXObject("ShockwaveFlash.ShockwaveFlash");ver=3Daxo.GetVariable("$ve=
+rsion").split(' ')[1].split(',')[0];}}catch(e){}if(ver>=3Dversion)return =
+true;return false;}function =
+addEvent(element,type,handler){if(!handler.$$guid)handler.$$guid=3DaddEve=
+nt.guid++;if(!element.events)element.events=3D{};var =
+handlers=3Delement.events[type];if(!handlers){handlers=3Delement.events[t=
+ype]=3D{};if(element["on"+type]){handlers[0]=3Delement["on"+type];}}handl=
+ers[handler.$$guid]=3Dhandler;element["on"+type]=3DhandleEvent;};addEvent=
+.guid=3D1;function =
+removeEvent(element,type,handler){if(element.events&&element.events[type]=
+){delete element.events[type][handler.$$guid];}};function =
+handleEvent(event){var =
+returnValue=3Dtrue;event=3Devent||fixEvent(window.event);var =
+handlers=3Dthis.events[event.type];for(var i in =
+handlers){if(!handlers.hasOwnProperty(i))continue;this.$$handleEvent=3Dha=
+ndlers[i];if(this.$$handleEvent(event)=3D=3D=3Dfalse){returnValue=3Dfalse=
+;}}return returnValue;};function =
+fixEvent(event){event.preventDefault=3DfixEvent.preventDefault;event.stop=
+Propagation=3DfixEvent.stopPropagation;event.target=3Devent.srcElement;re=
+turn =
+event;};fixEvent.preventDefault=3Dfunction(){this.returnValue=3Dfalse;};f=
+ixEvent.stopPropagation=3Dfunction(){this.cancelBubble=3Dtrue;};window.fi=
+reoninit=3Dfunction(){if(arguments.callee.done)return;arguments.callee.do=
+ne=3Dtrue;if(_timer){clearInterval(_timer);_timer=3Dnull;}if(typeof =
+window.oninit=3D=3D'function'){window.oninit();}};if(document.addEventLis=
+tener){document.addEventListener("DOMContentLoaded",window.fireoninit,nul=
+l);}/*@cc_on @*//*@if(@_win32)document.write("<scr"+"ipt =
+id=3D\"__ie_init\" defer=3D\"true\" src=3D\"//:\"><\/script>");var =
+script=3Ddocument.getElementById("__ie_init");script.onreadystatechange=3D=
+function(){if(this.readyState=3D=3D"complete"){window.fireoninit();}};/*@=
+end @*/if(/WebKit/i.test(navigator.userAgent)){var =
+_timer=3DsetInterval(function(){if(/loaded|complete/.test(document.readyS=
+tate)){window.fireoninit();}},10);}window.onload=3Dwindow.fireoninit;wind=
+ow.oninit=3Dfunction(){};function addInitEvent(func){var =
+oldoninit=3Dwindow.oninit;if(typeof =
+window.oninit!=3D'function'){window.oninit=3Dfunc;}else{window.oninit=3Df=
+unction(){oldoninit();func();};}}DokuCookie=3D{data:Array(),name:'DOKU_PR=
+EFS',setValue:function(key,val){DokuCookie.init();DokuCookie.data[key]=3D=
+val;var now=3Dnew =
+Date();DokuCookie.fixDate(now);now.setTime(now.getTime()+365*24*60*60*100=
+0);var text=3D'';for(var key in =
+DokuCookie.data){if(!DokuCookie.data.hasOwnProperty(key))continue;text+=3D=
+'#'+escape(key)+'#'+DokuCookie.data[key];}DokuCookie.setCookie(DokuCookie=
+.name,text.substr(1),now,DOKU_BASE);},getValue:function(key){DokuCookie.i=
+nit();return =
+DokuCookie.data[key];},init:function(){if(DokuCookie.data.length)return;v=
+ar text=3DDokuCookie.getCookie(DokuCookie.name);if(text){var =
+parts=3Dtext.split('#');for(var =
+i=3D0;i<parts.length;i+=3D2){DokuCookie.data[unescape(parts[i])]=3Dunesca=
+pe(parts[i+1]);}}},setCookie:function(name,value,expires,path,domain,secu=
+re){var curCookie=3Dname+"=3D"+escape(value)+((expires)?"; =
+expires=3D"+expires.toGMTString():"")+((path)?"; =
+path=3D"+path:"")+((domain)?"; domain=3D"+domain:"")+((secure)?"; =
+secure":"");document.cookie=3DcurCookie;},getCookie:function(name){var =
+dc=3Ddocument.cookie;var prefix=3Dname+"=3D";var begin=3Ddc.indexOf("; =
+"+prefix);if(begin=3D=3D-1){begin=3Ddc.indexOf(prefix);if(begin!=3D=3D0){=
+return null;}}else{begin+=3D2;}var =
+end=3Ddocument.cookie.indexOf(";",begin);if(end=3D=3D-1){end=3Ddc.length;=
+}return =
+unescape(dc.substring(begin+prefix.length,end));},fixDate:function(date){=
+var base=3Dnew Date(0);var =
+skew=3Dbase.getTime();if(skew>0){date.setTime(date.getTime()-skew);}}};va=
+r clientPC=3Dnavigator.userAgent.toLowerCase();var =
+is_macos=3Dnavigator.appVersion.indexOf('Mac')!=3D-1;var =
+is_gecko=3D((clientPC.indexOf('gecko')!=3D-1)&&(clientPC.indexOf('spoofer=
+')=3D=3D-1)&&(clientPC.indexOf('khtml')=3D=3D-1)&&(clientPC.indexOf('nets=
+cape/7.0')=3D=3D-1));var =
+is_safari=3D((clientPC.indexOf('AppleWebKit')!=3D-1)&&(clientPC.indexOf('=
+spoofer')=3D=3D-1));var =
+is_khtml=3D(navigator.vendor=3D=3D'KDE'||(document.childNodes&&!document.=
+all&&!navigator.taintEnabled));if(clientPC.indexOf('opera')!=3D-1){var =
+is_opera=3Dtrue;var =
+is_opera_preseven=3D(window.opera&&!document.childNodes);var =
+is_opera_seven=3D(window.opera&&document.childNodes);}var =
+toolbar=3D'';function $(){var elements=3Dnew Array();for(var =
+i=3D0;i<arguments.length;i++){var element=3Darguments[i];if(typeof =
+element=3D=3D'string')element=3Ddocument.getElementById(element);if(argum=
+ents.length=3D=3D1)return element;elements.push(element);}return =
+elements;}function =
+isset(varname){return(typeof(window[varname])!=3D'undefined');}function =
+getElementsByClass(searchClass,node,tag){var classElements=3Dnew =
+Array();if(node=3D=3Dnull)node=3Ddocument;if(tag=3D=3Dnull)tag=3D'*';var =
+els=3Dnode.getElementsByTagName(tag);var elsLen=3Dels.length;var =
+pattern=3Dnew =
+RegExp("(^|\\s)"+searchClass+"(\\s|$)");for(i=3D0,j=3D0;i<elsLen;i++){if(=
+pattern.test(els[i].className)){classElements[j]=3Dels[i];j++;}}return =
+classElements;}function findPosX(object){var curleft=3D0;var =
+obj=3D$(object);if(obj.offsetParent){while(obj.offsetParent){curleft+=3Do=
+bj.offsetLeft;obj=3Dobj.offsetParent;}}else =
+if(obj.x){curleft+=3Dobj.x;}return curleft;}function =
+findPosY(object){var curtop=3D0;var =
+obj=3D$(object);if(obj.offsetParent){while(obj.offsetParent){curtop+=3Dob=
+j.offsetTop;obj=3Dobj.offsetParent;}}else =
+if(obj.y){curtop+=3Dobj.y;}return curtop;}function jsEscape(text){var =
+re=3Dnew RegExp("\\\\","g");text=3Dtext.replace(re,"\\\\");re=3Dnew =
+RegExp("'","g");text=3Dtext.replace(re,"\\'");re=3Dnew =
+RegExp('"',"g");text=3Dtext.replace(re,'&quot;');re=3Dnew =
+RegExp("\\\\\\\\n","g");text=3Dtext.replace(re,"\\n");return =
+text;}function escapeQuotes(text){var re=3Dnew =
+RegExp("'","g");text=3Dtext.replace(re,"\\'");re=3Dnew =
+RegExp('"',"g");text=3Dtext.replace(re,'&quot;');re=3Dnew =
+RegExp("\\n","g");text=3Dtext.replace(re,"\\n");return text;}function =
+prependChild(parent,element){if(!parent.firstChild){parent.appendChild(el=
+ement);}else{parent.insertBefore(element,parent.firstChild);}}function =
+showLoadBar(){document.write('<img =
+src=3D"'+DOKU_BASE+'lib/images/loading.gif" '+'width=3D"150" =
+height=3D"12" alt=3D"..." />');}function =
+hideLoadBar(id){obj=3D$(id);if(obj)obj.style.display=3D"none";}function =
+addTocToggle(){if(!document.getElementById)return;var =
+header=3D$('toc__header');if(!header)return;var =
+obj=3Ddocument.createElement('span');obj.id=3D'toc__toggle';obj.innerHTML=
+=3D'<span>&minus;</span>';obj.className=3D'toc_close';obj.style.cursor=3D=
+'pointer';prependChild(header,obj);obj.parentNode.onclick=3DtoggleToc;try=
+{obj.parentNode.style.cursor=3D'pointer';obj.parentNode.style.cursor=3D'h=
+and';}catch(e){}}function toggleToc(){var toc=3D$('toc__inside');var =
+obj=3D$('toc__toggle');if(toc.style.display=3D=3D'none'){toc.style.displa=
+y=3D'';obj.innerHTML=3D'<span>&minus;</span>';obj.className=3D'toc_close'=
+;}else{toc.style.display=3D'none';obj.innerHTML=3D'<span>+</span>';obj.cl=
+assName=3D'toc_open';}}function =
+checkAclLevel(){if(document.getElementById){var =
+scope=3D$('acl_scope').value;if((scope.indexOf(":*")>0)||(scope=3D=3D"*")=
+){document.getElementsByName('acl_checkbox[4]')[0].disabled=3Dfalse;docum=
+ent.getElementsByName('acl_checkbox[8]')[0].disabled=3Dfalse;}else{docume=
+nt.getElementsByName('acl_checkbox[4]')[0].checked=3Dfalse;document.getEl=
+ementsByName('acl_checkbox[8]')[0].checked=3Dfalse;document.getElementsBy=
+Name('acl_checkbox[4]')[0].disabled=3Dtrue;document.getElementsByName('ac=
+l_checkbox[8]')[0].disabled=3Dtrue;}}}function footnote(e){var =
+obj=3De.target;var id=3Dobj.id.substr(5);var =
+fndiv=3D$('insitu__fn');if(!fndiv){fndiv=3Ddocument.createElement('div');=
+fndiv.id=3D'insitu__fn';fndiv.className=3D'insitu-footnote JSpopup =
+dokuwiki';addEvent(fndiv,'mouseout',function(e){if(e.target!=3Dfndiv){e.s=
+topPropagation();return;}if(e.pageX){var bx1=3DfindPosX(fndiv);var =
+bx2=3Dbx1+fndiv.offsetWidth;var by1=3DfindPosY(fndiv);var =
+by2=3Dby1+fndiv.offsetHeight;var x=3De.pageX;var =
+y=3De.pageY;if(x>bx1&&x<bx2&&y>by1&&y<by2){e.stopPropagation();return;}}e=
+lse{if(e.offsetX>0&&e.offsetX<fndiv.offsetWidth-1&&e.offsetY>0&&e.offsetY=
+<fndiv.offsetHeight-1){e.stopPropagation();return;}}fndiv.style.display=3D=
+'none';});document.body.appendChild(fndiv);}var =
+a=3D$("fn__"+id);if(!a){return;}var content=3Dnew =
+String(a.parentNode.parentNode.innerHTML);content=3Dcontent.replace(/<sup=
+>.*<\/sup>/gi,'');content=3Dcontent.replace(/^\s+(,\s+)+/,'');content=3Dc=
+ontent.replace(/\bid=3D\"(.*?)\"/gi,'id=3D"insitu__$1');fndiv.innerHTML=3D=
+content;var x;var =
+y;if(e.pageX){x=3De.pageX;y=3De.pageY;}else{x=3De.offsetX;y=3De.offsetY;}=
+fndiv.style.position=3D'absolute';fndiv.style.left=3D(x+2)+'px';fndiv.sty=
+le.top=3D(y+2)+'px';fndiv.style.display=3D'';}addInitEvent(function(){var=
+ elems=3DgetElementsByClass('fn_top',null,'a');for(var =
+i=3D0;i<elems.length;i++){addEvent(elems[i],'mouseover',function(e){footn=
+ote(e);});}});function =
+initSizeCtl(ctlid,edid){if(!document.getElementById){return;}var =
+ctl=3D$(ctlid);var textarea=3D$(edid);if(!ctl||!textarea)return;var =
+hgt=3DDokuCookie.getValue('sizeCtl');if(hgt){textarea.style.height=3Dhgt;=
+}else{textarea.style.height=3D'300px';}var =
+wrp=3DDokuCookie.getValue('wrapCtl');if(wrp){setWrap(textarea,wrp);}var =
+l=3Ddocument.createElement('img');var =
+s=3Ddocument.createElement('img');var =
+w=3Ddocument.createElement('img');l.src=3DDOKU_BASE+'lib/images/larger.gi=
+f';s.src=3DDOKU_BASE+'lib/images/smaller.gif';w.src=3DDOKU_BASE+'lib/imag=
+es/wrap.gif';addEvent(l,'click',function(){sizeCtl(edid,100);});addEvent(=
+s,'click',function(){sizeCtl(edid,-100);});addEvent(w,'click',function(){=
+toggleWrap(edid);});ctl.appendChild(l);ctl.appendChild(s);ctl.appendChild=
+(w);}function sizeCtl(edid,val){var textarea=3D$(edid);var =
+height=3DparseInt(textarea.style.height.substr(0,textarea.style.height.le=
+ngth-2));height+=3Dval;textarea.style.height=3Dheight+'px';DokuCookie.set=
+Value('sizeCtl',textarea.style.height);}function toggleWrap(edid){var =
+textarea=3D$(edid);var =
+wrap=3Dtextarea.getAttribute('wrap');if(wrap&&wrap.toLowerCase()=3D=3D'of=
+f'){setWrap(textarea,'soft');}else{setWrap(textarea,'off');}DokuCookie.se=
+tValue('wrapCtl',textarea.getAttribute('wrap'));}function =
+setWrap(textarea,wrapAttrValue){textarea.setAttribute('wrap',wrapAttrValu=
+e);var parNod=3Dtextarea.parentNode;var =
+nxtSib=3Dtextarea.nextSibling;parNod.removeChild(textarea);parNod.insertB=
+efore(textarea,nxtSib);}function =
+closePopups(){if(!document.getElementById){return;}var =
+divs=3Ddocument.getElementsByTagName('div');for(var =
+i=3D0;i<divs.length;i++){if(divs[i].className.indexOf('JSpopup')!=3D-1){d=
+ivs[i].style.display=3D'none';}}}function scrollToMarker(){var =
+obj=3D$('scroll__here');if(obj)obj.scrollIntoView();}function =
+focusMarker(){var obj=3D$('focus__this');if(obj)obj.focus();}function =
+cleanMsgArea(){var =
+elems=3DgetElementsByClass('(success|info|error)',document,'div');if(elem=
+s){for(var =
+i=3D0;i<elems.length;i++){elems[i].style.display=3D'none';}}}addInitEvent=
+(function(){var revForm=3D$('page__revisions');if(!revForm)return;var =
+elems=3DrevForm.elements;var countTicks=3D0;for(var =
+i=3D0;i<elems.length;i++){var =
+input1=3Delems[i];if(input1.type=3D=3D'checkbox'){addEvent(input1,'click'=
+,function(e){if(this.checked)countTicks++;else countTicks--;for(var =
+j=3D0;j<elems.length;j++){var =
+input2=3Delems[j];if(countTicks>=3D2)input2.disabled=3D(input2.type=3D=3D=
+'checkbox'&&!input2.checked);else =
+input2.disabled=3D(input2.type!=3D'checkbox');}});}}});addInitEvent(funct=
+ion(){var =
+selector=3D$('action__selector');if(!selector)return;addEvent(selector,'c=
+hange',function(e){this.form.submit();});$('action__selectorbtn').style.d=
+isplay=3D'none';});function checkWindowsShares(){var =
+elems=3DgetElementsByClass('windows',document,'a');if(elems){for(var =
+i=3D0;i<elems.length;i++){var =
+share=3Delems[i];addEvent(share,'click',function(){if(document.all=3D=3Dn=
+ull){alert(LANG['nosmblinks']);}});}}}addInitEvent(function(){checkWindow=
+sShares();});function sack(file){this.AjaxFailedAlert=3D"Your browser =
+does not support the enhanced functionality of this website, and =
+therefore you will have an experience that differs from the intended =
+one.\n";this.requestFile=3Dfile;this.method=3D"POST";this.URLString=3D"";=
+this.encodeURIString=3Dtrue;this.execute=3Dfalse;this.onLoading=3Dfunctio=
+n(){};this.onLoaded=3Dfunction(){};this.onInteractive=3Dfunction(){};this=
+.onCompletion=3Dfunction(){};this.afterCompletion=3Dfunction(){};this.cre=
+ateAJAX=3Dfunction(){try{this.xmlhttp=3Dnew =
+ActiveXObject("Msxml2.XMLHTTP");}catch(e){try{this.xmlhttp=3Dnew =
+ActiveXObject("Microsoft.XMLHTTP");}catch(err){this.xmlhttp=3Dnull;}}if(!=
+this.xmlhttp&&typeof XMLHttpRequest!=3D"undefined"){this.xmlhttp=3Dnew =
+XMLHttpRequest();}if(!this.xmlhttp){this.failed=3Dtrue;}};this.setVar=3Df=
+unction(name,value){if(this.URLString.length<3){this.URLString=3Dname+"=3D=
+"+value;}else{this.URLString+=3D"&"+name+"=3D"+value;}};this.encVar=3Dfun=
+ction(name,value){var =
+varString=3DencodeURIComponent(name)+"=3D"+encodeURIComponent(value);retu=
+rn =
+varString;};this.encodeURLString=3Dfunction(string){varArray=3Dstring.spl=
+it('&');for(i=3D0;i<varArray.length;i++){urlVars=3DvarArray[i].split('=3D=
+');if(urlVars[0].indexOf('amp;')!=3D-1){urlVars[0]=3DurlVars[0].substring=
+(4);}varArray[i]=3Dthis.encVar(urlVars[0],urlVars[1]);}return =
+varArray.join('&');};this.runResponse=3Dfunction(){eval(this.response);};=
+this.runAJAX=3Dfunction(urlstring){this.responseStatus=3Dnew =
+Array(2);if(this.failed&&this.AjaxFailedAlert){alert(this.AjaxFailedAlert=
+);}else{if(urlstring){if(this.URLString.length){this.URLString=3Dthis.URL=
+String+"&"+urlstring;}else{this.URLString=3Durlstring;}}if(this.encodeURI=
+String){var timeval=3Dnew =
+Date().getTime();this.URLString=3Dthis.encodeURLString(this.URLString);th=
+is.setVar("rndval",timeval);}if(this.element){this.elementObj=3Ddocument.=
+getElementById(this.element);}if(this.xmlhttp){var =
+self=3Dthis;if(this.method=3D=3D"GET"){var =
+totalurlstring=3Dthis.requestFile+"?"+this.URLString;this.xmlhttp.open(th=
+is.method,totalurlstring,true);}else{this.xmlhttp.open(this.method,this.r=
+equestFile,true);}if(this.method=3D=3D"POST"){try{this.xmlhttp.setRequest=
+Header('Content-Type','application/x-www-form-urlencoded; =
+charset=3DUTF-8');}catch(e){}}this.xmlhttp.onreadystatechange=3Dfunction(=
+){switch(self.xmlhttp.readyState){case 1:self.onLoading();break;case =
+2:self.onLoaded();break;case 3:self.onInteractive();break;case =
+4:self.response=3Dself.xmlhttp.responseText;self.responseXML=3Dself.xmlht=
+tp.responseXML;self.responseStatus[0]=3Dself.xmlhttp.status;self.response=
+Status[1]=3Dself.xmlhttp.statusText;self.onCompletion();if(self.execute){=
+self.runResponse();}if(self.elementObj){var =
+elemNodeName=3Dself.elementObj.nodeName;elemNodeName.toLowerCase();if(ele=
+mNodeName=3D=3D"input"||elemNodeName=3D=3D"select"||elemNodeName=3D=3D"op=
+tion"||elemNodeName=3D=3D"textarea"){self.elementObj.value=3Dself.respons=
+e;}else{self.elementObj.innerHTML=3Dself.response;}}self.afterCompletion(=
+);self.URLString=3D"";break;}};this.xmlhttp.send(this.URLString);}}};this=
+.createAJAX();}function =
+ajax_qsearch_class(){this.sack=3Dnull;this.inObj=3Dnull;this.outObj=3Dnul=
+l;this.timer=3Dnull;}var ajax_qsearch=3Dnew =
+ajax_qsearch_class();ajax_qsearch.sack=3Dnew =
+sack(DOKU_BASE+'lib/exe/ajax.php');ajax_qsearch.sack.AjaxFailedAlert=3D''=
+;ajax_qsearch.sack.encodeURIString=3Dfalse;ajax_qsearch.init=3Dfunction(i=
+nID,outID){ajax_qsearch.inObj=3Ddocument.getElementById(inID);ajax_qsearc=
+h.outObj=3Ddocument.getElementById(outID);if(ajax_qsearch.inObj=3D=3D=3Dn=
+ull){return;}if(ajax_qsearch.outObj=3D=3D=3Dnull){return;}addEvent(ajax_q=
+search.inObj,'keyup',ajax_qsearch.call);addEvent(ajax_qsearch.outObj,'cli=
+ck',function(){ajax_qsearch.outObj.style.display=3D'none';});};ajax_qsear=
+ch.clear=3Dfunction(){ajax_qsearch.outObj.style.display=3D'none';ajax_qse=
+arch.outObj.innerHTML=3D'';if(ajax_qsearch.timer!=3D=3Dnull){window.clear=
+Timeout(ajax_qsearch.timer);ajax_qsearch.timer=3Dnull;}};ajax_qsearch.exe=
+c=3Dfunction(){ajax_qsearch.clear();var =
+value=3Dajax_qsearch.inObj.value;if(value=3D=3D=3D''){return;}ajax_qsearc=
+h.sack.runAJAX('call=3Dqsearch&q=3D'+encodeURI(value));};ajax_qsearch.sac=
+k.onCompletion=3Dfunction(){var =
+data=3Dajax_qsearch.sack.response;if(data=3D=3D=3D''){return;}ajax_qsearc=
+h.outObj.innerHTML=3Ddata;ajax_qsearch.outObj.style.display=3D'block';};a=
+jax_qsearch.call=3Dfunction(){ajax_qsearch.clear();ajax_qsearch.timer=3Dw=
+indow.setTimeout("ajax_qsearch.exec()",500);};index=3D{throbber_delay:500=
+,treeattach:function(obj){if(!obj)return;var =
+items=3DgetElementsByClass('idx_dir',obj,'a');for(var =
+i=3D0;i<items.length;i++){var =
+elem=3Ditems[i];addEvent(elem,'click',function(e){return =
+index.toggle(e,this);});var =
+listitem=3Delem.parentNode;while(listitem.tagName!=3D'LI'){listitem=3Dlis=
+titem.parentNode;}if(listitem.getElementsByTagName('ul').length){listitem=
+.open=3Dtrue;}}},toggle:function(e,clicky){var =
+listitem=3Dclicky.parentNode.parentNode;listitem.open=3D!listitem.open;va=
+r =
+sublists=3Dlistitem.getElementsByTagName('ul');if(!listitem.open){if(subl=
+ists.length){sublists[0].style.display=3D'none';}listitem.className=3D'cl=
+osed';e.preventDefault();return =
+false;}if(sublists.length&&listitem.open){sublists[0].style.display=3D'';=
+listitem.className=3D'open';e.preventDefault();return false;}var =
+ajax=3Dnew =
+sack(DOKU_BASE+'lib/exe/ajax.php');ajax.AjaxFailedAlert=3D'';ajax.encodeU=
+RIString=3Dfalse;if(ajax.failed)return true;var =
+ul=3Ddocument.createElement('ul');ul.className=3D'idx';timeout=3Dwindow.s=
+etTimeout(function(){if(listitem.open){ul.innerHTML=3D'<li><img =
+src=3D"'+DOKU_BASE+'lib/images/throbber.gif" alt=3D"loading..." =
+title=3D"loading..." =
+/></li>';listitem.appendChild(ul);listitem.className=3D'open';}},this.thr=
+obber_delay);ajax.elementObj=3Dul;ajax.afterCompletion=3Dfunction(){windo=
+w.clearTimeout(timeout);index.treeattach(ul);if(listitem.className!=3D'op=
+en'){if(!listitem.open){ul.style.display=3D'none';}listitem.appendChild(u=
+l);if(listitem.open){listitem.className=3D'open';}}};ajax.runAJAX(clicky.=
+search.substr(1)+'&call=3Dindex');e.preventDefault();return =
+false;}};addInitEvent(function(){index.treeattach($('index__tree'));});ad=
+dInitEvent(function(){ajax_qsearch.init('qsearch__in','qsearch__out');});=
+addInitEvent(function(){addEvent(document,'click',closePopups);});addInit=
+Event(function(){addTocToggle();});var =
+ASCIIsvgURL=3D'/lib/plugins/asciisvg/main/ASCIIsvg127.js';document.write(=
+'<script type=3D"text/javascript" =
+src=3D"'+ASCIIsvgURL+'"></script>');function =
+installASCIIsvg(){ASCIIsvg.Process(document);}addInitEvent(installASCIIsv=
+g);function =
+setName(){document.getElementById("editform").setAttribute("action","?id=3D=
+"+document.getElementById('np_cat').value+':'+document.getElementById('ad=
+dnewpage_title').value);}function =
+isBlank(s){if((s=3D=3D=3Dnull)||(s.length=3D=3D=3D0)){return =
+true;}for(var i=3D0;i<s.length;i++){var c=3Ds.charAt(i);if((c!=3D' =
+')&&(c!=3D'\n')&&(c!=3D'\t')){return false;}}return true;}function =
+validate(form){if(!form)return;if(isBlank(form.name.value)){form.name.foc=
+us();form.name.style.backgroundColor=3D'#fcc';return =
+false;}else{form.name.style.backgroundColor=3D'#fff';}if(isBlank(form.mai=
+l.value)||form.mail.value.indexOf("@")=3D=3D-1){form.mail.focus();form.ma=
+il.style.backgroundColor=3D'#fcc';return =
+false;}else{form.mail.style.backgroundColor=3D'#fff';}if(isBlank(form.tex=
+t.value)){form.text.focus();form.text.style.borderColor=3D'#fcc';return =
+false;}}function =
+discussion_ajax_preview(){if(!document.getElementById)return;var =
+textarea=3D$('discussion__comment_text');var =
+comment=3Dtextarea.value;if(!comment)return;var =
+preview=3D$('discussion__comment_preview');var =
+wikisyntaxok=3D$('discussion__comment_wikisyntaxok');var ajax=3Dnew =
+sack(DOKU_BASE+'lib/plugins/discussion/ajax.php');ajax_qsearch.sack.AjaxF=
+ailedAlert=3D'';ajax_qsearch.sack.encodeURIString=3Dfalse;ajax.onCompleti=
+on=3Dfunction(){var =
+data=3Dthis.response;if(data=3D=3D=3D''){return;}preview.style.visibility=
+=3D'hidden';preview.innerHTML=3Ddata;preview.style.visibility=3D'visible'=
+;};ajax.runAJAX('comment=3D'+comment+'&wikisyntaxok=3D'+wikisyntaxok.valu=
+e);}addInitEvent(function(){if(typeof =
+window.initToolbar=3D=3D'function'){initToolbar("discussion__comment_tool=
+bar","discussion__comment_text",toolbar)}});addInitEvent(function(){var =
+btn=3D$('discussion__btn_preview');if(!btn)return;addEvent(btn,'click',di=
+scussion_ajax_preview);});addInitEvent(function(){var =
+form=3D$('discussion__comment_form');if(!form)return;addEvent(form,'submi=
+t',function(){return validate(form);});});addInitEvent(function(){var =
+code=3D$('plugin__captcha_code');if(!code)return;var =
+box=3D$('plugin__captcha');box.value=3Dcode.innerHTML;$('plugin__captcha_=
+wrapper').style.display=3D'none';});acl=3D{init:function(){this.ctl=3D$('=
+acl_manager');if(!this.ctl)return;var =
+sel=3D$('acl__user').getElementsByTagName('select')[0];addEvent(sel,'chan=
+ge',acl.userselhandler);addEvent($('acl__tree'),'click',acl.treehandler);=
+addEvent($('acl__user').getElementsByTagName('input')[1],'click',acl.load=
+info);},userselhandler:function(e){if(this.value=3D=3D'__g__'||this.value=
+=3D=3D'__u__'){$('acl__user').getElementsByTagName('input')[0].style.disp=
+lay=3D'';$('acl__user').getElementsByTagName('input')[1].style.display=3D=
+'';}else{$('acl__user').getElementsByTagName('input')[0].style.display=3D=
+'none';$('acl__user').getElementsByTagName('input')[1].style.display=3D'n=
+one';}acl.loadinfo();},loadinfo:function(){var =
+frm=3D$('acl__detail').getElementsByTagName('form')[0];var ajax=3Dnew =
+sack(DOKU_BASE+'lib/plugins/acl/ajax.php');ajax.AjaxFailedAlert=3D'';ajax=
+.encodeURIString=3Dfalse;if(ajax.failed)return true;var =
+data=3DArray();data[0]=3Dajax.encVar('ns',frm.elements['ns'].value);data[=
+1]=3Dajax.encVar('id',frm.elements['id'].value);data[2]=3Dajax.encVar('ac=
+l_t',frm.elements['acl_t'].value);data[3]=3Dajax.encVar('acl_w',frm.eleme=
+nts['acl_w'].value);data[4]=3Dajax.encVar('ajax','info');ajax.elementObj=3D=
+$('acl__info');ajax.runAJAX(data.join('&'));return =
+false;},parseatt:function(str){if(str[0]=3D=3D'?')str=3Dstr.substr(1);var=
+ attributes=3D{};var all=3Dstr.split('&');for(var =
+i=3D0;i<all.length;i++){var =
+att=3Dall[i].split('=3D');attributes[att[0]]=3DdecodeURIComponent(att[1])=
+;}return =
+attributes;},hsc:function(str){str=3Dstr.replace(/&/g,"&amp;");str=3Dstr.=
+replace(/\"/g,"&quot;");str=3Dstr.replace(/\'/g,"&#039;");str=3Dstr.repla=
+ce(/</g,"&lt;");str=3Dstr.replace(/>/g,"&gt;");return =
+str;},treetoggle:function(clicky){var =
+listitem=3Dclicky.parentNode.parentNode;var =
+sublists=3Dlistitem.getElementsByTagName('ul');if(sublists.length){listit=
+em.removeChild(sublists[0]);clicky.src=3DDOKU_BASE+'lib/images/plus.gif';=
+clicky.alt=3D'+';return false;}var =
+link=3Dlistitem.getElementsByTagName('a')[0];var ajax=3Dnew =
+sack(DOKU_BASE+'lib/plugins/acl/ajax.php');ajax.AjaxFailedAlert=3D'';ajax=
+.encodeURIString=3Dfalse;if(ajax.failed)return true;var =
+ul=3Ddocument.createElement('ul');listitem.appendChild(ul);ajax.elementOb=
+j=3Dul;ajax.runAJAX(link.search.substr(1)+'&ajax=3Dtree');clicky.src=3DDO=
+KU_BASE+'lib/images/minus.gif';return =
+false;},treehandler:function(e){if(e.target.src){acl.treetoggle(e.target)=
+;}else if(e.target.href){var =
+obj=3DgetElementsByClass('cur',$('acl__tree'),'a');for(var =
+i=3D0;i<obj.length;i++){obj[i].className=3Dobj[i].className.replace(/ =
+cur/,'');}e.target.className+=3D' cur';var =
+frm=3D$('acl__detail').getElementsByTagName('form')[0];if(e.target.classN=
+ame.search(/wikilink1/)>-1){frm.elements['ns'].value=3D'';frm.elements['i=
+d'].value=3Dacl.hsc(acl.parseatt(e.target.search)['id']);}else =
+if(e.target.className.search(/idx_dir/)>-1){frm.elements['ns'].value=3Dac=
+l.hsc(acl.parseatt(e.target.search)['ns']);frm.elements['id'].value=3D'';=
+}acl.loadinfo();}e.stopPropagation();e.preventDefault();return =
+false;}};addInitEvent(acl.init);function =
+plugin_tagindex_class(){this.pages=3Dnull;this.page=3Dnull;this.sack=3Dnu=
+ll;this.done=3D1;this.count=3D0;}var plugin_tag=3Dnew =
+plugin_tagindex_class();plugin_tag.sack=3Dnew =
+sack(DOKU_BASE+'lib/plugins/tag/ajax.php');plugin_tag.sack.AjaxFailedAler=
+t=3D'';plugin_tag.sack.encodeURIString=3Dfalse;function =
+plugin_tagindex_throbber(on){obj=3Ddocument.getElementById('pl_si_throbbe=
+r');if(on){obj.style.visibility=3D'visible';}else{obj.style.visibility=3D=
+'hidden';}}function =
+plugin_tagindex_status(text){obj=3Ddocument.getElementById('pl_si_out');o=
+bj.innerHTML=3Dtext;}function =
+plugin_tagindex_cb_clear(){ok=3Dthis.response;if(ok=3D=3D1){window.setTim=
+eout("plugin_tagindex_index()",1000);}else{plugin_tagindex_status(ok);win=
+dow.setTimeout("plugin_tagindex_clear()",5000);}}function =
+plugin_tagindex_cb_pages(){data=3Dthis.response;plugin_tag.pages=3Ddata.s=
+plit("\n");plugin_tag.count=3Dplugin_tag.pages.length;plugin_tagindex_sta=
+tus(plugin_tag.pages.length+" pages =
+found");plugin_tag.page=3Dplugin_tag.pages.shift();window.setTimeout("plu=
+gin_tagindex_clear()",1000);}function =
+plugin_tagindex_cb_index(){ok=3Dthis.response;if(ok=3D=3D1){plugin_tag.pa=
+ge=3Dplugin_tag.pages.shift();plugin_tag.done++;window.setTimeout("plugin=
+_tagindex_index()",1000);}else{plugin_tagindex_status(ok);window.setTimeo=
+ut("plugin_tagindex_index()",5000);}}function =
+plugin_tagindex_index(){if(plugin_tag.page){plugin_tagindex_status('index=
+ing<br />'+plugin_tag.page+'<br =
+/>('+plugin_tag.done+'/'+plugin_tag.count+')<br =
+/>');plugin_tag.sack.onCompletion=3Dplugin_tagindex_cb_index;plugin_tag.s=
+ack.URLString=3D'';plugin_tag.sack.runAJAX('call=3Dindexpage&page=3D'+enc=
+odeURI(plugin_tag.page));}else{plugin_tagindex_status('finished');plugin_=
+tagindex_throbber(false);}}function =
+plugin_tagindex_clear(){plugin_tagindex_status('clearing =
+index...');plugin_tag.sack.onCompletion=3Dplugin_tagindex_cb_clear;plugin=
+_tag.sack.URLString=3D'';plugin_tag.sack.runAJAX('call=3Dclearindex');}fu=
+nction =
+plugin_tagindex_go(){document.getElementById('pl_si_gobtn').style.display=
+=3D'none';plugin_tagindex_throbber(true);plugin_tagindex_status('Finding =
+all =
+pages');plugin_tag.sack.onCompletion=3Dplugin_tagindex_cb_pages;plugin_ta=
+g.sack.URLString=3D'';plugin_tag.sack.runAJAX('call=3Dpagelist');}var =
+stIsIE=3D/*@cc_on!@*/false;var =
+tableid=3D0;sorttable=3D{reinit:function(){arguments.callee.done=3Dtrue;i=
+f(_timer){clearInterval(_timer);}if(!document.createElement||!document.ge=
+tElementsByTagName){return;}sorttable.DATE_RE=3D/^(\d\d?)[\/\.\-](\d\d?)[=
+\/\.\-]((\d\d)?\d\d)( =
+(\d\d?)[:\.]?(\d\d?))?$/;forEach(document.getElementsByTagName('table'),f=
+unction(table){if(table.className.search(/\bsortable\b/)!=3D-1){sorttable=
+.makeSortable(table);}});forEach(document.getElementsByTagName('div'),fun=
+ction(div){if(div.className.search(/\bsortable\b/)!=3D-1){sorttable.makeS=
+ortablediv(div);}});},init:function(){if(arguments.callee.done){return;}a=
+rguments.callee.done=3Dtrue;if(_timer){clearInterval(_timer);}if(!documen=
+t.createElement||!document.getElementsByTagName){return;}sorttable.DATE_R=
+E=3D/^(\d\d?)[\/\.\-](\d\d?)[\/\.\-]((\d\d)?\d\d)( =
+(\d\d?):?(\d\d?))?$/;forEach(document.getElementsByTagName('table'),funct=
+ion(table){if(table.className.search(/\bsortable\b/)!=3D-1){sorttable.mak=
+eSortable(table);}});forEach(document.getElementsByTagName('div'),functio=
+n(div){if(div.className.search(/\bsortable\b/)!=3D-1){sorttable.makeSorta=
+blediv(div);}});},makeSortablediv:function(div){if(div.getElementsByTagNa=
+me('table').length=3D=3D=3D0){}else{forEach(div.getElementsByTagName('tab=
+le'),function(table){sorttable.makeSortable(table);if(div.className.searc=
+h(/\bsort/)!=3D-1){colid=3Ddiv.className.replace('sortable','');colid=3Dc=
+olid.replace(' =
+sort','');revs=3Dfalse;if(colid.search(/\br/)!=3D-1){revs=3Dtrue;colid=3D=
+colid.replace('r','');}sorttable.defaultSort(table,colid,revs);}});}},def=
+aultSort:function(table,colid,revs){theadrow=3Dtable.tHead.rows[0].cells;=
+colid--;colname=3D"col"+colid;var =
+thiscell=3Dfalse;forEach(theadrow,function(cell){if(cell.className=3D=3Dc=
+olname){thiscell=3Dcell;}});if(thiscell=3D=3D=3Dfalse){return;}sortfwdind=
+=3Ddocument.getElementById('sorttable_sortfwdind');if(sortfwdind){sortfwd=
+ind.parentNode.removeChild(sortfwdind);}sortrevind=3Ddocument.getElementB=
+yId('sorttable_sortrevind');if(sortrevind){sortrevind.parentNode.removeCh=
+ild(sortrevind);}thiscell.className+=3D' =
+sorttable_sorted';sortfwdind=3Ddocument.createElement('span');sortfwdind.=
+id=3D"sorttable_sortfwdind";sortfwdind.innerHTML=3DstIsIE?'&nbsp<font =
+face=3D"webdings">6</font>':'&nbsp;&#x25BE;';thiscell.appendChild(sortfwd=
+ind);row_array=3D[];col=3Dthiscell.sorttable_columnindex;rows=3Dthiscell.=
+sorttable_tbody.rows;for(var =
+j=3D0;j<rows.length;j++){row_array[row_array.length]=3D[sorttable.getInne=
+rText(rows[j].cells[col]),rows[j]];}row_array.sort(thiscell.sorttable_sor=
+tfunction);tb=3Dthiscell.sorttable_tbody;for(var =
+jj=3D0;jj<row_array.length;jj++){tb.appendChild(row_array[jj][1]);}delete=
+ =
+row_array;if(revs){sorttable.reverse(thiscell.sorttable_tbody);thiscell.c=
+lassName=3Dthiscell.className.replace('sorttable_sorted','sorttable_sorte=
+d_reverse');thiscell.removeChild(document.getElementById('sorttable_sortf=
+wdind'));sortrevind=3Ddocument.createElement('span');sortrevind.id=3D"sor=
+ttable_sortrevind";sortrevind.innerHTML=3DstIsIE?'&nbsp<font =
+face=3D"webdings">5</font>':'&nbsp;&#x25B4;';thiscell.appendChild(sortrev=
+ind);}},makeSortable:function(table){if(table.getElementsByTagName('thead=
+').length=3D=3D=3D0){the=3Ddocument.createElement('thead');the.appendChil=
+d(table.rows[0]);table.insertBefore(the,table.firstChild);}if(table.tHead=
+=3D=3D=3Dnull){table.tHead=3Dtable.getElementsByTagName('thead')[0];}if(t=
+able.tHead.rows.length!=3D1){return;}sortbottomrows=3D[];for(var =
+i=3D0;i<table.rows.length;i++){if(table.rows[i].className.search(/\bsortb=
+ottom\b/)!=3D-1){sortbottomrows[sortbottomrows.length]=3Dtable.rows[i];}}=
+if(sortbottomrows){if(table.tFoot=3D=3D=3Dnull){tfo=3Ddocument.createElem=
+ent('tfoot');table.appendChild(tfo);}for(var =
+ii=3D0;ii<sortbottomrows.length;ii++){tfo.appendChild(sortbottomrows[ii])=
+;}delete =
+sortbottomrows;}headrow=3Dtable.tHead.rows[0].cells;for(i=3D0;i<headrow.l=
+ength;i++){if(!headrow[i].className.match(/\bsorttable_nosort\b/)){mtch=3D=
+headrow[i].className.match(/\bsorttable_([a-z0-9]+)\b/);if(mtch){override=
+=3Dmtch[1];}if(mtch&&typeof =
+sorttable["sort_"+override]=3D=3D'function'){headrow[i].sorttable_sortfun=
+ction=3Dsorttable["sort_"+override];}else{headrow[i].sorttable_sortfuncti=
+on=3Dsorttable.guessType(table,i);}headrow[i].sorttable_columnindex=3Di;h=
+eadrow[i].sorttable_tbody=3Dtable.tBodies[0];addEvent(headrow[i],"click",=
+function(e){theadrow=3Dthis.parentNode;if(this.className.search(/\bsortta=
+ble_sorted\b/)!=3D-1){sorttable.reverse(this.sorttable_tbody);this.classN=
+ame=3Dthis.className.replace('sorttable_sorted','sorttable_sorted_reverse=
+');sortfwdind=3Ddocument.getElementById('sorttable_sortfwdind');if(sortfw=
+dind){sortfwdind.parentNode.removeChild(sortfwdind);}sortrevind=3Ddocumen=
+t.getElementById('sorttable_sortrevind');if(sortrevind){sortrevind.parent=
+Node.removeChild(sortrevind);}sortrevind=3Ddocument.createElement('span')=
+;sortrevind.id=3D"sorttable_sortrevind";sortrevind.innerHTML=3DstIsIE?'&n=
+bsp<font =
+face=3D"webdings">5</font>':'&nbsp;&#x25B4;';this.appendChild(sortrevind)=
+;return;}if(this.className.search(/\bsorttable_sorted_reverse\b/)!=3D-1){=
+sorttable.reverse(this.sorttable_tbody);this.className=3Dthis.className.r=
+eplace('sorttable_sorted_reverse','sorttable_sorted');sortrevind=3Ddocume=
+nt.getElementById('sorttable_sortrevind');if(sortrevind){sortrevind.paren=
+tNode.removeChild(sortrevind);}sortfwdind=3Ddocument.getElementById('sort=
+table_sortfwdind');if(sortfwdind){sortfwdind.parentNode.removeChild(sortf=
+wdind);}sortfwdind=3Ddocument.createElement('span');sortfwdind.id=3D"sort=
+table_sortfwdind";sortfwdind.innerHTML=3DstIsIE?'&nbsp<font =
+face=3D"webdings">6</font>':'&nbsp;&#x25BE;';this.appendChild(sortfwdind)=
+;return;}forEach(theadrow.childNodes,function(cell){if(cell.nodeType=3D=3D=
+1){cell.className=3Dcell.className.replace('sorttable_sorted_reverse','')=
+;cell.className=3Dcell.className.replace('sorttable_sorted','');}});sortf=
+wdind=3Ddocument.getElementById('sorttable_sortfwdind');if(sortfwdind){so=
+rtfwdind.parentNode.removeChild(sortfwdind);}sortrevind=3Ddocument.getEle=
+mentById('sorttable_sortrevind');if(sortrevind){sortrevind.parentNode.rem=
+oveChild(sortrevind);}this.className+=3D' =
+sorttable_sorted';sortfwdind=3Ddocument.createElement('span');sortfwdind.=
+id=3D"sorttable_sortfwdind";sortfwdind.innerHTML=3DstIsIE?'&nbsp<font =
+face=3D"webdings">6</font>':'&nbsp;&#x25BE;';this.appendChild(sortfwdind)=
+;row_array=3D[];col=3Dthis.sorttable_columnindex;rows=3Dthis.sorttable_tb=
+ody.rows;for(var =
+j=3D0;j<rows.length;j++){row_array[row_array.length]=3D[sorttable.getInne=
+rText(rows[j].cells[col]),rows[j]];}row_array.sort(this.sorttable_sortfun=
+ction);tb=3Dthis.sorttable_tbody;for(var =
+j3=3D0;j3<row_array.length;j3++){tb.appendChild(row_array[j3][1]);}delete=
+ =
+row_array;});}}},guessType:function(table,column){sortfn=3Dsorttable.sort=
+_alpha;for(var =
+i=3D0;i<table.tBodies[0].rows.length;i++){text=3Dsorttable.getInnerText(t=
+able.tBodies[0].rows[i].cells[column]);if(text!=3D=3D''){if(text.match(/^=
+-?[=A3$=A4]?[\d,.]+%?$/)){return =
+sorttable.sort_numeric;}possdate=3Dtext.match(sorttable.DATE_RE);if(possd=
+ate){first=3DparseInt(possdate[1]);second=3DparseInt(possdate[2]);if(firs=
+t>12){return sorttable.sort_ddmm;}else if(second>12){return =
+sorttable.sort_mmdd;}else{sortfn=3Dsorttable.sort_ddmm;}}}}return =
+sortfn;},getInnerText:function(node){hasInputs=3D(typeof =
+node.getElementsByTagName=3D=3D'function')&&node.getElementsByTagName('in=
+put').length;if(node.getAttribute("sorttable_customkey")!=3D=3Dnull){retu=
+rn node.getAttribute("sorttable_customkey");}else if(typeof =
+node.textContent!=3D'undefined'&&!hasInputs){return =
+node.textContent.replace(/^\s+|\s+$/g,'');}else if(typeof =
+node.innerText!=3D'undefined'&&!hasInputs){return =
+node.innerText.replace(/^\s+|\s+$/g,'');}else if(typeof =
+node.text!=3D'undefined'&&!hasInputs){return =
+node.text.replace(/^\s+|\s+$/g,'');}else{switch(node.nodeType){case =
+3:if(node.nodeName.toLowerCase()=3D=3D'input'){return =
+node.value.replace(/^\s+|\s+$/g,'');}case 4:return =
+node.nodeValue.replace(/^\s+|\s+$/g,'');break;case 1:case 11:var =
+innerText=3D'';for(var =
+i=3D0;i<node.childNodes.length;i++){innerText+=3Dsorttable.getInnerText(n=
+ode.childNodes[i]);}return =
+innerText.replace(/^\s+|\s+$/g,'');break;default:return'';}}},reverse:fun=
+ction(tbody){newrows=3D[];for(var =
+i=3D0;i<tbody.rows.length;i++){newrows[newrows.length]=3Dtbody.rows[i];}f=
+or(var =
+i=3Dnewrows.length-1;i>=3D0;i--){tbody.appendChild(newrows[i]);}delete =
+newrows;},sort_numeric:function(a,b){aa=3DparseFloat(a[0].replace(/[^0-9.=
+\-]/g,''));if(isNaN(aa)){aa=3D0;}bb=3DparseFloat(b[0].replace(/[^0-9.\-]/=
+g,''));if(isNaN(bb)){bb=3D0;}return =
+aa-bb;},sort_alpha:function(a,b){if(a[0]=3D=3Db[0]){return =
+0;}if(a[0]<b[0]){return-1;}return =
+1;},sort_ddmm:function(a,b){mtch=3Da[0].match(sorttable.DATE_RE);y=3Dmtch=
+[3];m=3Dmtch[2];d=3Dmtch[1];t=3Dmtch[5]+'';if(t.length<1){t=3D'';}if(m.le=
+ngth=3D=3D1){m=3D'0'+m;}if(d.length=3D=3D1){d=3D'0'+d;}dt1=3Dy+m+d+t;mtch=
+=3Db[0].match(sorttable.DATE_RE);y=3Dmtch[3];m=3Dmtch[2];d=3Dmtch[1];t=3D=
+mtch[5]+'';if(t.length<1){t=3D'';}if(m.length=3D=3D1){m=3D'0'+m;}if(d.len=
+gth=3D=3D1){d=3D'0'+d;}dt2=3Dy+m+d+t;if(dt1=3D=3Ddt2){return =
+0;}if(dt1<dt2){return-1;}return =
+1;},sort_mmdd:function(a,b){mtch=3Da[0].match(sorttable.DATE_RE);y=3Dmtch=
+[3];d=3Dmtch[2];m=3Dmtch[1];t=3Dmtch[5]+'';if(m.length=3D=3D1){m=3D'0'+m;=
+}if(d.length=3D=3D1){d=3D'0'+d;}dt1=3Dy+m+d+t;mtch=3Db[0].match(sorttable=
+.DATE_RE);y=3Dmtch[3];d=3Dmtch[2];m=3Dmtch[1];t=3Dmtch[5]+'';if(t.length<=
+1){t=3D'';}if(m.length=3D=3D1){m=3D'0'+m;}if(d.length=3D=3D1){d=3D'0'+d;}=
+dt2=3Dy+m+d+t;if(dt1=3D=3Ddt2){return 0;}if(dt1<dt2){return-1;}return =
+1;},shaker_sort:function(list,comp_func){var b=3D0;var =
+t=3Dlist.length-1;var swap=3Dtrue;while(swap){swap=3Dfalse;for(var =
+i=3Db;i<t;++i){if(comp_func(list[i],list[i+1])>0){var =
+q=3Dlist[i];list[i]=3Dlist[i+1];list[i+1]=3Dq;swap=3Dtrue;}}t--;if(!swap)=
+{break;}for(var i=3Dt;i>b;--i){if(comp_func(list[i],list[i-1])<0){var =
+q=3Dlist[i];list[i]=3Dlist[i-1];list[i-1]=3Dq;swap=3Dtrue;}}b++;}}};if(!A=
+rray.forEach){Array.forEach=3Dfunction(array,block,context){for(var =
+i=3D0;i<array.length;i++){block.call(context,array[i],i,array);}};}Functi=
+on.prototype.forEach=3Dfunction(object,block,context){for(var key in =
+object){if(typeof =
+this.prototype[key]=3D=3D"undefined"){block.call(context,object[key],key,=
+object);}}};String.forEach=3Dfunction(string,block,context){Array.forEach=
+(string.split(""),function(chr,index){block.call(context,chr,index,string=
+);});};var forEach=3Dfunction(object,block,context){if(object){var =
+resolve=3DObject;if(object instanceof Function){resolve=3DFunction;}else =
+if(object.forEach instanceof =
+Function){object.forEach(block,context);return;}else if(typeof =
+object=3D=3D"string"){resolve=3DString;}else if(typeof =
+object.length=3D=3D"number"){resolve=3DArray;}resolve.forEach(object,bloc=
+k,context);}};if('undefined'!=3Dtypeof(window.addEvent)){window.addEvent(=
+window,'load',sorttable.init);}function =
+reinitsort(){sorttable.reinit();}function =
+usrmgr_delconfirm(){if($('usrmgr__del')){addEvent($('usrmgr__del'),'click=
+',function(){return =
+confirm(reallyDel);});}};addInitEvent(usrmgr_delconfirm);function =
+tagentry_clicktag(tagname,cbox){tagentry_settag(tagname,cbox.checked);}fu=
+nction tagentry_settag(tagname,on){var =
+oldtext=3Ddocument.getElementById('wiki__text').value;var =
+tagstart=3Doldtext.toLowerCase().indexOf("{{tag>");if(tagstart>=3D0){var =
+tagend=3Doldtext.substr(tagstart).indexOf("}}");if(tagend<0){alert('incom=
+lete "{{tag>}}" - missing trailing "}}" ?');return;}var =
+len=3Dtagname.length+1;var s=3Dtagstart;var l=3Dtagend;var =
+f=3D-1;while((f=3Doldtext.toLowerCase().substr(s,l).indexOf(tagname.toLow=
+erCase()))>=3D0){var cs=3Doldtext.substr(s+f-1,1);if(cs!=3D' =
+'&&cs!=3D'>'){s+=3Df+len;l-=3Df+len;continue;}var =
+ce=3Doldtext.substr(s+f+len-1,1);if(ce!=3D' =
+'&&ce!=3D'}'){s+=3Df+len;l-=3Df+len;continue;}if(ce=3D=3D'}'){if(cs=3D=3D=
+'>'){len--;}else{f--;}}oldtext=3Doldtext.substr(0,s+f)+oldtext.substr(s+f=
++len);l=3Doldtext.substr(s).indexOf("}}");}tagend=3Doldtext.substr(tagsta=
+rt).indexOf("}}");if(tagend<0){alert('incomlete "{{tag>}}" - missing =
+trailing "}}" ?');return;}if(on){var split=3Dtagstart+tagend;var =
+ws=3D"";if(tagend!=3D6)ws=3D" =
+";oldtext=3Doldtext.substr(0,split)+ws+tagname+oldtext.substr(split);}}el=
+se{if(on){oldtext+=3D'\n{{tag>'+tagname+'}}';}}document.getElementById('w=
+iki__text').value=3Doldtext;}addInitEvent(function(){scrollToMarker();});=
+addInitEvent(function(){focusMarker();});=0A=
+
+------=_NextPart_000_0000_01D004AF.7632E820--

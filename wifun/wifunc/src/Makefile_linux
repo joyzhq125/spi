@@ -1,0 +1,34 @@
+#=== makefile start ===
+CC = gcc
+#INC = -I"../../impl/src/wep/inc" -I"../../impl/inc/sec" -I"../../inc" -I"../../inc" -I"../../impl/src/oem"\
+#      -I"../../impl/src/secd" -I"../../impl/src/comm"
+
+CFLAG = -Wall -O1 
+TARGET = wifunc
+LIB = -lpthread
+LINK =
+LINKFLAG = 
+AR = ar
+#VPATH = .:../../impl/core/cert:../../impl/core/ue:../../impl/core/wim:../../impl/core/alg:../../impl/src/oem\
+#        :../../impl/core/main:../../impl/src/secd:../../impl/src/wep/src:../../impl/src/comm
+VPATH = .
+
+OBJ = \
+      Ecdr.o log.o MsgHdl.o MsgHdl.o MsgQueue.o UartHdl.o Wifunc.o
+
+All : $(TARGET)
+
+$(TARGET): $(OBJ)
+	$(CC) -o $@ $^ $(LIB)
+#	$(AR) -r $@ $^
+
+%.o: %.c
+	@echo ---------------------------
+	@echo TARGET $(@F)
+	$(CC) $(INC) $(CFLAG) -c -o $@ $^
+	@echo ---------------------------
+
+clean:
+	rm -f *.o $(TARGET)
+    	
+#=== makefile end ===

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+	<Button
+	    android:id="@+id/array_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="一个按钮"
+	    android:visibility="invisible" />
+
+	<ImageView
+	    android:id="@+id/array_image"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_toRightOf="@+id/array_button"
+	    android:adjustViewBounds="true"
+	    android:padding="2dip"
+	    android:visibility="invisible" />
+
+	<TextView
+	    android:id="@+id/array_title"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_toRightOf="@+id/array_image"
+	    android:ellipsize="marquee"
+	    android:singleLine="true"
+	    android:textSize="15dip"
+	    android:visibility="visible" />
+
+	<TextView
+	    android:id="@+id/array_text"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="false"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="false"
+	    android:layout_alignParentTop="true"
+	    android:layout_below="@+id/array_title"
+	    android:layout_toRightOf="@+id/array_image"
+	    android:ellipsize="marquee"
+	    android:singleLine="true"
+	    android:textColor="#0000FF"
+	    android:textSize="22dip" />
+
+</RelativeLayout>
+
+ 

@@ -1,0 +1,6 @@
+#ifndef WAP_BID
+#define WAP_BID
+
+#define AEECLSID_WAP        0x11111111
+
+#endif //WAP_BID

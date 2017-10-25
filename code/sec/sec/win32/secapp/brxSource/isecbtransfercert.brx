@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BREWRes Name="isecbtransfercert" VERSION="1">
+<Strings Encoding="Unicode">
+	<String Id="1001" Name="ITARGETID">
+		<Text>1</Text>
+	</String>
+	<String Id="1002" Name="MIME">
+		<Text>application/x-x509-ca-cert</Text>
+	</String>
+	<String Id="1003" Name="CERTNAME">
+		<Text>rootcert1</Text>
+	</String>
+	<String Id="1004" Name="ITARGETID2">
+		<Text>2</Text>
+	</String>
+	<String Id="1005" Name="MIME2">
+		<Text>application/x-x509-ca-cert</Text>
+	</String>
+	<String Id="1006" Name="CERTNAME2">
+		<Text>rootcert2</Text>
+	</String>
+	<String Id="1007" Name="ITARGETID3">
+		<Text>3</Text>
+	</String>
+	<String Id="1008" Name="MIME3">
+		<Text>application/vnd.wap.hashed-certificate</Text>
+	</String>
+	<String Id="1009" Name="CERTNAME3">
+		<Text>hashedcert</Text>
+	</String>
+	<String Id="1010" Name="ITARGETID4">
+		<Text>4</Text>
+	</String>
+	<String Id="1011" Name="MIME4">
+		<Text>application/vnd.wap.signed-certificate</Text>
+	</String>
+	<String Id="1012" Name="CERTNAME4">
+		<Text>signedcert</Text>
+	</String>
+	<String Id="1013" Name="ITARGETID5">
+		<Text>5</Text>
+	</String>
+	<String Id="1014" Name="MIME5">
+		<Text>application/vnd.wap.cert-response</Text>
+	</String>
+	<String Id="1015" Name="CERTNAME5">
+		<Text>deliverycert</Text>
+	</String>
+	<String Id="1016" Name="ITARGETID6">
+		<Text>6</Text>
+	</String>
+	<String Id="1017" Name="MIME6">
+		<Text>application/x-x509-user-cert</Text>
+	</String>
+	<String Id="1018" Name="CERTNAME6">
+		<Text>usercert1</Text>
+	</String>
+	<String Id="1019" Name="ITARGETID7">
+		<Text>7</Text>
+	</String>
+	<String Id="1020" Name="MIME7">
+		<Text>application/x-x509-user-cert</Text>
+	</String>
+	<String Id="1021" Name="CERTNAME7">
+		<Text>usercert2</Text>
+	</String>
+	<String Id="1022" Name="ITARGETID8">
+		<Text>8</Text>
+	</String>
+	<String Id="1023" Name="MIME8">
+		<Text>application/x-x509-user-cert</Text>
+	</String>
+	<String Id="1024" Name="CERTNAME8">
+		<Text>usercert3</Text>
+	</String>
+	<String Id="1025" Name="ITARGETID9">
+		<Text>9</Text>
+	</String>
+	<String Id="1026" Name="MIME9">
+		<Text>application/x-x509-ca-cert</Text>
+	</String>
+	<String Id="1027" Name="CERTNAME9">
+		<Text>cacert1</Text>
+	</String>
+	<String Id="1028" Name="ITARGETID10">
+		<Text>10</Text>
+	</String>
+	<String Id="1029" Name="IDS_STRING_1029">
+		<Text>application/x-x509-user-cert</Text>
+	</String>
+	<String Id="1030" Name="IDS_STRING_1030">
+		<Text>usercert4</Text>
+	</String>
+	<String Id="1031" Name="ITARGETID11">
+		<Text>11</Text>
+	</String>
+	<String Id="1032" Name="IDS_STRING_1032">
+		<Text>application/x-x509-user-cert</Text>
+	</String>
+	<String Id="1033" Name="IDS_STRING_1033">
+		<Text>usercert5</Text>
+	</String>
+	<String Id="1034" Name="ITARGETID12">
+		<Text>12</Text>
+	</String>
+	<String Id="1035" Name="IDS_STRING_1035">
+		<Text>application/x-x509-user-cert</Text>
+	</String>
+	<String Id="1036" Name="IDS_STRING_1036">
+		<Text>usercert6</Text>
+	</String>
+	<String Id="1037" Name="ITARGETID13">
+		<Text>13</Text>
+	</String>
+	<String Id="1038" Name="IDS_STRING_1038">
+		<Text>application/x-x509-user-cert</Text>
+	</String>
+	<String Id="1039" Name="IDS_STRING_1039">
+		<Text>usercert7</Text>
+	</String>
+	<String Id="1040" Name="IDS_STRING_1040">
+		<Text>14</Text>
+	</String>
+	<String Id="1041" Name="IDS_STRING_1041">
+		<Text>application/x-x509-user-cert</Text>
+	</String>
+	<String Id="1042" Name="IDS_STRING_1042">
+		<Text>usercert4.cer</Text>
+	</String>
+	<String Id="1043" Name="IDS_STRING_1043">
+		<Text>15</Text>
+	</String>
+	<String Id="1044" Name="IDS_STRING_1044">
+		<Text>application/x-x509-ca-cert</Text>
+	</String>
+	<String Id="1045" Name="IDS_STRING_1045">
+		<Text>cacert2</Text>
+	</String>
+	<String Id="1046" Name="IDS_STRING_1046">
+		<Text>16</Text>
+	</String>
+	<String Id="1047" Name="IDS_STRING_1047">
+		<Text>application/x-x509-user-cert</Text>
+	</String>
+	<String Id="1048" Name="IDS_STRING_1048">
+		<Text>usercert8</Text>
+	</String>
+</Strings>
+</BREWRes>

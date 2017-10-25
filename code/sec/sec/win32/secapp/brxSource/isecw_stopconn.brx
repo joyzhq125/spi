@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BREWRes Name="isecw_stopconn" VERSION="1">
+<Strings Encoding="Unicode">
+	<String Id="1001" Name="TARGETID1">
+		<Text>1</Text>
+		<Comment>target id</Comment>
+	</String>
+	<String Id="1002" Name="SECURITYID1">
+		<Text>1</Text>
+	</String>
+	<String Id="1003" Name="TARGETID2">
+		<Text>2</Text>
+	</String>
+	<String Id="1004" Name="SECURITYID2">
+		<Text>0</Text>
+	</String>
+	<String Id="1005" Name="TARGETID3">
+		<Text>2</Text>
+	</String>
+	<String Id="1006" Name="SECURITYID3">
+		<Text>2</Text>
+	</String>
+	<String Id="1007" Name="TARGETID4">
+		<Text>3</Text>
+	</String>
+	<String Id="1008" Name="SECURITYID4">
+		<Text>1</Text>
+	</String>
+</Strings>
+</BREWRes>

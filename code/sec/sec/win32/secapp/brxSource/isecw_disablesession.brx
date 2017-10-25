@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BREWRes Name="isecw_disablesession" VERSION="1">
+<Strings Encoding="Unicode">
+	<String Id="1001" Name="MASTERID1">
+		<Text>1</Text>
+	</String>
+	<String Id="1002" Name="MASTERID2">
+		<Text>2</Text>
+	</String>
+	<String Id="1003" Name="MASTERID3">
+		<Text>3</Text>
+	</String>
+</Strings>
+</BREWRes>

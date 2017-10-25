@@ -1,0 +1,5 @@
+---- thread_callback Matches (4 in 1 files) ----
+Test.c (sec_linux\impl\src\isec):static WE_VOID thread_callback(ISEC *pISec)
+Test.c (sec_linux\impl\src\isec)://    iResult = pthread_create(&(thread[i++]), NULL, (THREAD)thread_callback, (WE_VOID *)pISecW);
+Test.c (sec_linux\impl\src\isec):    iResult = pthread_create(&(thread[i++]), NULL, (THREAD)thread_callback, (WE_VOID *)pISecB);
+Test.c (sec_linux\impl\src\isec)://    iResult = pthread_create(&(thread[i++]), NULL, (THREAD)thread_callback, (WE_VOID *)pISecS);

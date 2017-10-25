@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BREWRes Name="isecw_sessionrenew" VERSION="1">
+<Strings Encoding="Unicode">
+	<String Id="1001" Name="MASTERSECRETID">
+		<Text>0</Text>
+	</String>
+	<String Id="1002" Name="SESSIONOPTION">
+		<Text>5</Text>
+	</String>
+	<String Id="1003" Name="SESSION">
+		<Text>12345678</Text>
+	</String>
+	<String Id="1004" Name="ID2">
+		<Text>1</Text>
+	</String>
+	<String Id="1005" Name="OPTION2">
+		<Text>1</Text>
+	</String>
+	<String Id="1006" Name="SESSION2">
+		<Text>1</Text>
+	</String>
+	<String Id="1007" Name="IDS_STRING_1007">
+		<Text>2</Text>
+	</String>
+	<String Id="1008" Name="IDS_STRING_1008">
+		<Text>4</Text>
+	</String>
+	<String Id="1009" Name="IDS_STRING_1009">
+		<Text>33333333</Text>
+	</String>
+	<String Id="1010" Name="IDS_STRING_1010">
+		<Text>3</Text>
+	</String>
+	<String Id="1011" Name="IDS_STRING_1011">
+		<Text>2</Text>
+	</String>
+	<String Id="1012" Name="IDS_STRING_1012">
+		<Text>44444</Text>
+	</String>
+	<String Id="1013" Name="IDS_STRING_1013">
+		<Text>4</Text>
+	</String>
+	<String Id="1014" Name="IDS_STRING_1014">
+		<Text>3</Text>
+	</String>
+	<String Id="1015" Name="IDS_STRING_1015">
+		<Text>67890</Text>
+	</String>
+	<String Id="1016" Name="IDS_STRING_1016">
+		<Text>5</Text>
+	</String>
+	<String Id="1017" Name="IDS_STRING_1017">
+		<Text>1</Text>
+	</String>
+	<String Id="1018" Name="IDS_STRING_1018">
+		<Text>98764455</Text>
+	</String>
+	<String Id="1019" Name="IDS_STRING_1019">
+		<Text>6</Text>
+	</String>
+	<String Id="1020" Name="IDS_STRING_1020">
+		<Text>2</Text>
+	</String>
+	<String Id="1021" Name="IDS_STRING_1021">
+		<Text>666666</Text>
+	</String>
+	<String Id="1022" Name="IDS_STRING_1022">
+		<Text>7</Text>
+	</String>
+	<String Id="1023" Name="IDS_STRING_1023">
+		<Text>3</Text>
+	</String>
+	<String Id="1024" Name="IDS_STRING_1024">
+		<Text>7777777</Text>
+	</String>
+	<String Id="1025" Name="IDS_STRING_1025">
+		<Text>8</Text>
+	</String>
+	<String Id="1026" Name="IDS_STRING_1026">
+		<Text>2</Text>
+	</String>
+	<String Id="1027" Name="IDS_STRING_1027">
+		<Text>88888888</Text>
+	</String>
+	<String Id="1028" Name="IDS_STRING_1028">
+		<Text>9</Text>
+	</String>
+	<String Id="1029" Name="IDS_STRING_1029">
+		<Text>4</Text>
+	</String>
+	<String Id="1030" Name="IDS_STRING_1030">
+		<Text>9999999</Text>
+	</String>
+	<String Id="1031" Name="IDS_STRING_1031">
+		<Text>10</Text>
+	</String>
+	<String Id="1032" Name="IDS_STRING_1032">
+		<Text>5</Text>
+	</String>
+	<String Id="1033" Name="IDS_STRING_1033">
+		<Text>0000000</Text>
+	</String>
+</Strings>
+</BREWRes>
